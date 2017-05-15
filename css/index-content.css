@@ -747,6 +747,12 @@
     right: 0;
     margin: auto;
 }
+.index-first-block-four ul.block-four li.four-4 .circle-img{
+	overflow: hidden;
+}
+.index-first-block-four ul.block-four li.four-4 .circle-img img{
+	width: 100%;
+}
 .index-first-block-four ul.block-four li .circle-img img{
 	position: absolute;
     left: 0;

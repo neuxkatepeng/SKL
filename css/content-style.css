@@ -1501,6 +1501,109 @@ ul.dtr-details .dtr-data {
 		width: 100%;
 	}
 }
+
+.control-insu-service-finish-searchresult-block{
+	margin-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-insu-service-finish-searchresult-block{
+		margin-bottom: 0px;
+	}
+}
+
+.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline{
+	vertical-align: top;
+}
+.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline.active{
+	position: relative;
+	margin-bottom: 115px;
+}
+.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB{
+	display: none;
+}
+.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline.active .insu-service-finish-inlineRadio-4-SUB{
+	display: block;
+}
+.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB .radio-inline{
+	margin-bottom: 0;
+}
+.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB .radio-inline:last-child{
+	width: 79%;
+}
+.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB .radio-inline .pure-input-one-1{
+	display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-left: 36px;
+    position: relative;
+    top: -5px;
+    width: 100%;
+}
+
+.insu-service-finish-inlineRadio-4-SUB{
+	position: absolute;
+	top: 45px;
+	left: 36px;
+	width: 668px;
+	padding: 25px 20px 15px 20px;
+}
+@media only screen and (min-width: 320px) and (max-width:1199px) {
+	.insu-service-finish-inlineRadio-4-SUB{
+		left: -260px;
+		width: 540px;
+	}
+	.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB .radio-inline:last-child{
+		width: 70%;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	.insu-service-finish-inlineRadio-4-SUB{
+		left: -225px;
+		width: 505px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB .radio-inline {
+	    display: inline-block;
+	    width: auto;
+	    margin-right: 30px;
+	}
+	.insu-service-finish-inlineRadio-4-SUB{
+		left: 38px;
+		width: 92%;
+	}
+	.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB .radio-inline:last-child{
+		width: 63%;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB .radio-inline:last-child{
+		width: 128px;
+	}
+	.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB .radio-inline .form-control {
+	    height: 35px;
+	}
+	.insu-service-finish-inlineRadio-4-SUB{
+		width: 89%;
+		padding: 25px 20px 15px 20px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:359px) {
+	.control-insu-service-finish-radio-block .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB .radio-inline {
+	    margin-right: 10px;
+	}
+	.insu-service-finish-inlineRadio-4-SUB{
+		width: 87%;
+		padding: 25px 10px 15px 10px;
+	}
+}
+
+.control-insu-paper-reapply-table .input-check-items-two-1{
+	height: 21px;
+}
+
 /* 170428 */
 .radio-inline label {
 	width: 100%;
