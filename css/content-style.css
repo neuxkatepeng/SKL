@@ -1474,6 +1474,33 @@ ul.dtr-details .dtr-data {
 		padding-bottom: 0;
 	}
 }
+
+
+.control-insu-service-finish-search-block{
+
+}
+.control-insu-service-finish-search-block .search-date .cols-1{
+	width: 17%;
+}
+.control-insu-service-finish-search-block .search-date .cols-2{
+	width: 83%;
+}
+@media only screen and (min-width: 320px) and (max-width:1199px) {
+	.control-insu-service-finish-search-block .search-date .cols-1{
+		width: 21%;
+	}
+	.control-insu-service-finish-search-block .search-date .cols-2{
+		width: 79%;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-insu-service-finish-search-block .search-date .cols-1{
+		width: 100%;
+	}
+	.control-insu-service-finish-search-block .search-date .cols-2{
+		width: 100%;
+	}
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;

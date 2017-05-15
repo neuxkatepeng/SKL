@@ -69,6 +69,129 @@
 						  		</div>
 						  		
 						  		<div class="index-title margin-bottom0">
+									<p>保單服務完成件查詢</p>
+									<span class="red-line"></span>
+								</div>
+								<div class="">
+									<div class="">
+										
+									</div>
+									<div class="control-insu-service-finish-search-block">
+										<div class="search-date">
+											<div class="cols-1">
+												<p class="h5txt font-weight800">查詢結案日期區間</p>
+											</div>
+											<div class="cols-2">
+												<div class="left">
+													<input type='text' class="form-control" id="datepicker3">
+													<a href="" class="datepicker3"><img src="img/date-icon.png"> </a>
+												</div>
+												<div class="right">
+													<input type='text' class="form-control" id="datepicker4">
+													<a href="" class="datepicker4"><img src="img/date-icon.png"> </a>
+												</div>
+											</div>
+										</div>
+										<div class="margin-top10">
+											<div class="twobtn-1">
+												<a href="" class="bgred">查詢</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="">
+										<div class="">
+											<p class="font-weight800 colorred h5txt">變更日期：2017-01-19</p>
+											<p class="font-weight800 colorred h5txt">變更結果：查無資料</p>
+											<p class="font-weight800 colorred h5txt">訊息說明：此日期區間無紀錄，請重新選擇查詢條件。</p>
+											<p class="font-weight800 colorred h5txt">※ 如查無您的保單資料或資料誤值等相關疑問，請聯繫您的服務人員或使用免付費電話0800-031-115</p>
+										</div>
+
+										<div class="insu-service-finish-checkitem1">
+											<div class="">
+												<p class="title">保單內容變更紀錄</p>
+											</div>
+											<div class="padding-left12">
+												<p class="h5txt">查詢日期：2017-01-19</p>
+											</div>
+											<div class="padding-top30 margin-bottom30">
+												<div class="table-small-hide">
+													<div class="table-small-hide-inside">
+														<table id="table-small-hide-4" class="display" cellspacing="0" width="100%">
+													        <thead>
+													            <tr>
+													                <th>保單號碼</th>
+													                <th>主約險種</th>
+													                <th>要保人</th>
+													                <th>被保人</th>
+													                <th>契變案號</th>
+													                <th>交易狀態</th>
+													                <th>收件/受理日期</th>
+													                <th>結案日期</th>
+													                <th>單位電話</th>
+													                <th>服務人員</th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td><a href="">ARM0000005</a></td>
+													                <td>已結束</td>
+													                <td>2017-01-07</td>
+													                <td>2017-01-17</td>
+													                <td>02-22222222</td>
+													                <td>盧韻竹</td>
+													            </tr>
+													            <tr>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td><a href="">ARM0000005</a></td>
+													                <td>註銷</td>
+													                <td>2017-01-07</td>
+													                <td>2017-01-17</td>
+													                <td>02-22222222</td>
+													                <td>盧韻竹</td>
+													            </tr>
+													        </tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="insu-service-finish-checkitem2">
+											
+										</div>
+										
+										<div class="insu-service-finish-checkitem3">
+											
+										</div>
+
+										<div class="insu-service-finish-checkitem4">
+											
+										</div>
+
+										<div class="insu-service-finish-checkitem5">
+											
+										</div>
+									</div>
+										
+
+	
+								</div>
+						  	</div>
+
+							<div class="skl-60-layout-1 block-style minheight660px margin-bottom30">
+						  		<div class="favorite-btn-block">
+							  		<a href="" class="favorite-btn"></a>
+						  		</div>
+						  		
+						  		<div class="index-title margin-bottom0">
 									<p>保單服務進度查詢</p>
 									<span class="red-line"></span>
 								</div>
@@ -843,7 +966,7 @@
 											</div>
 										</div>
 									</div>
-									<div class=" margin-bottom50">
+									<div class="margin-bottom50">
 
 										<div class="">
 											<p class="h5txt colorred font-weight800">您所輸入查詢區間內並無任何交易紀錄!請重新查詢!</p>
@@ -1328,12 +1451,28 @@ GardenUtils.plugin.datePicker({
     defaultDate: '2017-05-05'
 });
 
+GardenUtils.plugin.datePicker({
+    target: $('#datepicker3'),
+    maxMonth: '0',
+    minMonth: '-3',
+    defaultDate: '2017-05-05'
+});
+
+GardenUtils.plugin.datePicker({
+    target: $('#datepicker4'),
+    maxMonth: '0',
+    minMonth: '-3',
+    defaultDate: '2017-05-05'
+});
+
+
 GardenUtils.display.checkboxSelectAll({
     target: 'dataCheck1'
 });
 GardenUtils.display.checkboxSelectAll({
     target: 'dataCheck2'
 });
+
 
 $('a.datepicker1').on('click', function(ev){
     ev.preventDefault();
@@ -1342,6 +1481,16 @@ $('a.datepicker1').on('click', function(ev){
 $('a.datepicker2').on('click', function(ev){
     ev.preventDefault();
     $("#datepicker2").datepicker("show");
+});
+
+$('a.datepicker3').on('click', function(ev){
+    ev.preventDefault();
+    $("#datepicker3").datepicker("show");
+});
+
+$('a.datepicker4').on('click', function(ev){
+    ev.preventDefault();
+    $("#datepicker4").datepicker("show");
 });
 
 
