@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>線上繳費紀錄查詢</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/thirdParty.css">
+	<link rel="stylesheet" href="css/GardenUtils.css">
+	<link rel="stylesheet" href="css/header-footer.css">
+	<link rel="stylesheet" href="css/index-content.css">
+	<link rel="stylesheet" href="css/content-style.css">
+	<link rel="stylesheet" href="css/common-style.css">
+	<!-- [if IE]>
+	<link rel="stylesheet" href="css/iefix.css">
+	<![endif] -->
+	
+    
+    
+</head>
+
+<body>
+
+
+
+<div id="rwd-left-menu" style="display:none;">
+	<div w3-include-html="SKL-include-rwd-left-menu.html" class="menu-title ga-mobile-menu-nav" ga-mobile-menu-nav-position="top">
+					
+    </div>
+</div>
+
+<div id="rwd-right-menu" style="display:none;">
+	<div w3-include-html="SKL-include-rwd-right-menu.html" class="menu-title ga-mobile-menu-nav" ga-mobile-menu-nav-position="top">
+	
+	</div>
+</div>
+
+<div class="whole-SKL">
+
+	<header w3-include-html="SKL-include-header.html">
+		
+	</header>
+	<!-- end of mobile nav -->
+	
+	<!-- content -->
+	<div class="content">
+		
+		<div class="Index-content page-for-min-height">
+			<div class="breadcrumb-block">
+				<div class="breadcrumb">
+					<a href="index.html">麵包屑位置/</a>
+					<a href="#">N/</a>
+					<span>N</span>
+				</div>
+			</div>
+			<!-- index-top content row -->
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-9 left-content">
+							<!-- .col-xs-12 .col-md-9 left-content -->
+
+
+
+						  	<div class="skl-60-layout-1 block-style minheight660px">
+						  		<div class="favorite-btn-block">
+							  		<a href="" class="favorite-btn"></a>
+						  		</div>
+						  		
+						  		<div class="index-title margin-bottom0">
+									<p>線上繳費紀錄查詢</p>
+									<span class="red-line"></span>
+								</div>
+								<div class="margin-top30">
+									<div class="apply-regive-insufee-search-block">
+										<div class="search-date">
+											<div class="cols-1">
+												<p class="h5txt font-weight800">請輸入交易區間</p>
+											</div>
+											<div class="cols-2">
+												<div class="left">
+													<input type='text' class="form-control" id="datepicker1">
+													<a href="" class="datepicker1"><img src="img/date-icon.png"> </a>
+												</div>
+												<div class="right">
+													<input type='text' class="form-control" id="datepicker2">
+													<a href="" class="datepicker2"><img src="img/date-icon.png"> </a>
+												</div>
+											</div>
+										</div>
+										<div class="margin-top10">
+											<div class="twobtn-1">
+												<a href="" class="bgred">查詢</a>
+											</div>
+										</div>
+									</div>
+									<div class="apply-regive-insufee-table-block margin-bottom50">
+										<!-- <div class="apply-regive-insufee-table-p">
+											<p class="h5txt colorred font-weight800 padding-left12">此日期區間查無紀錄，請重新選擇查詢條件，如有任何疑問，請洽本公司客服中心免付費服務電話0800-031-115</p>
+										</div> -->
+										<!-- <div class="apply-regive-insufee-table-table padding-top10">
+											
+										</div> -->
+									</div>
+									<div class="apply-regive-insufee-memotxt-block">
+										<div class="titledescr">
+											<p class="title">備註</p>
+											<ol class="title-ol-list">
+												<li>點選繳費編號可以查詢繳費明細</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+						  	</div>
+
+						 
+
+						</div>
+
+						<div class="col-xs-12 col-md-3 right-menu">
+							<div w3-include-html="SKL-include-rightmenu.html" class="menu-aside-block">
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- index-top content row -->
+
+
+		</div>
+		<!-- end of Index-content -->
+
+
+
+		<!-- index-slider content row -->
+
+
+		<!-- index-slider content row -->
+
+
+
+	</div>
+	<!-- end of content -->
+
+	<div class="fix-rightdown-block" w3-include-html="SKL-include-fix-rightdown-block.html">
+
+	</div>
+	
+
+
+	<div w3-include-html="SKL-include-Modal-cancel-favorite.html">
+		
+	</div>
+
+		
+
+
+	<!-- Modal -->
+
+			<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			  Launch demo modal
+			</button> -->
+
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        		<span aria-hidden="true">&times;</span>
+			        	</button>
+			        	<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			        	...
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        	<button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	<!-- Modal -->  	
+	  
+
+
+	
+
+	<!-- footer -->
+	<footer w3-include-html="SKL-include-footer.html">
+		
+	</footer>
+	<!-- end of btm text row -->
+		
+	
+</div>
+
+
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/w3IncludeHTML.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/thirdParty.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.responsive.min.js"></script>
+<script src="js/GardenUtils.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+w3IncludeHTML(function(){
+
+	GardenUtils.plugin.mobileMenu({
+	    dataEleId: 'rwd-left-menu',
+	    isFullScreen: true
+	});
+
+	GardenUtils.plugin.mobileMenu({
+	    dataEleId: 'rwd-right-menu',
+	    position: 'right',
+	    isFullScreen: true
+	});
+
+	setTimeout(function(){
+		$('#new-activities-col a[href="#new-activities-collapse"]').on('click', function(){
+			$('header, .content').addClass('active');
+		});
+	}, 1000);	
+
+	// 我的最愛點擊
+	$('a.favorite-btn').on('click', function(ev){
+		ev.preventDefault();
+
+		var parent = $(this).parents('.favorite-btn-block').first();
+		parent.toggleClass('active');
+
+		if( parent.hasClass('active') ){
+			$('.favohintfade').removeClass('hidden fadeOut');
+			GardenUtils.display.autoClose({
+				target: $('.favohintfade.autoCloseTarget'),
+				retentionTime: 3000
+			});
+		} else {
+			$('.favohintfade').addClass('hidden fadeOut');
+		}
+	});
+
+	GardenUtils.display.scrollTop({
+		target: $('.footer .ga-scroll-top-btn'),
+		footerEle: $('.footer')
+	});
+
+
+
+	GardenUtils.display.helper({
+	    target:$('#fix-onlineservice'),
+	    options:{
+	        bottom:'20px',
+	    }
+	});
+
+
+	GardenUtils.display.helper({
+	    target:$('#fix-activnews'),
+	    options:{
+	        type:'right',
+	        bottom:'158px',
+	    }
+	});
+
+
+	// fix footer: min-height
+    $(window).resize(function(){
+
+        var window_h = $(window).height(),
+            content_h = $('.page-for-min-height').height();
+
+        if( window_h > content_h ){
+            $('.page-for-min-height').css('min-height', window_h - $('.footer').height());
+        }
+        //alert(window_h+', '+content_h);
+    });
+
+    $(window).trigger('resize');
+});
+
+// $(function(){
+// 	$('#myModal').modal('toggle');
+// });
+
+
+$(function(){
+	$('.dropdown-toggle').dropdown();
+});
+
+
+
+$(function(){
+	$('#myTabs a').click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show');
+	});
+});
+
+
+
+
+
+
+
+$('#Modal-immediacontact .topbtn.topbtnstydot > a').click(function (ev) {
+	ev.preventDefault();
+	$('#Modal-immediacontact').modal('hide');
+  	$('#fix-onlineservice').trigger('click');
+});
+
+
+GardenUtils.plugin.tableCollapse({
+    target: $('#table-small-hide-1')
+});
+GardenUtils.plugin.tableCollapse({
+    target: $('#table-small-hide-2')
+});
+
+GardenUtils.display.blockEqualHeight({
+	displaySingleWindowWidth: 767
+});
+
+
+
+GardenUtils.plugin.datePicker({
+    target: $('#datepicker1'),
+    maxMonth: '0',
+    minMonth: '-3',
+    defaultDate: '2017-05-05'
+});
+
+GardenUtils.plugin.datePicker({
+    target: $('#datepicker2'),
+    maxMonth: '0',
+    minMonth: '-3',
+    defaultDate: '2017-05-05'
+});
+
+GardenUtils.display.checkboxSelectAll({
+    target: 'dataCheck1'
+});
+GardenUtils.display.checkboxSelectAll({
+    target: 'dataCheck2'
+});
+
+$('a.datepicker1').on('click', function(ev){
+    ev.preventDefault();
+    $("#datepicker1").datepicker("show");
+});
+$('a.datepicker2').on('click', function(ev){
+    ev.preventDefault();
+    $("#datepicker2").datepicker("show");
+});
+
+
+</script>
+</html>
