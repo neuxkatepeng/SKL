@@ -1857,15 +1857,34 @@ var GardenUtils = {
         
             table.on( 'responsive-resize', function ( e, datatable, columns ) {
 
+                // console.log('responsive-resize');
+
                 controlDetail();
 
                 
             });
+
+            function openTabelWithIndex(open_conf){
+
+                var openIndex = open_conf.openIndex;
+                var collapseBtn = open_conf.collapseBtn;
+
+                if( !collapseBtn.eq(1).parent().hasClass('parent') 
+                    && !collapseBtn.eq(1).hasClass('hidden') ){
+                    if( openIndex == -1 ){
+                        collapseBtn.trigger('click');
+                    } else {
+                        collapseBtn.eq((openIndex+1)).trigger('click');
+                    }
+                }
+            } // end openTabelWithIndex function
             
             
             function controlDetail() {
-                var hiddenLen = target.find('tbody tr:first td:hidden').length;
+                var hiddenLen = target.find('tbody tr:first td:not(:first-child):hidden').length;
                 var collapseBtn = target.find('.details-control');
+
+                // console.log('hiddenLen', hiddenLen, target.attr('id'));
 
                 if( !hasCollapseBtn ){
                     if( !collapseBtn.parent().hasClass('parent') ){
@@ -1878,14 +1897,11 @@ var GardenUtils = {
                     collapseBtn.addClass('hidden');
                 }
 
-                if( !collapseBtn.parent().hasClass('parent') ){
-                    if( openIndex == -1 ){
-                        collapseBtn.trigger('click');
-                    } else {
-                        collapseBtn.eq((openIndex+1)).trigger('click');
-                    }
-                }
-            }
+                openTabelWithIndex({
+                    openIndex: openIndex,
+                    collapseBtn: collapseBtn
+                });
+            } // end controlDetail function
             
             controlDetail();
         }, // end tableCollapse function
