@@ -1660,7 +1660,15 @@ ul.dtr-details .dtr-data {
     padding: 5px 10px;
 }
 
-
+.control-insu-paid-give-tab-twolevel-block .tab-content{
+	margin-top: 30px;
+}
+.control-insu-paid-tab2-btn .twobtn-1{
+	padding-bottom: 0;
+}
+.control-insu-paid-tab2-btn .twobtn-1 a{
+	margin-bottom: 0;
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;

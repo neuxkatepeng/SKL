@@ -892,7 +892,7 @@
 	    bottom: 0;
 	    display: inline-block;
 	    vertical-align: top;
-	    width: 60%;
+	    width: 59%;
 	}
 	.index-first-block-four ul.block-four li .index-botm-txt p {
 	    margin-top: 30px;
@@ -901,7 +901,7 @@
 	    padding: 2px 27px;
 	}
 }
-@media only screen and (min-width: 320px) and (max-width:767px) {
+@media only screen and (min-width: 320px) and (max-width:766px) {
 	.index-first-block{
 		/*border: 1px solid #f00;*/
 		border-radius: 0;
