@@ -501,6 +501,9 @@ ul.tab-sty-gray li.active:after{
 	/*border: 1px solid #f00;*/
 	padding-top: 12px;
 }
+
+
+
 @media only screen and (min-width: 320px) and (max-width:480px) {
 	ul.tab-sty-gray li a{
 		padding: 10px;
@@ -514,6 +517,118 @@ ul.tab-sty-gray li.active:after{
 	  	position: relative;
 	}
 }
+ul.tab-sty-gray.sixtab-change-style{
+	display: block;
+	width: 100%;
+	font-size: 0;
+	border-bottom: 0;
+}
+ul.tab-sty-gray.sixtab-change-style li:before{
+	display: block;
+}
+ul.tab-sty-gray.sixtab-change-style li{
+	display: inline-block;
+	width: 174px;
+	margin-bottom: 1px;
+}
+ul.tab-sty-gray.sixtab-change-style li a{
+	font-size: 16px;
+	padding: 10px 0;
+}
+ul.tab-sty-gray.sixtab-change-style li:after{
+	display: none;
+}
+@media only screen and (min-width: 320px) and (max-width:1199px) {
+	ul.tab-sty-gray.sixtab-change-style li{
+		width: 139px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.Dropdown-style-1-iphone-hide{
+		display: none;
+	}
+}
+
+.Dropdown-style-1{
+	display: none;
+}
+.Dropdown-style-1 span.caret{
+	display: none;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li:before{
+	display: none;
+}
+.Dropdown-style-1 li{
+	width: 100%;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active{
+	background-color: #d8d8d8;
+	font-size: 18px;
+	text-align: center;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active a{
+	color: #717171;
+	font-size: 18px;
+	padding: 10px 56px 10px 14px;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active.open{
+	background-color: #7b868c;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active.open a{
+	color: #fff;
+}
+
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active>a:after {
+    content: '';
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    margin: auto;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #7b868c;
+    border-left: 10px solid transparent;
+    display: inline-block;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active.open>a:after {
+    border-top: 10px solid #fff;
+}
+
+
+.Dropdown-style-1 .Dropdown-style-ul-1 li ul.dropdown-menu{
+	width: 100%;
+	background-color: #d8d8d8;
+	margin: 0;
+	padding: 0 56px 0 14px;
+	text-align: center;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active.open ul.dropdown-menu li a{
+	color: #717171;
+	background-image: none;
+	background-color: transparent;
+	padding: 10px 0;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active.open ul.dropdown-menu li a:focus{
+	background-image: none;
+	background-color: transparent;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active.open ul.dropdown-menu li a:hover{
+	background-image: none;
+	background-color: transparent;
+}
+.Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active.open ul.dropdown-menu li a:active{
+	background-image: none;
+	background-color: transparent;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.Dropdown-style-1{
+		display: block;
+	}
+}
+
+
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
 	border: 0;
