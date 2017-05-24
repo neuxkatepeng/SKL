@@ -549,6 +549,56 @@ $('a.datepicker2').on('click', function(ev){
     $("#datepicker2").datepicker("show");
 });
 
+$('.dropdown-menu').on('click', 'li a', function(){
 
+	var dropdown_btnId = $(this).parents('.dropdown-menu').first().attr('aria-labelledby');
+	var dropdown_btn = $('#'+dropdown_btnId);
+
+  	dropdown_btn.text($(this).text());
+  	dropdown_btn.val($(this).text());
+  
+});
+$('.dropdown-menu').each(function(){
+	$(this).find('li a').first().trigger('click');
+});
+
+$('.model-style-1').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
+
+$('.model-style-2').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
+
+$('.model-style-3').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
 </script>
 </html>

@@ -1122,9 +1122,8 @@
 										            	<th></th>
 										                <th>保單狀況</th>
 										                <th>主約險種名稱</th>
-										                <th>投保身份別</th>
+										                <th>被保險人</th>
 										                <th>投保始期</th>
-										                <th>下次繳費時間</th>
 										            </tr>
 										        </thead>
 										        <tbody>
@@ -1141,7 +1140,6 @@
 										                <td class="text-align-left"><a href="" data-toggle="modal" data-target="">8888888888 傳家樂(253)終身還本壽險</a></td>
 										                <td>陳欣欣</td>
 										                <td>2010-09-20</td>
-										                <td>2016-09-20</td>
 										            </tr>
 										            <tr>
 										            	<td>
@@ -1156,7 +1154,6 @@
 										                <td class="text-align-left"><a href="" data-toggle="modal" data-target="">8888888888 金寶貝終身還本壽險</a></td>
 										                <td>陳欣欣</td>
 										                <td>2010-09-20</td>
-										                <td>2016-09-20</td>
 										            </tr>
 										            <tr>
 										            	<td>
@@ -1171,7 +1168,6 @@
 										                <td class="text-align-left"><a href="" data-toggle="modal" data-target="">8888888888 長安養老終身壽險（甲型）</a></td>
 										                <td>林大美</td>
 										                <td>2009-08-20</td>
-										                <td>2016-09-20</td>
 										            </tr>
 										            <tr>
 										            	<td>
@@ -1186,7 +1182,6 @@
 										                <td class="text-align-left"><a href="" data-toggle="modal" data-target="">8888888888 傳家樂(253)終身還本壽險</a></td>
 										                <td>林大美</td>
 										                <td>2005-08-20</td>
-										                <td>2016-09-20</td>
 										            </tr>
 										            <tr>
 										            	<td>
@@ -1201,7 +1196,6 @@
 										                <td class="text-align-left"><a href="" data-toggle="modal" data-target="">8888888888 傳家樂(253)終身還本壽險</a></td>
 										                <td>李新奇</td>
 										                <td>1999-04-27</td>
-										                <td>2016-09-20</td>
 										            </tr>
 										        </tbody>
 											</table>
@@ -1955,6 +1949,57 @@ $('a.datepicker4').on('click', function(ev){
     $("#datepicker4").datepicker("show");
 });
 
+$('.dropdown-menu').on('click', 'li a', function(){
+
+	var dropdown_btnId = $(this).parents('.dropdown-menu').first().attr('aria-labelledby');
+	var dropdown_btn = $('#'+dropdown_btnId);
+
+  	dropdown_btn.text($(this).text());
+  	dropdown_btn.val($(this).text());
+  
+});
+$('.dropdown-menu').each(function(){
+	$(this).find('li a').first().trigger('click');
+});
+
+$('.model-style-1').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
+
+$('.model-style-2').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
+
+$('.model-style-3').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
 
 </script>
 </html>

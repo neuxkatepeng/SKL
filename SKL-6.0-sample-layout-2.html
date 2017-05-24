@@ -1661,6 +1661,43 @@ $('a.datepicker2').on('click', function(ev){
     $("#datepicker2").datepicker("show");
 });
 
+$('.model-style-1').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
 
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
+
+$('.model-style-2').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
+
+$('.model-style-3').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
 </script>
 </html>

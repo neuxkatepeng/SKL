@@ -490,6 +490,18 @@ $('a.datepicker2').on('click', function(ev){
     $("#datepicker2").datepicker("show");
 });
 
+$('#Modal-billdetail').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
 
 </script>
 </html>

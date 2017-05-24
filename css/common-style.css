@@ -528,7 +528,7 @@ ul.tab-sty-gray.sixtab-change-style li:before{
 }
 ul.tab-sty-gray.sixtab-change-style li{
 	display: inline-block;
-	width: 174px;
+	width: 169px;
 	margin-bottom: 1px;
 }
 ul.tab-sty-gray.sixtab-change-style li a{
@@ -601,14 +601,14 @@ ul.tab-sty-gray.sixtab-change-style li:after{
 	width: 100%;
 	background-color: #d8d8d8;
 	margin: 0;
-	padding: 0 56px 0 14px;
+	padding: 0 0px 0 0px;
 	text-align: center;
 }
 .Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active.open ul.dropdown-menu li a{
 	color: #717171;
 	background-image: none;
 	background-color: transparent;
-	padding: 10px 0;
+	padding: 10px 56px 10px 14px;
 }
 .Dropdown-style-1 .Dropdown-style-ul-1 li.dropdown.active.open ul.dropdown-menu li a:focus{
 	background-image: none;
@@ -655,7 +655,7 @@ ul.subtab-sty-white li{
 	float: none;
 	text-align: center;
 	background-color: #fff;
-	padding: 8px 0 14px 0;
+	padding: 8px 0 0px 0;
 	/*border: 1px solid #0f0;*/
 }
 
@@ -671,7 +671,7 @@ ul.subtab-sty-white li a{
   	position: initial;
 
 }
-ul.subtab-sty-white li a:after{
+ul.subtab-sty-white li:after{
 	content: '';
     width: 13px;
     height: 7px;
@@ -695,14 +695,16 @@ ul.subtab-sty-white li.active a{
 	background-color: #fff !important;
 	border: 0;
 }
-ul.subtab-sty-white li.active a:after{
+ul.subtab-sty-white li.active:after{
 	display: inline-block;
 }
 ul.subtab-sty-white li a{
 	border-left: 1px solid #d6d6d6 !important;
+	padding-bottom: 14px;
 }
 ul.subtab-sty-white li:first-child a{
 	border-left: 0 !important;
+	
 }
 ul.subtab-sty-white li.active a span{
 	position: absolute;
@@ -733,7 +735,7 @@ ul.subtab-sty-white li.active a span{
 	  	display: block;
 	  	width: 100%;
 	  	border-radius: 0;
-	  	position: relative;
+	  	position: initial;
 	}
 	ul.subtab-sty-white li.active a span{
 		
@@ -4125,9 +4127,13 @@ ul.subtab-sty-white li.active a span{
 		padding: 0 85px; 
 		padding-bottom: 30px;
 	}
-	.three-ul-items-imgtxt .li-item .pic img{
+	.three-ul-items-imgtxt .li-item .pic{
 		width: 80px;
 		height: 80px;
+	}
+	.three-ul-items-imgtxt .li-item .pic img{
+		width: 40px;
+		height: 40px;
 	}
 }
 @media only screen and (min-width: 320px) and (max-width:767px) {
@@ -4135,8 +4141,15 @@ ul.subtab-sty-white li.active a span{
 		padding: 0 10px; 
 		padding-bottom: 30px;
 	}
+	.three-ul-items-imgtxt .li-item {
+	    padding: 0 10px;
+	}
 }
-
+@media only screen and (min-width: 320px) and (max-width:345px) {
+	.three-ul-items-imgtxt .li-item {
+	    padding: 0 0px;
+	}
+}
 
 .tagcard-inside-items{
 
@@ -4850,7 +4863,7 @@ a.table-ratio-configuration-btn{
 	padding: 5px 5px;
     min-width: 90px;
     display: inline-block;
-    margin: 0 5px;
+    margin: 5px 5px;
     border-radius: 4px;
     letter-spacing: 1px;
     font-size: 16px;
@@ -5181,6 +5194,9 @@ span.bold{
 	}
 }
 
+.displayblock{
+	display: block !important;
+}
 .displaynone{
 	display: none !important;
 }
