@@ -1437,9 +1437,7 @@ ul.dtr-details .dtr-data {
 .control-invest-insu-paper-trans .cashdetail-whole .selectfilter-itemdetail .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .tag{
 	width: auto;
 }
-.control-invest-insu-paper-trans-btn .twobtn-1{
-	padding-bottom: 0;
-}
+
 
 .control-insu-detail-basicinfo{
 	padding-bottom: 50px;
@@ -1447,6 +1445,9 @@ ul.dtr-details .dtr-data {
 @media only screen and (min-width: 320px) and (max-width:480px) {
 	.control-insu-detail-basicinfo{
 		padding-bottom: 0px;
+	}
+	.control-invest-insu-paper-trans-btn .twobtn-1{
+		padding-bottom: 0;
 	}
 }
 
@@ -1669,7 +1670,48 @@ ul.dtr-details .dtr-data {
 .control-insu-paid-tab2-btn .twobtn-1 a{
 	margin-bottom: 0;
 }
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+	.control-insupaper-lists-bigpic .three-ul-items-imgtxt .li-item p{
+		padding: 0 10px;
+	}
+}
+.control-insu-paid-give-tab-twolevel-block .subtab-block .img-human-block .human-txt{
+	padding: 17px 20px;
+	width: 382px;
+}
+.control-insu-paid-give-tab-twolevel-block .subtab-block .img-human-block .human-txt p{
+	margin-bottom: 0;
+}
 
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-insu-paid-give-tab-twolevel-block .subtab-block .img-human-block .human-txt{
+		padding: 0;
+		width: 100%;
+	}
+	.control-insu-paid-give-tab-twolevel-block .subtab-block .img-human-block .human-txt p{
+		padding: 0;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:374px) {
+	.control-tagcard-inside-items-block .tagcard-inside-items .ul-items{
+		padding: 0 0px;
+	}
+	.control-tagcard-inside-items-block .tagcard-inside-total{
+		margin: 0 20px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.name-desc-nowidth .ul-li-items .li-items .Right.iphone-cus-width{
+		width: 43%;
+	}
+}
+.control-insu-contract-situation-list .titledescr .title-ol-list{
+	margin-bottom: 0;
+	font-size: 15px;
+}
+.control-insu-contract-situation-list .titledescr .descr p{
+	font-size: 15px;
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;

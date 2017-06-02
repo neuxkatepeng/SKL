@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>保單服務完成件查詢</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/thirdParty.css">
+	<link rel="stylesheet" href="css/GardenUtils.css">
+	<link rel="stylesheet" href="css/header-footer.css">
+	<link rel="stylesheet" href="css/index-content.css">
+	<link rel="stylesheet" href="css/content-style.css">
+	<link rel="stylesheet" href="css/common-style.css">
+	<!-- [if IE]>
+	<link rel="stylesheet" href="css/iefix.css">
+	<![endif] -->
+	
+    
+    
+</head>
+
+<body>
+
+
+
+<div id="rwd-left-menu" style="display:none;">
+	<div w3-include-html="SKL-include-rwd-left-menu.html" class="menu-title ga-mobile-menu-nav" ga-mobile-menu-nav-position="top">
+					
+    </div>
+</div>
+
+<div id="rwd-right-menu" style="display:none;">
+	<div w3-include-html="SKL-include-rwd-right-menu.html" class="menu-title ga-mobile-menu-nav" ga-mobile-menu-nav-position="top">
+	
+	</div>
+</div>
+
+<div class="whole-SKL">
+
+	<header w3-include-html="SKL-include-header.html">
+		
+	</header>
+	<!-- end of mobile nav -->
+	
+	<!-- content -->
+	<div class="content">
+		
+		<div class="Index-content page-for-min-height">
+			<div class="breadcrumb-block">
+				<div class="breadcrumb">
+					<a href="index.html">麵包屑位置/</a>
+					<a href="#">N/</a>
+					<span>N</span>
+				</div>
+			</div>
+			<!-- index-top content row -->
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-9 left-content">
+							<!-- .col-xs-12 .col-md-9 left-content -->
+
+							<div class="skl-60-layout-1 block-style minheight660px">
+						  		<div class="favorite-btn-block">
+							  		<a href="" class="favorite-btn"></a>
+						  		</div>
+						  		
+						  		<div class="index-title margin-bottom0">
+									<p>保單服務完成件查詢</p>
+									<span class="red-line"></span>
+								</div>
+								<div class="margin-top30">
+									<div class="margin-bottom10 control-insu-service-finish-radio-block">
+										<div class="name-checkradio-fill-block-1">
+											<div class="fill-title-name">
+												<p class="font-weight800 h5txt">請選擇查詢項目</p>
+											</div>
+											<div class="fill-txt-checkradio">
+												<div class="input-radio-items-1">
+													<div class="radio-inline">
+														<input type="radio" name="national" id="insu-service-finish-inlineRadio-1" value="dos-option">
+														<label for="insu-service-finish-inlineRadio-1"><span class="cusradio-sty"></span></label>
+														<p>保單內容變更紀錄</p>
+													</div>
+													<div class="radio-inline">
+														<input type="radio" name="national" id="insu-service-finish-inlineRadio-2" value="oiu-option">
+														<label for="insu-service-finish-inlineRadio-2"><span class="cusradio-sty"></span></label>
+														<p>保單借款申請紀錄</p>
+													</div>
+													<div class="radio-inline">
+														<input type="radio" name="national" id="insu-service-finish-inlineRadio-3" value="oiu-option">
+														<label for="insu-service-finish-inlineRadio-3"><span class="cusradio-sty"></span></label>
+														<p>銀行轉帳/信用卡受理紀錄</p>
+													</div>
+													<div class="radio-inline active">
+														<input type="radio" name="national" id="insu-service-finish-inlineRadio-4" value="oiu-option">
+														<label for="insu-service-finish-inlineRadio-4"><span class="cusradio-sty"></span></label>
+														<p>理賠紀錄</p>
+
+														<div class="borderccc insu-service-finish-inlineRadio-4-SUB">
+															<div class="radio-inline">
+																<input type="radio" name="nationalaa" id="insu-service-finish-inlineRadio-6" value="oiu-option">
+																<label for="insu-service-finish-inlineRadio-6"><span class="cusradio-sty"></span></label>
+																<p>本人</p>
+															</div>
+															<div class="radio-inline">
+																<input type="radio" name="nationalaa" id="insu-service-finish-inlineRadio-7" value="oiu-option">
+																<label for="insu-service-finish-inlineRadio-7"><span class="cusradio-sty"></span></label>
+																
+																<div class="pure-input-one-1">
+																	<input type="" class="form-control" name="" placeholder="輸入事故人ID">
+																</div>												
+															</div>
+														</div>
+													</div>
+													<div class="radio-inline">
+														<input type="radio" name="national" id="insu-service-finish-inlineRadio-5" value="oiu-option">
+														<label for="insu-service-finish-inlineRadio-5"><span class="cusradio-sty"></span></label>
+														<p>年金/滿期金/紅利/回饋金申請紀錄</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="control-insu-service-finish-search-block">
+										<div class="search-date">
+											<div class="cols-1">
+												<p class="h5txt font-weight800">查詢結案日期區間</p>
+											</div>
+											<div class="cols-2">
+												<div class="left">
+													<input type='text' class="form-control" id="datepicker3">
+													<a href="" class="datepicker3"><img src="img/date-icon.png"> </a>
+												</div>
+												<div class="right">
+													<input type='text' class="form-control" id="datepicker4">
+													<a href="" class="datepicker4"><img src="img/date-icon.png"> </a>
+												</div>
+											</div>
+										</div>
+										<div class="margin-top10">
+											<div class="twobtn-1">
+												<a href="" class="bgred">查詢</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="control-insu-service-finish-searchresult-block">
+										<div class="control-insu-service-finish-redtxt">
+											<p class="font-weight800 colorred h5txt">變更日期：2017-01-19</p>
+											<p class="font-weight800 colorred h5txt">變更結果：查無資料</p>
+											<p class="font-weight800 colorred h5txt">訊息說明：此日期區間無紀錄，請重新選擇查詢條件。</p>
+											<p class="font-weight800 colorred h5txt">※ 如查無您的保單資料或資料誤值等相關疑問，請聯繫您的服務人員或使用客戶服務專線0800-031-115</p>
+										</div>
+
+										<div class="insu-service-finish-checkitem1">
+											<div class="">
+												<p class="title">保單內容變更紀錄</p>
+											</div>
+											<div class="padding-left12">
+												<p class="h5txt">查詢日期：2017-01-19</p>
+											</div>
+											<div class="padding-top30 margin-bottom30">
+												<div class="table-small-hide">
+													<div class="table-small-hide-inside">
+														<table id="table-small-hide-4" class="display" cellspacing="0" width="100%">
+													        <thead>
+													            <tr>
+													                <th>保單號碼</th>
+													                <th>主約險種</th>
+													                <th>要保人</th>
+													                <th>被保人</th>
+													                <th>契變案號</th>
+													                <th>交易狀態</th>
+													                <th>收件/受理日期</th>
+													                <th>結案日期</th>
+													                <th>單位電話</th>
+													                <th>服務人員</th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td><a href="" data-toggle="modal" data-target="#Modal-member-descrs-1">ARM0000005</a></td>
+													                <td>已結束</td>
+													                <td>2017-01-07</td>
+													                <td>2017-01-17</td>
+													                <td>02-22222222</td>
+													                <td>盧韻竹</td>
+													            </tr>
+													            <tr>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td><a href="" data-toggle="modal" data-target="#Modal-member-descrs-1">ARM0000005</a></td>
+													                <td>註銷</td>
+													                <td>2017-01-07</td>
+													                <td>2017-01-17</td>
+													                <td>02-22222222</td>
+													                <td>盧韻竹</td>
+													            </tr>
+													        </tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="insu-service-finish-checkitem2">
+											<div class="">
+												<p class="title">保單借款申請紀錄</p>
+											</div>
+											<div class="padding-left12">
+												<p class="h5txt">查詢日期：2017-01-19</p>
+											</div>
+											<div class="padding-top30 margin-bottom30">
+												<div class="table-small-hide">
+													<div class="table-small-hide-inside">
+														<table id="table-small-hide-5" class="display" cellspacing="0" width="100%">
+													        <thead>
+													            <tr>
+													            	<th>收件/受理日期</th>
+													                <th>保單號碼</th>
+													                <th>主約險種</th>
+													                <th>要保人</th>
+													                <th>被保人</th>
+													                <th>付款方式</th>
+													                <th>結案日期</th>
+													                <th>付款日期</th>
+													                <th>單位電話</th>
+													                <th>服務人員</th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													            	<td>2017-01-17</td>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td>現金</td>
+													                <td>2017-01-17</td>
+													                <td>2017-01-17</td>
+													                <td>02-22222222</td>
+													                <td>盧韻竹</td>
+													            </tr>
+													            <tr>
+													            	<td>2017-01-17</td>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td>現金</td>
+													                <td>2017-01-17</td>
+													                <td>2017-01-17</td>
+													                <td>02-22222222</td>
+													                <td>盧韻竹</td>
+													            </tr>
+													        </tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="insu-service-finish-checkitem3">
+											<div class="">
+												<p class="title">銀行轉帳/信用卡受理紀錄</p>
+											</div>
+											<div class="padding-left12">
+												<p class="h5txt">查詢日期：2017-01-19</p>
+											</div>
+											<div class="padding-top30 margin-bottom30">
+												<div class="table-small-hide">
+													<div class="table-small-hide-inside">
+														<table id="table-small-hide-6" class="display" cellspacing="0" width="100%">
+													        <thead>
+													            <tr>
+													            	<th>受理日期</th>
+													                <th>保單號碼</th>
+													                <th>主約險種</th>
+													                <th>要保人</th>
+													                <th>被保人</th>
+													                <th>委託帳號/卡號</th>
+													                <th>委託銀行</th>
+													                <th>信用卡效期</th>
+													                <th>服務人員</th>
+													                <th>單位電話</th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													            	<td>2017-01-27</td>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td>12345678901234</td>
+													                <td>新光銀行</td>
+													                <td>yyyy/mm</td>
+													                <td>盧韻竹</td>
+													                <td>02-22222222</td>
+													            </tr>
+													            <tr>
+													            	<td>2017-01-27</td>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td>12345678901234</td>
+													                <td>新光銀行</td>
+													                <td>yyyy/mm</td>
+													                <td>盧韻竹</td>
+													                <td>02-22222222</td>
+													            </tr>
+													        </tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="insu-service-finish-checkitem4">
+											<div class="">
+												<p class="title">理賠紀錄</p>
+											</div>
+											<div class="padding-left12">
+												<p class="h5txt">查詢日期：2017-01-19</p>
+											</div>
+											<div class="padding-left12 margin-top30">
+												<div class="name-desc-nowidth">
+													<ul class="ul-li-items">
+														<li class="li-items">
+															<div class="Left">
+																<p class="h5txt font-weight800">查詢事故人姓名</p>
+															</div>
+															<div class="Right">
+																<p class="h5txt">徐小敏</p>
+															</div>
+														</li>
+														<li class="li-items">
+															<div class="Left">
+																<p class="h5txt font-weight800">查詢結案日期區間</p>
+															</div>
+															<div class="Right iphone-cus-width">
+																<p class="h5txt">yyyy-mm-dd～yyyy-mm-dd</p>
+															</div>
+														</li>
+													</ul>
+													<ul class="ul-li-items">
+														<li class="li-items">
+															<div class="Left">
+																<p class="h5txt font-weight800">理賠金給付總額</p>
+															</div>
+															<div class="Right">
+																<p class="h5txt">123,456,789元</p>
+															</div>
+														</li>
+														<li class="li-items">
+															<div class="Left">
+																<p class="h5txt font-weight800">實際給付金額</p>
+															</div>
+															<div class="Right">
+																<p class="h5txt">123,456,789元</p>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="padding-top30 margin-bottom30">
+												<div class="table-small-hide">
+													<div class="table-small-hide-inside">
+														<table id="table-small-hide-7" class="display" cellspacing="0" width="100%">
+													        <thead>
+													            <tr>
+													            	<th>理賠案號</th>
+													                <th>保單號碼</th>
+													                <th>主約險種</th>
+													                <th>收件/受理日期</th>
+													                <th>給付項目</th>
+													                <th>結案日期</th>
+													                <th>事故日期</th>
+													                <th>幣別給付金額</th>
+													                <th>審核單位</th>
+													                <th>審核經辦</th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													            	<td>12345678901234567</td>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>2017-01-27</td>
+													                <td>＃意外門診保險金</td>
+													                <td>2017-01-27</td>
+													                <td></td>
+													                <td>123,456,789元 （台幣）</td>
+													                <td>台北服務中心</td>
+													                <td>林小姐</td>
+													            </tr>
+													            <tr>
+													            	<td>12345678901234567</td>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>2017-01-27</td>
+													                <td>疾病住院保險金</td>
+													                <td>2017-01-27</td>
+													                <td></td>
+													                <td>123,456,789元 （台幣）</td>
+													                <td>台北服務中心</td>
+													                <td>林小姐</td>
+													            </tr>
+													        </tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="insu-service-finish-checkitem5">
+											<div class="">
+												<p class="title">年金/滿期金/紅利/回饋金申請紀錄</p>
+											</div>
+											<div class="padding-left12">
+												<p class="h5txt">查詢日期：2017-01-19</p>
+											</div>
+											<div class="padding-top30 margin-bottom30">
+												<div class="table-small-hide">
+													<div class="table-small-hide-inside">
+														<table id="table-small-hide-8" class="display" cellspacing="0" width="100%">
+													        <thead>
+													            <tr>
+													                <th>保單號碼</th>
+													                <th>主約險種</th>
+													                <th>要保人</th>
+													                <th>被保人</th>
+													                <th>付款方式</th>
+													                <th>給付種類</th>
+													                <th>收件/受理日期</th>
+													                <th>進度</th>
+													                <th>單位電話</th>
+													                <th>服務人員</th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td>支票</td>
+													                <td>年金</td>
+													                <td>2017-01-27</td>
+													                <td></td>
+													                <td>02-22222222</td>
+													                <td>盧韻竹</td>
+													            </tr>
+													            <tr>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td>支票</td>
+													                <td>回饋金</td>
+													                <td>2017-01-27</td>
+													                <td></td>
+													                <td>02-22222222</td>
+													                <td>盧韻竹</td>
+													            </tr>
+													            <tr>
+													                <td>8888888888</td>
+													                <td>新光人壽新健康百分百終身健康保險</td>
+													                <td>徐小敏</td>
+													                <td>徐小平</td>
+													                <td>現金</td>
+													                <td>紅利</td>
+													                <td>2017-01-27</td>
+													                <td></td>
+													                <td>02-22222222</td>
+													                <td>盧韻竹</td>
+													            </tr>
+													        </tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+										
+
+	
+								</div>
+						  	</div>
+
+
+						</div>
+
+						<div class="col-xs-12 col-md-3 right-menu">
+							<div w3-include-html="SKL-include-rightmenu.html" class="menu-aside-block">
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- index-top content row -->
+
+
+		</div>
+		<!-- end of Index-content -->
+
+
+
+		<!-- index-slider content row -->
+
+
+		<!-- index-slider content row -->
+
+
+
+	</div>
+	<!-- end of content -->
+
+	<div class="fix-rightdown-block" w3-include-html="SKL-include-fix-rightdown-block.html">
+
+	</div>
+	
+
+
+	<div w3-include-html="SKL-include-Modal-cancel-favorite.html">
+		
+	</div>
+
+		
+	
+
+
+	<!-- Modal -->
+
+			<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			  Launch demo modal
+			</button> -->
+
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        		<span aria-hidden="true">&times;</span>
+			        	</button>
+			        	<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			        	...
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        	<button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	<!-- Modal -->  	
+
+
+	<!-- Modal-member-descrs-1-交易項目 -->
+
+			<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal-member-descrs-1">
+			  交易項目
+			</button> -->
+
+			<div class="modal fade model-style-3" id="Modal-member-descrs-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        		<span aria-hidden="true"><img src="img/gray-x.png"></span>
+			        	</button>
+			        	<div class="index-title margin-bottom0 font-weight800">
+							<p>交易項目</p>
+							<span class="red-line"></span>
+						</div>
+			      </div>
+			      <div class="modal-body">
+			      		<div class="modal-mar-18-18-10">
+							<div class="modal-table-1">
+								<table>
+									<thead>
+										<tr class="modal-table-title">
+											<th>服務項目</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>利率變動型保險商品增加回饋金批註(60)</td>
+										</tr>
+										<tr>
+											<td>定期定額之增額約定-增額保費繳法別與保費之約定</td>
+										</tr>
+										<tr>
+											<td>非傳統型商品選擇權變更-年金開始給付日期/週期</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+				        </div>
+			      </div>
+			      <div class="modal-footer text-align-center">
+			        	<button type="button" class="Modal-cancel-fav-btn bgwhite colorblack" data-dismiss="modal" aria-label="Close">確認</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	<!-- Modal-member-descrs-1-交易項目 -->
+	  
+
+
+	
+
+	<!-- footer -->
+	<footer w3-include-html="SKL-include-footer.html">
+		
+	</footer>
+	<!-- end of btm text row -->
+		
+	
+</div>
+
+
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/w3IncludeHTML.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mmenu.min.js"></script>
+<script src="js/jquery-plugin.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.responsive.min.js"></script>
+<script src="js/GardenUtils.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+w3IncludeHTML(function(){
+
+	GardenUtils.plugin.mobileMenu({
+	    dataEleId: 'rwd-left-menu',
+	    isFullScreen: true
+	});
+
+	GardenUtils.plugin.mobileMenu({
+	    dataEleId: 'rwd-right-menu',
+	    position: 'right',
+	    isFullScreen: true
+	});
+
+	setTimeout(function(){
+		$('#new-activities-col a[href="#new-activities-collapse"]').on('click', function(){
+			$('header, .content').addClass('active');
+		});
+	}, 1000);	
+
+	// 我的最愛點擊
+	$('a.favorite-btn').on('click', function(ev){
+		ev.preventDefault();
+
+		var parent = $(this).parents('.favorite-btn-block').first();
+		parent.toggleClass('active');
+
+		if( parent.hasClass('active') ){
+			$('.favohintfade').removeClass('hidden fadeOut');
+			GardenUtils.display.autoClose({
+				target: $('.favohintfade.autoCloseTarget'),
+				retentionTime: 3000
+			});
+		} else {
+			$('.favohintfade').addClass('hidden fadeOut');
+		}
+	});
+
+	GardenUtils.display.scrollTop({
+		target: $('.footer .ga-scroll-top-btn'),
+		footerEle: $('.footer')
+	});
+
+
+
+	GardenUtils.display.helper({
+	    target:$('#fix-onlineservice'),
+	    options:{
+	        bottom:'20px',
+	    }
+	});
+
+
+	GardenUtils.display.helper({
+	    target:$('#fix-activnews'),
+	    options:{
+	        type:'right',
+	        bottom:'158px',
+	    }
+	});
+
+
+	// fix footer: min-height
+    $(window).resize(function(){
+
+        var window_h = $(window).height(),
+            content_h = $('.page-for-min-height').height();
+
+        if( window_h > content_h ){
+            $('.page-for-min-height').css('min-height', window_h - $('.footer').height());
+        }
+        //alert(window_h+', '+content_h);
+    });
+
+    $(window).trigger('resize');
+});
+
+// $(function(){
+// 	$('#myModal').modal('toggle');
+// });
+
+
+$(function(){
+	$('.dropdown-toggle').dropdown();
+});
+
+
+
+$(function(){
+	$('#myTabs a').click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show');
+	});
+});
+
+
+
+
+
+
+
+$('#Modal-immediacontact .topbtn.topbtnstydot > a').click(function (ev) {
+	ev.preventDefault();
+	$('#Modal-immediacontact').modal('hide');
+  	$('#fix-onlineservice').trigger('click');
+});
+
+
+
+GardenUtils.plugin.tableCollapse({
+    target: $('#table-small-hide-4'),
+    priority: [
+        { responsivePriority: 1, targets: 0 }],
+      hasCollapseBtn: true,
+    openIndex: 0
+});
+
+GardenUtils.plugin.tableCollapse({
+    target: $('#table-small-hide-5'),
+    priority: [
+        { responsivePriority: 1, targets: 0 }],
+      hasCollapseBtn: true,
+    openIndex: 0
+});
+
+GardenUtils.plugin.tableCollapse({
+    target: $('#table-small-hide-6'),
+    priority: [
+        { responsivePriority: 1, targets: 0 }],
+      hasCollapseBtn: true,
+    openIndex: 0
+});
+
+GardenUtils.plugin.tableCollapse({
+    target: $('#table-small-hide-7'),
+    priority: [
+        { responsivePriority: 1, targets: 0 }],
+      hasCollapseBtn: true,
+    openIndex: 0
+});
+
+GardenUtils.plugin.tableCollapse({
+    target: $('#table-small-hide-8'),
+    priority: [
+        { responsivePriority: 1, targets: 0 }],
+      hasCollapseBtn: true,
+    openIndex: 0
+});
+
+
+
+// GardenUtils.display.blockEqualHeight({
+// 	displaySingleWindowWidth: 767
+// });
+
+
+
+GardenUtils.plugin.datePicker({
+    target: $('#datepicker1'),
+    maxMonth: '0',
+    minMonth: '-3',
+    defaultDate: '2017-05-05'
+});
+
+GardenUtils.plugin.datePicker({
+    target: $('#datepicker2'),
+    maxMonth: '0',
+    minMonth: '-3',
+    defaultDate: '2017-05-05'
+});
+
+GardenUtils.plugin.datePicker({
+    target: $('#datepicker3'),
+    maxMonth: '0',
+    minMonth: '-3',
+    defaultDate: '2017-05-05'
+});
+
+GardenUtils.plugin.datePicker({
+    target: $('#datepicker4'),
+    maxMonth: '0',
+    minMonth: '-3',
+    defaultDate: '2017-05-05'
+});
+
+
+GardenUtils.display.checkboxSelectAll({
+    target: 'dataCheck1'
+});
+GardenUtils.display.checkboxSelectAll({
+    target: 'dataCheck2'
+});
+
+
+$('a.datepicker1').on('click', function(ev){
+    ev.preventDefault();
+    $("#datepicker1").datepicker("show");
+});
+$('a.datepicker2').on('click', function(ev){
+    ev.preventDefault();
+    $("#datepicker2").datepicker("show");
+});
+
+$('a.datepicker3').on('click', function(ev){
+    ev.preventDefault();
+    $("#datepicker3").datepicker("show");
+});
+
+$('a.datepicker4').on('click', function(ev){
+    ev.preventDefault();
+    $("#datepicker4").datepicker("show");
+});
+
+$('.dropdown-menu').on('click', 'li a', function(){
+
+	var dropdown_btnId = $(this).parents('.dropdown-menu').first().attr('aria-labelledby');
+	var dropdown_btn = $('#'+dropdown_btnId);
+
+  	dropdown_btn.text($(this).text());
+  	dropdown_btn.val($(this).text());
+  
+});
+$('.dropdown-menu').each(function(){
+	$(this).find('li a').first().trigger('click');
+});
+
+$('.model-style-1').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
+
+$('.model-style-2').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
+
+$('.model-style-3').on('shown.bs.modal', function (e) {
+	var target = $(e.relatedTarget).attr('data-target');
+
+	var content_div = $(target).first();
+  	var tables = content_div.find('table.display');
+
+  	if( tables.length > 0 ){
+  		tables.each(function(){
+  			$(this).trigger('resize');
+  		});
+  	}
+});
+
+</script>
+</html>

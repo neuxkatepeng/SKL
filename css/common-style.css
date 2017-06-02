@@ -1027,7 +1027,7 @@ ul.subtab-sty-white li.active a span{
 }
 .titledescr ol.title-ol-list li{
 	list-style-type: decimal; 
-	padding-left: 10px;
+	/*padding-left: 10px;*/
 	letter-spacing: 1px;
 }
 
@@ -4386,6 +4386,7 @@ ul.subtab-sty-white li.active a span{
 	display: table;
 	width: 100%;
 	border-bottom: 0;
+
 }
 .table-cus-style-3 .down-two-col .ul-items:last-child{
 	border-bottom: 0;
@@ -4402,7 +4403,7 @@ ul.subtab-sty-white li.active a span{
 .table-cus-style-3 .down-two-col .ul-items .two-block .two-block-in{
 	display: table;
 	width: 100%;
-	min-height: 60px;
+	height: 60px;
 }
 .table-cus-style-3 .down-two-col .ul-items .two-block .two-block-in .left{
 	display: table-cell;
@@ -4432,7 +4433,7 @@ ul.subtab-sty-white li.active a span{
 .table-cus-style-3 .down-two-col .cus-ul-items .one-block .one-block-in{
 	display: table;
 	width: 100%;
-	min-height: 60px;
+	height: 60px;
 }
 .table-cus-style-3 .down-two-col .cus-ul-items .one-block .one-block-in .left{
 	display: table-cell;
@@ -4447,6 +4448,7 @@ ul.subtab-sty-white li.active a span{
 	display: table-cell;
 	width: 75%;
 	vertical-align: middle;
+	padding: 0 50px; 
 }
 .table-cus-style-3 .down-two-col .cus-ul-items .one-block .one-block-in .right p{
 	margin-bottom: 0;
@@ -4993,6 +4995,10 @@ span.bold{
 .margin-rightleft10{
 	margin: 0 10px;
 }
+.margin-topbottom5{
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+}
 .margin-top0{
 	margin-top: 0px !important;
 }
@@ -5319,6 +5325,9 @@ span.bold{
 	.fill-select-one-1-item:after {
 	    display: none;
 	}
+	.select-fill-block-three-2 .fill-select-three-2 .fill-select-item:after{
+		display: none;
+	}
 	.ui-datepicker-title:before{
 		display: none;
 	}
@@ -5358,6 +5367,9 @@ span.bold{
 	}
 	.fill-select-one-1-item:after {
 	    display: none\9;
+	}
+	.select-fill-block-three-2 .fill-select-three-2 .fill-select-item:after{
+		display: none\9;
 	}
 	.ui-datepicker-title:before{
 		display: none;
