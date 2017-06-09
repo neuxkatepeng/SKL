@@ -1712,6 +1712,301 @@ ul.dtr-details .dtr-data {
 .control-insu-contract-situation-list .titledescr .descr p{
 	font-size: 15px;
 }
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.tranfinished-block .each-table-1 ul.table-single-display li .table-single-content .single-content-detail{
+		padding: 0 10px;
+	}
+}
+.investtargettransrule .titledescr .title-ol-list{
+	font-size: 15px;
+	padding-left: 35px;
+}
+.investtargettransrule .twobtn-1 a{
+	margin: 15px 7px;
+}
+.investtargettransrule .titledescr{
+	padding-bottom: 0;
+}
+.investtargettransrule .titledescr p.title{
+	padding-left: 11px;
+}
+
+
+.control-banktransgiveservice .setmemberpasswordinputblock .Left{
+	width: 17%;
+}
+.control-banktransgiveservice .setmemberpasswordinputblock .Left p{
+	text-align: left;
+}
+.control-banktransgiveservice .setmemberpasswordinputblock .Right{
+	width: 83%;
+}
+@media only screen and (min-width: 320px) and (max-width:1199px) {
+	.control-banktransgiveservice .setmemberpasswordinputblock .Left{
+		width: 22%;
+	}
+	.control-banktransgiveservice .setmemberpasswordinputblock .Right{
+		width: 78%;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-banktransgiveservice .setmemberpasswordinputblock .Left{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.control-banktransgiveservice .setmemberpasswordinputblock .Right{
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-investinsupaper-contentchange .select-fill-block-three-2 .fill-select-three-2 .fill-select-item select{
+		height: 45px;
+	}
+	.control-investinsupaper-contentchange .select-fill-block-three-2 .fill-select-three-2 .condition-reset-btn {
+	    top: 13px;
+	}
+}
+
+.control-tagcard-inside-items-block .tagcard-inside-total .tagcard-inside-total-LR .total-LR .left{
+	padding-top: 3px;
+}
+
+.outside-layout-btn{
+	margin-top: 30px;
+}
+.control-investfit-analy-block .control-investfit-analy-table-final-block table tr td{
+	text-align: left;
+}
+.control-investfit-analy-block .control-investfit-analy-table-final-block table tr td img{
+	width: 20px;
+	height: 20px;
+}
+
+
+.control-fund-distriratios-first-tagcard .itemdetail-tagcard .tagcard-inside{
+	box-shadow: none;
+}
+.control-fund-distriratios-first-tagcard .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .tag p:before{
+	display: none;
+}
+.control-fund-distriratios-first-tagcard .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .tag{
+	padding: 8px 30px 8px 13px;
+}
+.control-fund-distriratios-first-tagcard .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .tag p{
+	font-size: 16px;
+}
+.control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items{
+	padding: 0 0px;
+}
+.control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items{
+	
+}
+.control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR{
+	border-bottom: 0;
+}
+.control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR .left{
+	width: 42%;
+	text-align: right;
+}
+.control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR .right{
+	width: 58%;
+	padding-left: 14px;
+	text-align: left;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR .left{
+		width: 37%;
+		text-align: left;
+	}
+	.control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR .right{
+		width: 63%;
+		padding-left: 20px;
+		text-align: left;
+	}
+}
+
+
+.control-fund-distriratios-first-input .name-checkradio-fill-block-1 .fill-title-name{
+	width: 12%;
+    padding-right: 15px;
+}
+.control-fund-distriratios-first-input .name-checkradio-fill-block-1 .fill-txt-checkradio{
+	width: 88%;
+}
+.control-fund-distriratios-first-input .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline{
+	margin-right: 20px;
+}
+.control-fund-distriratios-btn .twostylemix-twobtn-1{
+	margin-bottom: 50px;
+}
+.control-fund-distriratios-btn .twobtn-1{
+	margin-bottom: 20px;
+}
+@media only screen and (min-width: 320px) and (max-width:1023px) {
+	.control-fund-distriratios-first-input .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline{
+		width: auto;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-fund-distriratios-first-input .name-checkradio-fill-block-1 .fill-title-name{
+		width: 100%;
+	    padding-right: 15px;
+	}
+	.control-fund-distriratios-first-input .name-checkradio-fill-block-1 .fill-txt-checkradio{
+		width: 100%;
+	}
+	.control-fund-distriratios-btn .twostylemix-twobtn-1{
+		margin-bottom: 0px;
+	}
+	.control-fund-distriratios-btn .twobtn-1{
+		margin-bottom: 0px;
+		padding-bottom: 0;
+	}
+}
+.control-fund-distriratios-btn .twobtn-1 a{
+	margin: 6px 25px;
+}
+
+.inputcredinum-block{
+
+}
+.inputcredinum-block .name-input-fill-block-1{
+
+}
+.inputcredinum-block .name-input-fill-block-1 .fill-title-name{
+	width: 70px;
+    max-width: 70px;
+    text-align: left;
+}
+.inputcredinum-block .name-input-fill-block-1 .fill-txt-input{
+	width: 510px;
+    max-width: 510px;
+}
+.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1{
+	
+}
+.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item{
+	position: relative;
+	width: 104px;
+    max-width: 104px;
+    margin-right: 27px;
+}
+.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item:last-child {
+    margin-right: 0px;
+}
+.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item p{
+	position: absolute;
+	right: -18px;
+	top: 5px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input{
+		width: 100%;
+	    max-width: none;
+	}
+	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item{
+		position: relative;
+		width: 20.5%;
+	    max-width: none;
+	    margin-right: 18px;
+	}
+	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item p{
+		position: absolute;
+		right: -13px;
+		top: 5px;
+	}
+	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item input{
+		height: 45px;
+	}
+	.inputcredinum-block .name-input-fill-block-1 .fill-title-name{
+		margin-bottom: 10px;
+	}
+}
+.control-crecarddeadlinechange-first-step .rectangle-btn-1{
+	padding-top: 0px;
+}
+.control-crecarddeadlinechange-second-step .rectangle-btn-1{
+	padding-top: 0px;
+}
+
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1{
+
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-title-name{
+	width: 18%;
+	max-width: 96px;
+	padding-top: 5px;
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input{
+	width: 82%;
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left{
+	width: 47.5%;
+	margin-right: 2.5%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left p{
+	position: absolute;
+	right: -20px;
+	top: 5px;
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .right{
+	width: 47.5%;
+	margin-left: 2.5%;
+	display: inline-block;
+	vertical-align: top;
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left .fill-select-one-1{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left .fill-select-one-1:nth-child(1){
+	padding-right: 5px;
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left .fill-select-one-1:nth-child(2){
+	padding-left: 5px;
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .right .fill-select-one-1{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;	
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .right .fill-select-one-1:nth-child(1){
+	padding-right: 5px;
+}
+.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .right .fill-select-one-1:nth-child(2){
+	padding-left: 5px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-title-name{
+		width: 100%;
+		max-width: none;
+		padding-top: 0px;
+		margin-bottom: 10px;
+	}
+	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input{
+		width: 100%;
+	}
+}
+.creditcardtxt{
+	font-size: 0;
+	padding-left: 60px;
+}
+.creditcardtxt .left{
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 12px;
+}
+.creditcardtxt .right{
+	display: inline-block;
+	vertical-align: top;
+}
+.control-crecarddeadlinechange-third-step .setmemberpasswordinputblock .Left p{
+	margin-bottom: 10px;
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;

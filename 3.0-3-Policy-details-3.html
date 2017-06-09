@@ -6,6 +6,7 @@
 	<title>保單明細</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/thirdParty.css">
@@ -1089,34 +1090,30 @@
 																	<table id="table-small-hide-10" class="display" cellspacing="0" width="100%">
 																        <thead>
 																            <tr>
-																                <th>保單號碼</th>
-																                <th>要保人</th>
+																                <th>商品中文名稱</th>
+																                <th>保障號碼</th>
+																                <th>保障狀態碼</th>
+																                <th>險種代碼</th>
+																                <th>版數</th>
 																                <th>投保始期</th>
-																                <th>投保終期</th>
-																                <th>收費管道</th>
-																                <th>主約保費</th>
-																                <th>附約保費</th>
-																                <th>總保費</th>
-																                <th>收據狀態</th>
-																                <th>送金單號碼</th>
-																                <th>繳費日期</th>
-																                <th>入帳日期</th>
+																                <th>契約期滿日</th>
+																                <th>紅利/回饋金選擇權</th>
+																                <th>累積紅利/回饋金金額</th>
+																                <th>累積繳清保額</th>
 																            </tr>
 																        </thead>
 																        <tbody>
 																            <tr>
-																                <td>8888888888</td>
-																                <td>陳新光</td>
-																                <td>2010-09-10</td>
-																                <td>2017-09-20</td>
-																                <td>C： 信用卡</td>
-																                <td>123,456,789 元</td>
-																                <td>123,456,789 元</td>
-																                <td>123,456,789 元</td>
-																                <td>O： 開單</td>
-																                <td>W060000001976</td>
-																                <td>2017-01-18</td>
-																                <td>2017-01-18</td>
+																                <td>新光人壽傳家樂（253） 終身還本壽險</td>
+																                <td>1</td>
+																                <td>正常繳費件</td>
+																                <td>1001Y</td>
+																                <td>2</td>
+																                <td>2009-11-11</td>
+																                <td>2009-11-11</td>
+																                <td>儲存生息</td>
+																                <td>123,456,789元</td>
+																                <td>123,456,789元</td>
 																            </tr>
 																        </tbody>
 																	</table>
@@ -2130,34 +2127,30 @@
 																	<table id="table-small-hide-1010" class="display" cellspacing="0" width="100%">
 																        <thead>
 																            <tr>
-																                <th>保單號碼</th>
-																                <th>要保人</th>
+																                <th>商品中文名稱</th>
+																                <th>保障號碼</th>
+																                <th>保障狀態碼</th>
+																                <th>險種代碼</th>
+																                <th>版數</th>
 																                <th>投保始期</th>
-																                <th>投保終期</th>
-																                <th>收費管道</th>
-																                <th>主約保費</th>
-																                <th>附約保費</th>
-																                <th>總保費</th>
-																                <th>收據狀態</th>
-																                <th>送金單號碼</th>
-																                <th>繳費日期</th>
-																                <th>入帳日期</th>
+																                <th>契約期滿日</th>
+																                <th>紅利/回饋金選擇權</th>
+																                <th>累積紅利/回饋金金額</th>
+																                <th>累積繳清保額</th>
 																            </tr>
 																        </thead>
 																        <tbody>
 																            <tr>
-																                <td>8888888888</td>
-																                <td>陳新光</td>
-																                <td>2010-09-10</td>
-																                <td>2017-09-20</td>
-																                <td>C： 信用卡</td>
-																                <td>123,456,789 元</td>
-																                <td>123,456,789 元</td>
-																                <td>123,456,789 元</td>
-																                <td>O： 開單</td>
-																                <td>W060000001976</td>
-																                <td>2017-01-18</td>
-																                <td>2017-01-18</td>
+																                <td>新光人壽傳家樂（253） 終身還本壽險</td>
+																                <td>1</td>
+																                <td>正常繳費件</td>
+																                <td>1001Y</td>
+																                <td>2</td>
+																                <td>2009-11-11</td>
+																                <td>2009-11-11</td>
+																                <td>儲存生息</td>
+																                <td>123,456,789元</td>
+																                <td>123,456,789元</td>
 																            </tr>
 																        </tbody>
 																	</table>
@@ -2552,6 +2545,17 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   	if( tables.length > 0 ){
   		tables.each(function(){
   			$(this).trigger('resize');
+  			var table_w = $(this).width();
+  			var th_w = 0;
+  			$(this).find('th').each(function(){
+  				if( $(this).is(':visible') ){
+  					th_w += $(this).width();
+  				}
+  			});
+
+  			if( table_w != th_w ){
+  				$(this).trigger('resize');
+  			}
   		});
   	}
 });
