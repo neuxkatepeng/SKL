@@ -5214,6 +5214,279 @@ ul.ul-li-in-table li{
 }
 
 
+.money-style-2-comp{
+	font-size: 0;
+	text-align: right;
+}
+.money-style-2-comp .left{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 6px;
+}
+.money-style-2-comp .right{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.money-style-2-comp .left{
+		text-align: left;
+		width: 100%;
+	}
+	.money-style-2-comp .right{
+		width: 100%;
+	}
+}
+
+.changeaddress-comp{
+	font-size: 0;
+}
+.changeaddress-comp .left{
+	display: inline-block;
+	vertical-align: top;
+	width: 25.5%;
+	text-align: right;
+}
+.changeaddress-comp .right{
+	display: inline-block;
+	vertical-align: top;
+	width: 74.5%;
+	padding-right: 120px;
+	position: relative;
+	padding-left: 12px;
+}
+.changeaddress-comp .left p{
+	padding-right: 12px;
+}
+.changeaddress-comp .right a{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 6px 10px;
+	border-radius: 4px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.changeaddress-comp .left{
+		width: 100%;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.changeaddress-comp .right{
+		width: 100%;
+		padding-right: 100px;
+		position: relative;
+		padding-left: 12px;
+	}
+}
+
+.cus-input-belowtable-comp{
+	font-size: 0;
+}
+.cus-input-belowtable-comp .name{
+	display: inline-block;
+	vertical-align: top;
+	width: 6%;
+	padding-top: 6px;
+}
+.cus-input-belowtable-comp .putcont{
+	display: inline-block;
+	vertical-align: top;
+	width: 94%;
+	padding-left: 12px;
+}
+.cus-input-belowtable-comp .putcont .left{
+	display: inline-block;
+	vertical-align: top;
+	width: 34%;
+	padding-top: 6px;
+}
+.cus-input-belowtable-comp .putcont .right{
+	display: inline-block;
+	vertical-align: top;
+	width: 66%;
+}
+.cus-input-belowtable-comp .putcont .left .input-radio-items-1 .radio-inline{
+	margin-right: 12px;
+	margin-bottom: 0;
+}
+.cus-input-belowtable-comp .putcont .right .right-le{
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	margin-right: 1%;
+}
+.cus-input-belowtable-comp .putcont .right .right-ri{
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	margin-left: 1%; 
+}
+.cus-input-belowtable-comp .putcont .right .right-same{
+}
+.cus-input-belowtable-comp .putcont .right .right-same>p{
+	display: inline-block;
+}
+.cus-input-belowtable-comp .putcont .right .right-same .pure-input-one-1{
+	display: inline-block;
+	width: 90px;
+	margin: 0 30px 0 12px;
+	position: relative;
+}
+.cus-input-belowtable-comp .putcont .right .right-same .abso{
+	position: absolute;
+	right: -23px;
+	top: 6px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.cus-input-belowtable-comp .name{
+		width: 100%;
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+	.cus-input-belowtable-comp .putcont{
+		width: 100%;
+		padding-left: 0px;
+	}
+	.cus-input-belowtable-comp .putcont .left{
+		width: 100%;
+		padding-top: 0px;
+	}
+	.cus-input-belowtable-comp .putcont .right{
+		width: 100%;
+	}
+	.cus-input-belowtable-comp .putcont .left .input-radio-items-1 .radio-inline{
+		margin-right: 20px;
+		margin-bottom: 20px;
+		width: auto;
+	}
+	.cus-input-belowtable-comp .putcont .right .right-same p:first-child{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.cus-input-belowtable-comp .putcont .right .right-same .pure-input-one-1{
+		display: inline-block;
+		width: 90%;
+		margin: 0 5px 0 0px;
+	}
+	
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.cus-input-belowtable-comp .putcont .right .right-same .pure-input-one-1{
+		display: inline-block;
+		width: 77%;
+		margin: 0 5px 0 0px;
+	}
+	.cus-input-belowtable-comp .putcont .right .right-same .abso{
+		top: 10px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:345px) {
+	.cus-input-belowtable-comp .putcont .right .right-same .pure-input-one-1{
+		display: inline-block;
+		width: 110px;
+		margin: 0 10px 0 0px;
+	}
+}
+
+
+
+
+.cus-input-belowtable-1-comp{
+	font-size: 0;
+}
+.cus-input-belowtable-1-comp .name{
+	display: inline-block;
+	vertical-align: top;
+	width: 15%;
+}
+.cus-input-belowtable-1-comp .putcont{
+	display: inline-block;
+	vertical-align: top;
+	width: 85%;
+	padding-left: 12px;
+}
+.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline{
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty{
+	position: relative;
+	width: 290px;
+	margin-right: 0;
+}
+.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show{
+	display: none;
+	position: absolute;
+	top: -5px;
+	right: 0px;
+}
+.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show .partradio-input{
+	display: inline-block;
+	max-width: 168px;
+}
+.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show p{
+	margin-left: 12px;
+	padding-top: 6px;
+	display: inline-block;
+}
+.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty.active .control-partradio-show{
+	display: block;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.cus-input-belowtable-1-comp .name{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.cus-input-belowtable-1-comp .putcont{
+		width: 100%;
+		padding-left: 0px;
+	}
+	.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty{
+		position: relative;
+		width: 230px;
+		margin-right: 0;
+	}
+	.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show .partradio-input{
+		max-width: 108px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline{
+		width: auto;
+		margin-bottom: 65px;
+	}
+	.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty{
+		width: auto;
+	}
+	.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show{
+		position: absolute;
+		top: auto;
+		bottom: -65px;
+		right: auto;
+		left: -175px;
+		width: 320px;
+	}
+	.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show .partradio-input{
+		width: 85%;
+		max-width: 275px;
+	}
+	.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show p{
+		padding-top: 12px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:350px) {
+	.cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show .partradio-input{
+		width: 70%;
+	}
+}
+
+
+
+.titleandtable-comp{
+	border: 1px solid #bebec0;
+	padding: 20px 10px;
+}
+
 
 
 @media only screen and (min-width: 320px) and (max-width:480px) {
@@ -5321,7 +5594,13 @@ p.cuspstyle{
   	color: #000;
   	margin-bottom: 0;
 }
-
+.h5-5txt{
+	font-size: 16px !important;
+	line-height: 1.69;
+  	letter-spacing: 1px;
+  	color: #000;
+  	margin-bottom: 0;
+}
 .h5txt{
 	font-size: 15px !important;
 	line-height: 1.53;
@@ -5436,6 +5715,12 @@ span.bold{
 
 .padding-rightleft10{
 	padding: 0 10px;
+}
+.padding-top3{
+	padding-top: 3px !important;
+}
+.padding-top5{
+	padding-top: 5px !important;
 }
 .padding-top10{
 	padding-top: 10px !important;

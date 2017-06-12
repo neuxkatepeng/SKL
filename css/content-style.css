@@ -2007,6 +2007,88 @@ ul.dtr-details .dtr-data {
 .control-crecarddeadlinechange-third-step .setmemberpasswordinputblock .Left p{
 	margin-bottom: 10px;
 }
+
+.control-maineffect-first-step .rectangle-btn-1{
+	padding-bottom: 50px;
+	padding-top: 0;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-maineffect-first-step .rectangle-btn-1{
+		padding-bottom: 0px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-maineffect-first-step .setmemberpasswordinputblock .Left{
+		padding-bottom: 5px;
+	}
+}
+.control-applforpolicyreplace-first-step .twostylemix-twobtn-1{
+		padding-bottom: 50px;
+	}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-applforpolicyreplace-first-step .twostylemix-twobtn-1{
+		padding-bottom: 0px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-applforpolicyreplace-first-step .setmemberpasswordinputblock .Left{
+		padding-bottom: 5px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-applforpolicyreplace-first-step .setmemberpasswordinputblock .Left{
+		padding-bottom: 5px;
+	}
+}
+
+.control-fund-warnnotif-settings-third{
+	margin-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-fund-warnnotif-settings-third{
+		margin-bottom: 0px;
+	}
+}
+.control-fund-warnnotif-settings-btn .rectangle-btn-1{
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-fund-warnnotif-settings-btn .rectangle-btn-1{
+		padding-bottom: 0px;
+	}
+}
+.control-change-invest-target-first-step .rectangle-btn-1{
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-change-invest-target-first-step .rectangle-btn-1{
+		padding-bottom: 0px;
+	}
+}
+.control-change-invest-target-second-step .twostylemix-twobtn-1{
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-change-invest-target-second-step .twostylemix-twobtn-1{
+		padding-bottom: 0px;
+	}
+}
+.control-change-invest-target-third-step .twostylemix-twobtn-1{
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-change-invest-target-third-step .twostylemix-twobtn-1{
+		padding-bottom: 0px;
+	}
+}
+.control-change-invest-target-fourth-step .rectangle-btn-1{
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-change-invest-target-fourth-step .rectangle-btn-1{
+		padding-bottom: 0px;
+	}
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;
