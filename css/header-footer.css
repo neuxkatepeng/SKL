@@ -1906,7 +1906,7 @@ p.iph-none{
 	display: none;
 }
 .before-right-login-block .login-radio-input .login-radio .radio-inline input[type='radio']:checked + label span.cusradio-sty{
-    background-image: url(../img/radio-btn-checked.png);
+    /*background-image: url(../img/radio-btn-checked.png);*/
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;

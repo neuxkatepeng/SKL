@@ -236,6 +236,7 @@
 }
 .table-small-hide .table-small-hide-inside table{
 	border: 1px solid #d6d6d6;
+	border-right: 0;
 }
 .table-small-hide .table-small-hide-inside table tr{
 	border-bottom: 1px solid #d6d6d6;
@@ -250,7 +251,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 	background-color: #f2f2f8;
 	padding: 15px 10px;
 	text-align: center;
-	border-left: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
 }
 .table-small-hide .table-small-hide-inside th.details-control {
     min-width: 10px;
@@ -258,15 +259,17 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .table-small-hide .table-small-hide-inside table tr th:first-child{
 	border-left: 0;
 }
+
 .table-small-hide .table-small-hide-inside table tr td{
 	padding: 15px 0;
 	text-align: center;
-	border-left: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
 	font-size: 15px;
 }
 .table-small-hide .table-small-hide-inside table tr td:first-child{
 	border-left: 0;
 }
+
 ul.dtr-details {
     padding: 0;
     margin-bottom: 0;
@@ -1783,16 +1786,16 @@ ul.dtr-details .dtr-data {
 }
 
 
-.control-fund-distriratios-first-tagcard .itemdetail-tagcard .tagcard-inside{
+.itemdetail-tagcard.noicon-sty .tagcard-inside{
 	box-shadow: none;
 }
-.control-fund-distriratios-first-tagcard .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .tag p:before{
+.itemdetail-tagcard.noicon-sty .tagcard-inside .tagcard-inside-up .tag p:before{
 	display: none;
 }
-.control-fund-distriratios-first-tagcard .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .tag{
+.itemdetail-tagcard.noicon-sty .tagcard-inside .tagcard-inside-up .tag{
 	padding: 8px 30px 8px 13px;
 }
-.control-fund-distriratios-first-tagcard .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .tag p{
+.itemdetail-tagcard.noicon-sty .tagcard-inside .tagcard-inside-up .tag p{
 	font-size: 16px;
 }
 .control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items{
@@ -1807,11 +1810,13 @@ ul.dtr-details .dtr-data {
 .control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR .left{
 	width: 42%;
 	text-align: right;
+	word-wrap: break-word;
 }
 .control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR .right{
 	width: 58%;
 	padding-left: 14px;
 	text-align: left;
+	word-wrap: break-word;
 }
 @media only screen and (min-width: 320px) and (max-width:767px) {
 	.control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR .left{
@@ -1819,6 +1824,41 @@ ul.dtr-details .dtr-data {
 		text-align: left;
 	}
 	.control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR .right{
+		width: 63%;
+		padding-left: 20px;
+		text-align: left;
+	}
+}
+
+.control-tagcard-inside-items-block-2 .tagcard-inside-items .customize-one-ul-items{
+	padding: 0 18px;
+}
+.control-tagcard-inside-items-block-2 .tagcard-inside-items .customize-one-ul-items .ul-li-items .itemsLR{
+	border-bottom: 0;
+	font-size: 0;
+	padding: 10px 0;
+}
+.control-tagcard-inside-items-block-2 .tagcard-inside-items .customize-one-ul-items .ul-li-items .itemsLR .left{
+	width: 19.5%;
+	text-align: right;
+	display: inline-block;
+	vertical-align: top;
+	word-wrap: break-word;
+}
+.control-tagcard-inside-items-block-2 .tagcard-inside-items .customize-one-ul-items .ul-li-items .itemsLR .right{
+	width: 80.5%;
+	padding-left: 14px;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+	word-wrap: break-word;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-tagcard-inside-items-block-2 .tagcard-inside-items .customize-one-ul-items .ul-li-items .itemsLR .left{
+		width: 37%;
+		text-align: left;
+	}
+	.control-tagcard-inside-items-block-2 .tagcard-inside-items .customize-one-ul-items .ul-li-items .itemsLR .right{
 		width: 63%;
 		padding-left: 20px;
 		text-align: left;
@@ -1915,11 +1955,13 @@ ul.dtr-details .dtr-data {
 		right: -13px;
 		top: 5px;
 	}
-	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item input{
-		height: 45px;
-	}
 	.inputcredinum-block .name-input-fill-block-1 .fill-title-name{
 		margin-bottom: 10px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item input{
+		height: 45px;
 	}
 }
 .control-crecarddeadlinechange-first-step .rectangle-btn-1{
@@ -1989,6 +2031,17 @@ ul.dtr-details .dtr-data {
 	}
 	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input{
 		width: 100%;
+	}
+	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left p{
+		right: -24px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left p{
+		right: -17px;
+	}
+	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .fill-select-one-1 .fill-select-one-1-item select{
+		height: 45px;
 	}
 }
 .creditcardtxt{
@@ -2088,6 +2141,236 @@ ul.dtr-details .dtr-data {
 	.control-change-invest-target-fourth-step .rectangle-btn-1{
 		padding-bottom: 0px;
 	}
+}
+.control-fund-part-redemption-draw-first-step .rectangle-btn-1{
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-fund-part-redemption-draw-first-step .rectangle-btn-1{
+		padding-bottom: 0px;
+	}
+}
+.control-fund-part-redemption-draw-second-step .twostylemix-twobtn-1{
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-fund-part-redemption-draw-second-step .twostylemix-twobtn-1{
+		padding-bottom: 0px;
+	}
+}
+.card-item-collapse-1-comp{
+	background-color: #ffffff;
+ 	box-shadow: 4px 0 4px 0 rgba(0, 0, 0, 0.21);
+  	border: solid 1px #f2f2f2;
+  	padding: 15px 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.card-item-collapse-1-comp .bottom-cont .smalltitle-and-radio .input-radio-items-1 .radio-inline{
+		margin-top: 0;
+	}
+}
+
+.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-title-name{
+	width: 19%;
+	max-width: none;
+}
+.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input{
+	width: 81%;
+	max-width: 350px;
+}
+.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input .pure-input-one-1{
+	position: relative;
+	padding-right: 30px;
+}
+.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input .pure-input-one-1 input{
+
+}
+.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input .pure-input-one-1 p{
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-title-name{
+		width: 35%;
+		max-width: 110px;
+		padding-top: 5px;
+	}
+	.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input{
+		width: 65%;
+		max-width: 350px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-title-name{
+		padding-top: 11px;
+	}
+	.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input .pure-input-one-1 input{
+		height: 45px;
+	}
+	.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input .pure-input-one-1 p{
+		top: 11px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:345px) {
+	.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-title-name{
+		width: 40%;
+		max-width: 120px;
+	}
+	.control-name-input-fill-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input{
+		width: 60%;
+		max-width: 350px;
+	}
+}
+
+
+.control-input-radio-items-1-in-card-item-collapse-1 .name-input-fill-block-1 .fill-title-name{
+	width: 7%;
+	max-width: none;
+	padding-top: 0;
+}
+.control-input-radio-items-1-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input{
+	width: 93%;
+	max-width: none;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-input-radio-items-1-in-card-item-collapse-1 .name-input-fill-block-1 .fill-title-name{
+		width: 14%;
+		max-width: 45px;
+		padding-top: 0;
+		margin-top: 8px;
+	}
+	.control-input-radio-items-1-in-card-item-collapse-1 .name-input-fill-block-1 .fill-txt-input{
+		width: 86%;
+		max-width: none;
+	}
+}
+
+
+
+.control-propo-regu-excess-insu-prem .cus-left-right-mix-inputselect-comp .left .name-input-fill-block-1 .fill-title-name{
+	width: 41%;
+}
+.control-propo-regu-excess-insu-prem .cus-left-right-mix-inputselect-comp .left .name-input-fill-block-1 .fill-select-one-1{
+	width: 59%;
+}
+.control-propo-regu-excess-insu-prem .name-input-fill-block-1 .fill-title-name{
+	width: 12%;
+	max-width: none;
+	text-align: left;
+	padding-top: 5px;
+}
+.control-propo-regu-excess-insu-prem .name-input-fill-block-1 .fill-txt-input{
+	width: 88%;
+	max-width: none;
+	padding-right: 140px;
+	position: relative;
+}
+.control-propo-regu-excess-insu-prem .name-input-fill-block-1 .fill-txt-input .pure-input-one-1 {
+
+}
+.control-propo-regu-excess-insu-prem .name-input-fill-block-1 .fill-txt-input .pure-input-one-1 p {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-propo-regu-excess-insu-prem .name-input-fill-block-1 .fill-title-name{
+		width: 100%;
+    	max-width: 100%;
+    	text-align: left;
+    	padding-top: 0;
+    	margin-bottom: 10px;
+	}
+	.control-propo-regu-excess-insu-prem .name-input-fill-block-1 .fill-txt-input{
+		width: 100%;
+    	max-width: 100%;
+    	padding-left: 0px;
+	}
+	.control-propo-regu-excess-insu-prem .cus-left-right-mix-inputselect-comp .left .name-input-fill-block-1 .fill-title-name{
+		width: 100%;
+		padding-right: 0;
+	}
+	.control-propo-regu-excess-insu-prem .cus-left-right-mix-inputselect-comp .left .name-input-fill-block-1 .fill-select-one-1{
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-propo-regu-excess-insu-prem .cus-left-right-mix-inputselect-comp .right .name-input-fill-block-2 .right .right-input input {
+	    max-width: 85%;
+	    margin-right: 12px;
+	}
+	.control-propo-regu-excess-insu-prem .name-input-fill-block-1 .fill-txt-input .pure-input-one-1 input{
+		height: 45px;
+	}
+	.control-propo-regu-excess-insu-prem .name-input-fill-block-1 .fill-txt-input .pure-input-one-1 p{
+		top: 11px;
+	}
+}
+
+.card-item-collapse-1-comp .bottom-cont .control-agreed-basic-insu-prem .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline{
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+
+.card-item-collapse-1-comp .bottom-cont .control-invest-income-gain-assets-callback .input-radio-items-1 .radio-inline{
+	width: 100%;
+	margin-right: 0;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.control-invest-income-gain-assets-callback .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB {
+    position: relative;
+    top: auto; 
+    left: 36px;
+    width: 526px;
+    padding: 0px 20px 20px 20px;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-invest-income-gain-assets-callback .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB {
+	    width: 88%;
+	    padding: 0px 18px 20px 18px;
+	}
+}
+
+.control-annuity-begins-pay-day-age{
+	font-size: 0;
+}
+.control-annuity-begins-pay-day-age .fill-select-one-1{
+	width: 112px;
+	padding-right: 12px; 
+	display: inline-block;
+	vertical-align: top;
+}
+.control-annuity-begins-pay-day-age p{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 6px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-annuity-begins-pay-day-age p{
+		padding-top: 12px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-annuity-begins-pay-day-age .fill-select-one-1 .fill-select-one-1-item select{
+		height: 45px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-agreed-basic-insu-prem .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show{
+		margin-top: 20px;
+	}
+	.control-agreed-basic-insu-prem .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show p{
+		padding-top: 10px;
+	}
+}
+.control-fund-part-redemption-draw-first-step .itemdetail-tagcard{
+	padding-bottom: 20px;
 }
 /* 170428 */
 .radio-inline label {

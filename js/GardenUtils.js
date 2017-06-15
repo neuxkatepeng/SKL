@@ -1928,7 +1928,7 @@ var GardenUtils = {
                 datePicker_obj['minDate'] = minMonth+'m';
             }
 
-            target.datepicker( datePicker_obj );
+            target.datepicker( datePicker_obj ).attr('readonly', 'readonly');
 
             if( defaultDate == '' ){
                 var d = new Date();
