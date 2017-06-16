@@ -1832,6 +1832,7 @@ ul.dtr-details .dtr-data {
 
 .control-tagcard-inside-items-block-2 .tagcard-inside-items .customize-one-ul-items{
 	padding: 0 18px;
+	margin-bottom: 0;
 }
 .control-tagcard-inside-items-block-2 .tagcard-inside-items .customize-one-ul-items .ul-li-items .itemsLR{
 	border-bottom: 0;
@@ -2371,6 +2372,160 @@ ul.dtr-details .dtr-data {
 }
 .control-fund-part-redemption-draw-first-step .itemdetail-tagcard{
 	padding-bottom: 20px;
+}
+
+
+.control-inputandselect-in-protect-insu-info{
+
+}
+.control-inputandselect-in-protect-insu-info .fill-select-two-and-one .fill-select-two-1{
+	margin-bottom: 10px;
+}
+.control-inputandselect-in-protect-insu-info .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
+	width: 50%;
+	max-width: none;
+	margin: 0;
+	padding-right: 6px;
+}
+.control-inputandselect-in-protect-insu-info .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item:nth-child(2){
+	padding-right: 0;
+	padding-left: 6px;
+}
+.control-inputandselect-in-protect-insu-info .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item:nth-child(1):after{
+	right: 18px;
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-inputandselect-in-protect-insu-info .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item select{
+		height: 45px;
+	}
+}	
+.control-title-ol-list-in-protect-insu-info{
+
+}
+.control-title-ol-list-in-protect-insu-info ol.title-ol-list{
+	padding-left: 30px;
+}
+.control-title-ol-list-in-protect-insu-info ol.title-ol-list li{
+	list-style: decimal;
+}
+
+
+.cus-mix-inputsradios .ul-items{
+	padding-left: 0;
+}
+.cus-mix-inputsradios .ul-items .ul-li-items{
+	font-size: 0;
+	padding-top: 10px;
+}
+.cus-mix-inputsradios .ul-items .ul-li-items .left{
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 10px;
+	width: 14%;
+	max-width: 75px;
+}
+.cus-mix-inputsradios .ul-items .ul-li-items .right{
+	display: inline-block;
+	vertical-align: top;
+	width: 86%;
+}
+.cus-mix-inputsradios .ul-items .ul-li-items .right .input-radio-items-1 .cus-input-belowtable-2-radio-inline{
+	display: inline;
+	width: auto;
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show {
+    width: 220px;
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern{
+	top: -5px;
+	margin-left: 12px;
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-first{
+	width: 24%;
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-second{
+	padding: 0 12px;
+	width: 52%;
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-third{
+	width: 24%;
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-second .patternp-minus{
+	left: -10px;
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-second .patternp-x{
+	right: 0;
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline:last-child{
+	margin-right: 0;
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline{
+	padding-bottom: 0px;
+	vertical-align: top;
+
+}
+.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input{
+	max-width: 208px;
+	width: 100%;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.cus-mix-inputsradios .ul-items .ul-li-items .left{
+		display: inline;
+		padding-right: 10px;
+		width: 14%;
+		max-width: 75px;
+	}
+	.cus-mix-inputsradios .ul-items .ul-li-items .left p{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.cus-mix-inputsradios .ul-items .ul-li-items .right{
+		display: inline;
+		width: 86%;
+	}
+	.cus-mix-inputsradios .input-radio-items-1{
+		display: inline;
+	}
+	.card-item-collapse-1-comp .bottom-cont .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline{
+		display: inline-block;
+		margin-top: 0;
+		vertical-align: top;
+		padding-bottom: 10px;
+	}
+	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input{
+		margin-left: 12px;
+	}
+	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show {
+	    width: 248px;
+	}
+	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input {
+	    max-width: 236px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.card-item-collapse-1-comp .bottom-cont .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline{
+		padding-bottom: 20px;
+	}
+	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern{
+		top: -10px;
+	}
+	.card-item-collapse-1-comp .bottom-cont .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline:last-child{
+		padding-bottom: 0;
+	}
+	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input{
+		top: -10px;
+		
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:350px) {
+	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show{
+		width: 208px;
+	}
+	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input{
+		width: 196px;
+	}
+	
 }
 /* 170428 */
 .radio-inline label {

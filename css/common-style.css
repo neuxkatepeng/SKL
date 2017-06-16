@@ -1927,6 +1927,7 @@ ul.subtab-sty-white li.active a span{
     margin-left: 0;
     margin-bottom: 10px;
     display: inline-block;
+    /*position: relative;*/
 }
 .input-check-items-two-1 .check-input label {
     display: inline-block;
@@ -1952,6 +1953,7 @@ ul.subtab-sty-white li.active a span{
 	padding-right: 12px;
 	margin-bottom: 0;
 	position: absolute;
+	/*width: 100%;*/
 }
 .input-check-items-two-1 .check-input label span.cusradio-sty{
 	width: 24px;
@@ -4086,6 +4088,7 @@ ul.subtab-sty-white li.active a span{
 
 .each-table-1 ul.table-single-display li p{
 	margin-bottom: 0;
+	word-break: break-all;
 }
 .each-table-1 ul.table-single-display li:first-child{
 	border-left: 1px solid #d6d6d6; 
@@ -4096,7 +4099,6 @@ ul.subtab-sty-white li.active a span{
     padding: 20px 0px;
     background-color: #f2f2f8;
     font-size: 14px;
-    /*display: none;*/
 }
 
 
@@ -4105,7 +4107,6 @@ ul.subtab-sty-white li.active a span{
     position: relative;
 }
 .each-table-1 ul.table-single-display li .table-single-content {
-    /*border-bottom: 1px solid #d6d6d6; */
     padding: 20px 0px;
     font-size: 15px;
 }
@@ -6362,7 +6363,26 @@ span.bold{
 	}
 }
 
-
+@media only screen and (min-width: 768px) {
+	.table-width3{
+		width: 3% !important;
+	}
+	.table-width4{
+		width: 4% !important;
+	}
+	.table-width5{
+		width: 5% !important;
+	}
+	.table-width8{
+		width: 8% !important;
+	}
+	.table-width10{
+		width: 10% !important;
+	}
+	.table-width12{
+		width: 12% !important;
+	}
+}
 /*****************************************************************************************/
 /*IE10.11*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
