@@ -1777,6 +1777,11 @@ ul.dtr-details .dtr-data {
 .outside-layout-btn{
 	margin-top: 30px;
 }
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.outside-layout-btn{
+		display: none;
+	}
+}
 .control-investfit-analy-block .control-investfit-analy-table-final-block table tr td{
 	text-align: left;
 }
@@ -2330,6 +2335,7 @@ ul.dtr-details .dtr-data {
     width: 526px;
     padding: 0px 20px 20px 20px;
     margin-top: 20px;
+    border: 1px solid #e1e1e1;
 }
 @media only screen and (min-width: 320px) and (max-width:767px) {
 	.control-invest-income-gain-assets-callback .input-radio-items-1 .radio-inline .insu-service-finish-inlineRadio-4-SUB {
@@ -2515,7 +2521,12 @@ ul.dtr-details .dtr-data {
 	}
 	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input{
 		top: -10px;
-		
+	}
+	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-second .patternp-minus{
+		top: 12px;
+	}
+	.cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-second .patternp-x{
+		top: 12px;
 	}
 }
 @media only screen and (min-width: 320px) and (max-width:350px) {
@@ -2526,6 +2537,57 @@ ul.dtr-details .dtr-data {
 		width: 196px;
 	}
 	
+}
+.control-applforpolicyreplace-first-step .twostylemix-twobtn-1{
+	padding-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-applforpolicyreplace-first-step .twostylemix-twobtn-1{
+		padding-bottom: 50px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-applforpolicyreplace-first-step .twostylemix-twobtn-1{
+		padding-bottom: 0px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-fund-distriratios-first-tagcard .itemdetail-tagcard{
+		padding-top: 0;
+		padding-right: 0;
+	}
+}
+.control-fund-part-redemption-draw-first-step .itemdetail-tagcard.noicon-sty{
+	padding-bottom: 0;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-fund-part-redemption-draw-first-step .itemdetail-tagcard.noicon-sty{
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+}
+.control-investdes .titledescr{
+	padding-bottom: 0;
+}
+
+
+.control-insupaperinfo-fix .collapse-sty-2 .twobtn-1{
+	padding-bottom: 0;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-insupaperinfo-fix .collapse-sty-2 .twobtn-1{
+		padding-top: 15px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.investtargettransrule-block .investtargettransrule .twobtn-1{
+		padding-top: 20px;
+	}
+	.investtargettransrule-block .investtargettransrule .twobtn-1 a{
+		margin-top: 0px;
+	}
 }
 /* 170428 */
 .radio-inline label {

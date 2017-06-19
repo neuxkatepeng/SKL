@@ -364,7 +364,7 @@ table.dataTable thead th, table.dataTable thead td {
 	box-shadow: none;
 	font-size: 0;
 }
-.collapse-sty-2 .collapse-sty-1-btn{
+.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn{
 	text-align: center;
 	width: 33%;
 	margin: auto;
@@ -378,10 +378,10 @@ table.dataTable thead th, table.dataTable thead td {
 	border-left: 1px dashed #ccc;
 	vertical-align: top;
 }
-.collapse-sty-2 .collapse-sty-1-btn:first-child{
+.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn:first-child{
 	border-left: 0;
 }
-.collapse-sty-2 .collapse-sty-1-btn a{
+.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a{
 	color: #000;
 	padding: 0 0 12px 0;
 	display: block;
@@ -390,22 +390,22 @@ table.dataTable thead th, table.dataTable thead td {
 	position: relative;
 	border-bottom: 1px solid #ebebeb;
 }
-.collapse-sty-2 .collapse-sty-1-btn a img{
+.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a img{
 	max-width: 108px;
 	max-height: 108px; 
 }
-.collapse-sty-2 .collapse-sty-1-btn a p{
+.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a p{
 	margin-bottom: 0;
 	padding: 0 20px;
 	line-height: 1.53;
 }
-.collapse-sty-2 .collapse-sty-1-btn a:after{
+.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a:after{
 	
 }
-.collapse-sty-2 .collapse-sty-1-btn a[aria-expanded="false"]{
+.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a[aria-expanded="false"]{
 	border-bottom: 1px solid #ebebeb;
 }
-.collapse-sty-2 .collapse-sty-1-btn a[aria-expanded="true"]{
+.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a[aria-expanded="true"]{
 	border-bottom: 0;
 }
 .collapse-sty-2 .insuall-item-tabcon{
@@ -419,6 +419,7 @@ table.dataTable thead th, table.dataTable thead td {
 	padding: 0;
 }
 
+
 /*.collapse-sty-2 .insuall-item-tabcon .insuall-item-twoblockall:first-child{
 	border-bottom: 1px dashed #d6d6d6;
 	margin-bottom: 15px; 
@@ -430,27 +431,28 @@ table.dataTable thead th, table.dataTable thead td {
 	margin-bottom: 10px;
 }*/
 @media only screen and (min-width: 320px) and (max-width:767px) {
-	.collapse-sty-2 .collapse-sty-1-btn a p{
+	.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a p{
 		min-height: 90px;
 	}
-	.collapse-sty-2 .collapse-sty-1-btn a{
+	.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a{
 		padding: 0 0 0px 0;
 	}
 }
 @media only screen and (min-width: 320px) and (max-width:480px) {
-	.collapse-sty-2 .collapse-sty-1-btn a img{
+	.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a img{
 		max-width: 100px;
 		max-height: 100px; 
 	}
-	.collapse-sty-2 .collapse-sty-1-btn a p{
-		min-height: 110px;
+	.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a p{
+		min-height: 95px;
 	}
 }
 @media only screen and (min-width: 320px) and (max-width:350px) {
-	.collapse-sty-2 .collapse-sty-1-btn a p{
+	.collapse-sty-2 .collapse-sty-2-tab-btn-block .collapse-sty-1-btn a p{
 		padding: 0 10px;
 	}
 }
+
 
 
 .component-border{
@@ -5287,6 +5289,10 @@ ul.ul-li-in-table li{
 		padding-right: 100px;
 		position: relative;
 		padding-left: 12px;
+		min-height: 45px;
+	}
+	.changeaddress-comp .right a{
+		padding: 12px 10px;
 	}
 }
 
@@ -5758,12 +5764,12 @@ ul.ul-li-in-table li{
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 12px;
-	width: 35%;
+	width: 31%;
 }
 .leftbtn-right-money-comp .right{
 	display: inline-block;
 	vertical-align: top;
-	width: 65%;
+	width: 69%;
 }
 .leftbtn-right-money-comp .left .leftbtn{
 	font-size: 16px;
@@ -5847,6 +5853,11 @@ ul.ul-li-in-table li{
 	display: inline-block;
 	vertical-align: top;
 }
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.namedate-comp .left{
+		margin-bottom: 10px;
+	}
+}
 @media only screen and (min-width: 320px) and (max-width:480px) {
 	.namedate-comp .same{
 		display: block;
@@ -5877,7 +5888,7 @@ a.table-deletebtn{
 	text-decoration: none;
 }
 a.table-contchangebtn {
-    padding: 9px 10px;
+    padding: 6px 10px;
     border: solid 1px #d6d6d6;
     min-width: 90px;
     display: inline-block;
@@ -6292,6 +6303,16 @@ span.bold{
 	}
 }
 
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	.pad-0-20-0{
+		padding: 0 20px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.pad-0-20-0{
+		padding: 0 0px;
+	}
+}
 .mar-20-20-10{
 	margin: 0 20px;
 }
