@@ -18,7 +18,7 @@ header{
 header>.container{
 	height: 76px; 
 }
-@media only screen and (min-width: 1200px) and (max-width:1920px) {
+@media only screen and (min-width: 1200px){
 	header>.container{
 		width: 1200px;
 	}
@@ -732,7 +732,7 @@ footer .container .row .footer-text p{
 		padding-right: 18px;
 	}
 }
-@media only screen and (min-width: 1200px) and (max-width:1920px) {
+@media only screen and (min-width: 1200px){
 	.Index-content>.container-fluid>.container{
 		width: 1200px;
 		/*padding: 0;*/

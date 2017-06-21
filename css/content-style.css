@@ -252,6 +252,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 	padding: 15px 10px;
 	text-align: center;
 	border-right: 1px solid #d6d6d6;
+	/*min-width: 50px;*/
 }
 .table-small-hide .table-small-hide-inside th.details-control {
     min-width: 10px;
@@ -1913,60 +1914,57 @@ ul.dtr-details .dtr-data {
 	margin: 6px 25px;
 }
 
-.inputcredinum-block{
+.name-input-fill-block-1.creditcardinpu {
 
 }
-.inputcredinum-block .name-input-fill-block-1{
-
-}
-.inputcredinum-block .name-input-fill-block-1 .fill-title-name{
+.name-input-fill-block-1.creditcardinpu  .fill-title-name{
 	width: 70px;
     max-width: 70px;
     text-align: left;
 }
-.inputcredinum-block .name-input-fill-block-1 .fill-txt-input{
+.name-input-fill-block-1.creditcardinpu  .fill-txt-input{
 	width: 510px;
     max-width: 510px;
 }
-.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1{
+.name-input-fill-block-1.creditcardinpu  .fill-txt-input .pure-input-four-1{
 	
 }
-.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item{
+.name-input-fill-block-1.creditcardinpu  .fill-txt-input .pure-input-four-1 .pure-input-four-item{
 	position: relative;
 	width: 104px;
     max-width: 104px;
     margin-right: 27px;
 }
-.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item:last-child {
+.name-input-fill-block-1.creditcardinpu  .fill-txt-input .pure-input-four-1 .pure-input-four-item:last-child {
     margin-right: 0px;
 }
-.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item p{
+.name-input-fill-block-1.creditcardinpu  .fill-txt-input .pure-input-four-1 .pure-input-four-item p{
 	position: absolute;
 	right: -18px;
 	top: 5px;
 }
 @media only screen and (min-width: 320px) and (max-width:767px) {
-	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input{
+	.name-input-fill-block-1.creditcardinpu  .fill-txt-input{
 		width: 100%;
 	    max-width: none;
 	}
-	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item{
+	.name-input-fill-block-1.creditcardinpu  .fill-txt-input .pure-input-four-1 .pure-input-four-item{
 		position: relative;
 		width: 20.5%;
 	    max-width: none;
 	    margin-right: 18px;
 	}
-	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item p{
+	.name-input-fill-block-1.creditcardinpu  .fill-txt-input .pure-input-four-1 .pure-input-four-item p{
 		position: absolute;
 		right: -13px;
 		top: 5px;
 	}
-	.inputcredinum-block .name-input-fill-block-1 .fill-title-name{
+	.name-input-fill-block-1.creditcardinpu  .fill-title-name{
 		margin-bottom: 10px;
 	}
 }
 @media only screen and (min-width: 320px) and (max-width:480px) {
-	.inputcredinum-block .name-input-fill-block-1 .fill-txt-input .pure-input-four-1 .pure-input-four-item input{
+	.name-input-fill-block-1.creditcardinpu .fill-txt-input .pure-input-four-1 .pure-input-four-item input{
 		height: 45px;
 	}
 }
@@ -1977,79 +1975,11 @@ ul.dtr-details .dtr-data {
 	padding-top: 0px;
 }
 
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1{
 
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-title-name{
-	width: 18%;
-	max-width: 96px;
-	padding-top: 5px;
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input{
-	width: 82%;
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left{
-	width: 47.5%;
-	margin-right: 2.5%;
-	display: inline-block;
-	vertical-align: top;
-	position: relative;
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left p{
-	position: absolute;
-	right: -20px;
-	top: 5px;
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .right{
-	width: 47.5%;
-	margin-left: 2.5%;
-	display: inline-block;
-	vertical-align: top;
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left .fill-select-one-1{
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left .fill-select-one-1:nth-child(1){
-	padding-right: 5px;
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left .fill-select-one-1:nth-child(2){
-	padding-left: 5px;
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .right .fill-select-one-1{
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;	
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .right .fill-select-one-1:nth-child(1){
-	padding-right: 5px;
-}
-.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .right .fill-select-one-1:nth-child(2){
-	padding-left: 5px;
-}
-@media only screen and (min-width: 320px) and (max-width:767px) {
-	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-title-name{
-		width: 100%;
-		max-width: none;
-		padding-top: 0px;
-		margin-bottom: 10px;
-	}
-	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input{
-		width: 100%;
-	}
-	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left p{
-		right: -24px;
-	}
-}
-@media only screen and (min-width: 320px) and (max-width:480px) {
-	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .left p{
-		right: -17px;
-	}
-	.control-crecarddeadlinechange-second-step .name-input-fill-block-1 .fill-txt-input .fill-select-one-1 .fill-select-one-1-item select{
-		height: 45px;
-	}
-}
+
+
+
+
 .creditcardtxt{
 	font-size: 0;
 	padding-left: 60px;
@@ -2588,6 +2518,19 @@ ul.dtr-details .dtr-data {
 	.investtargettransrule-block .investtargettransrule .twobtn-1 a{
 		margin-top: 0px;
 	}
+}
+.control-change-invest-target-first-step .rectangle-btn-1{
+	padding-top: 0;
+}
+
+.control-crecarddeadlinechange-first-step .rectangle-btn-1{
+	padding-bottom: 50px;
+}
+.control-crecarddeadlinechange-second-step .rectangle-btn-1{
+	padding-bottom: 50px;
+}
+.control-crecarddeadlinechange-third-step .rectangle-btn-1{
+	padding-bottom: 50px;
 }
 /* 170428 */
 .radio-inline label {

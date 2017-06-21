@@ -2131,6 +2131,86 @@ ul.subtab-sty-white li.active a span{
 
 
 
+
+
+
+
+.name-input-fill-block-1.selectyearmonth{
+
+}
+.name-input-fill-block-1.selectyearmonth .fill-title-name{
+	width: 18%;
+	max-width: 96px;
+	padding-top: 5px;
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input{
+	width: 82%;
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input .left{
+	width: 47.5%;
+	margin-right: 2.5%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input .left p{
+	position: absolute;
+	right: -20px;
+	top: 5px;
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input .right{
+	width: 47.5%;
+	margin-left: 2.5%;
+	display: inline-block;
+	vertical-align: top;
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input .left .fill-select-one-1{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input .left .fill-select-one-1:nth-child(1){
+	padding-right: 5px;
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input .left .fill-select-one-1:nth-child(2){
+	padding-left: 5px;
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input .right .fill-select-one-1{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;	
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input .right .fill-select-one-1:nth-child(1){
+	padding-right: 5px;
+}
+.name-input-fill-block-1.selectyearmonth .fill-txt-input .right .fill-select-one-1:nth-child(2){
+	padding-left: 5px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.name-input-fill-block-1.selectyearmonth .fill-title-name{
+		width: 100%;
+		max-width: none;
+		padding-top: 0px;
+		margin-bottom: 10px;
+	}
+	.name-input-fill-block-1.selectyearmonth .fill-txt-input{
+		width: 100%;
+	}
+	.name-input-fill-block-1.selectyearmonth .fill-txt-input .left p{
+		right: -24px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.name-input-fill-block-1.selectyearmonth .fill-txt-input .left p{
+		right: -17px;
+	}
+	.name-input-fill-block-1.selectyearmonth .fill-txt-input .fill-select-one-1 .fill-select-one-1-item select{
+		height: 45px;
+	}
+}
+
+
+
 .mix-name-selectinput-1-block{
 	margin-bottom: 20px;
 }
@@ -2328,7 +2408,7 @@ ul.subtab-sty-white li.active a span{
 .select-fill-block-three-2 .fill-title-name{
 	display: inline-block;
 	vertical-align: top;
-	width: 30%;
+	width: 8%;
 	max-width: 68px;
 	padding-right: 0px;
 	padding-top: 4px;
@@ -2337,7 +2417,7 @@ ul.subtab-sty-white li.active a span{
 .select-fill-block-three-2 .fill-select-three-2{
 	display: inline-block;
 	vertical-align: top;
-	width: 93%;
+	width: 92%;
 	max-width: 780px;
 	padding-left: 12px;
 	/*border: 1px solid #0f0;*/
@@ -4091,6 +4171,7 @@ ul.subtab-sty-white li.active a span{
 .each-table-1 ul.table-single-display li p{
 	margin-bottom: 0;
 	word-break: break-all;
+	min-height: 20px;
 }
 .each-table-1 ul.table-single-display li:first-child{
 	border-left: 1px solid #d6d6d6; 
@@ -4114,6 +4195,7 @@ ul.subtab-sty-white li.active a span{
 }
 
 .each-table-1 ul.table-single-display li .table-single-content .single-content-detail {
+	padding: 0 8px;
 }
 
 .each-table-1 ul.table-single-display:first-child li .table-single-content {
