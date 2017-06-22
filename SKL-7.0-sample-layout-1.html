@@ -5503,10 +5503,8 @@
 																					</p>
 																				</li>
 																				<li class="ul-li-detail">
-																					<p class="h5txt colororangelight font-weight800">每期保費金額：
-																					</p>
-																					<p class="h5txt colororangelight font-weight800">123,456,789元
-																					</p>
+																					<p class="h5txt colororangelight font-weight800">每期保費金額：</p>
+																					<p class="h5txt colororangelight font-weight800">123,456,789元</p>
 																				</li>
 																				<li class="ul-li-detail">
 																					<p class="h5txt colororangelight font-weight800">繳別：
@@ -8943,6 +8941,14 @@ $(function(){
 });
 
 
+setTimeout(function(){
+	GardenUtils.display.autoClose({
+		target: $('.autoCloseTarget'),
+		retentionTime: 3000
+	});
+}, 1000);
+
+
 
 
 
@@ -9330,6 +9336,17 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   			}
   		});
   	}
+});
+
+$('a[data-toggle="collapse"]').each(function(){
+	var ele = $(this);
+	var targetId = ele.attr('href');
+
+	$(targetId).on('shown.bs.collapse', function () {
+	  	GardenUtils.display.blockEqualHeight({
+			displaySingleWindowWidth: 767
+		});
+	});
 });
 
 $('.dropdown-menu').on('click', 'li a', function(){
