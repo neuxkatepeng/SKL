@@ -253,6 +253,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 	text-align: center;
 	border-right: 1px solid #d6d6d6;
 	/*min-width: 50px;*/
+	white-space: nowrap;
 }
 .table-small-hide .table-small-hide-inside th.details-control {
     min-width: 10px;
@@ -1723,7 +1724,7 @@ ul.dtr-details .dtr-data {
 }
 .investtargettransrule .titledescr .title-ol-list{
 	font-size: 15px;
-	padding-left: 35px;
+	padding-left: 37px;
 }
 .investtargettransrule .twobtn-1 a{
 	margin: 15px 7px;
@@ -2567,6 +2568,159 @@ ul.dtr-details .dtr-data {
 		padding-top: 10px;
 	}
 }
+
+.control-send-by-mail .input-line-comp .ul-li-item .li-items:nth-child(1){
+	width: 150px;
+}
+.control-send-by-mail .input-line-comp .ul-li-item .li-items:nth-child(2){
+	width: 150px;
+}
+.control-send-by-mail .input-line-comp .ul-li-item .li-items:nth-child(3){
+	width: 232px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-send-by-mail .input-line-comp .ul-li-item .li-items:nth-child(1){
+		width: 100%;
+	}
+	.control-send-by-mail .input-line-comp .ul-li-item .li-items:nth-child(2){
+		width: 100%;
+	}
+	.control-send-by-mail .input-line-comp .ul-li-item .li-items:nth-child(3){
+		width: 100%;
+	}
+}
+
+.control-send-by-mail .search-date .cols-2{
+	width: 100%;
+}
+.control-send-by-mail .search-date .cols-2 .left {
+	width: 100%;
+	padding-right: 0;
+}
+
+
+.control-send-by-mail-name-input-fill .bordere1e1e1{
+	padding: 30px 16px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-send-by-mail-name-input-fill .bordere1e1e1{
+		padding: 20px 10px;
+	}
+}
+.control-send-by-mail-name-input-fill .name-input-fill-block-1:last-child{
+	margin-bottom: 0;
+}
+.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-title-name {
+    width: 30%;
+    width: 115px;
+    max-width: 115px;
+    padding-top: 5px;
+}
+.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-txt-input {
+    width: 70%;
+    width: 424px;
+    max-width: 424px;
+}
+
+.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-txt-input .pure-input-one-1{
+	width: 33.333333%;
+	display: inline-block;
+	vertical-align: top;
+}
+.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-txt-input .pure-input-one-1:nth-child(1){
+	padding: 0 7px 0 0;
+}
+.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-txt-input .pure-input-one-1:nth-child(2){
+	padding: 0 2px;
+}
+.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-txt-input .pure-input-one-1:nth-child(3){
+	padding: 0 0 0 7px;
+}
+.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-txt-input textarea.form-control{
+	width: 100% !important;
+	height: 90px !important;
+	padding: 9px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-title-name {
+	    width: 100%;
+	    max-width: none;
+	    padding-top: 0px;
+	    padding-bottom: 10px;
+	}
+	.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-txt-input {
+	    width: 100%;
+	    max-width: none;
+	}
+}
+@media only screen and (min-width: 360px) and (max-width:767px) {
+	.control-send-by-mail-first .check-two-line-comp{
+		padding-left: 40px!important;
+		padding-right: 40px!important;
+	}
+}
+@media only screen and (min-width: 360px) and (max-width:767px) {
+	.control-send-by-mail-second .input-line-comp {
+		padding-left: 40px!important;
+		padding-right: 40px!important;
+	}
+}
+@media only screen and (min-width: 360px) and (max-width:767px) {
+	.control-send-by-mail-name-input-fill{
+		padding-right: 12px;
+	}
+}
+
+.control-send-by-mail-fourth .input-radio-items-two-1 .radio-inline{
+	margin-right: 80px;
+}
+
+
+.control-select-to-contact-salesman-second .name-input-fill-block-1{
+	margin-bottom: 0;
+}
+.control-select-to-contact-salesman-second .name-input-fill-block-1 .fill-title-name{
+	width: 68px;
+	max-width: 68px;
+}
+.control-select-to-contact-salesman-second .name-input-fill-block-1 .fill-txt-input{
+	width: 505px;
+	max-width: none;
+}
+@media only screen and (min-width: 360px) and (max-width:767px) {
+	.control-select-to-contact-salesman-second .name-input-fill-block-1 .fill-title-name{
+		width: 100%;
+		max-width: none;
+		padding-bottom: 10px;
+		padding-top: 0;
+	}
+	.control-select-to-contact-salesman-second .name-input-fill-block-1 .fill-txt-input{
+		width: 100%;
+		max-width: none;
+	}
+}
+
+
+.control-select-to-contact-salesman-third .salesselect-comp{
+	padding-left: 12px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-select-to-contact-salesman-third .salesselect-comp{
+		padding-left: 0px;
+	}
+}
+.control-select-to-contact-salesman-third .panel-body{
+	padding: 0;
+}
+.control-select-to-contact-salesman-third .collapse-sty-1{
+	margin-bottom: 30px;
+}
+.control-select-to-contact-salesman-third .collapse-sty-1 .collapse-sty-1-btn a[aria-expanded="false"] {
+    background-color: #f6a623;
+}
+
+
+
 /* 170428 */
 .radio-inline label {
 	width: 100%;
