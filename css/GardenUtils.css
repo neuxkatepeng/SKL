@@ -665,3 +665,62 @@ tr.parent td.details-control {
     from { opacity: 1; }
     to   { opacity: 0; }
 }
+
+
+/* number bar */
+.ga-number-bar-container {
+    width: 100px;
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+}
+
+.ga-number-bar-container .ga-number-bar-input {
+    width: 50%;
+    display: inline-block;
+}
+
+.ga-number-bar-container .ga-number-bar-input input {
+    border: none;
+    line-height: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.ga-number-bar-container .ga-number-bar-minus,
+.ga-number-bar-container .ga-number-bar-plus {
+    background-color: #d8d8d8;
+    height: 35px;
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    line-height: 35px;
+}
+
+.ga-number-bar-container .ga-number-bar-minus:hover,
+.ga-number-bar-container .ga-number-bar-plus:hover {
+    background-color: #eee;
+}
+
+.ga-number-bar-container .ga-disabled {
+    cursor: not-allowed;
+    background-color: #fff;
+}
+
+/* Collapse */
+.ga-collapse {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: height,visibility;
+    -o-transition-property: height,visibility;
+    transition-property: height,visibility;
+}

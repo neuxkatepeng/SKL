@@ -400,7 +400,7 @@ var GardenUtils = {
             //console.log('options', options);
 
             // create datas
-            target.find('.ga-silder').each(function(i){
+            target.find('.ga-slider').each(function(i){
 
                 $(this).find('.ga-item').each(function(){
                     var pageTitle = $(this).attr('ga-page-title');
@@ -1928,7 +1928,7 @@ var GardenUtils = {
                 datePicker_obj['minDate'] = minMonth+'m';
             }
 
-            target.datepicker( datePicker_obj ).attr('readonly', 'readonly');
+            target.datepicker( datePicker_obj );
 
             if( defaultDate == '' ){
                 var d = new Date();
@@ -4795,6 +4795,10 @@ var GardenUtils = {
             setTimeout(function(){
                 // target.fadeOut();
                 target.addClass('fadeOut');
+
+                setTimeout(function(){
+                    target.addClass('hidden');
+                }, 1500);
             }, retentionTime);
         }, // end autoClose function
 
@@ -4935,7 +4939,160 @@ var GardenUtils = {
                     }
                 }
             });
-        } // end checkboxSelectAll function
+        }, // end checkboxSelectAll function
+
+        numberBar: function(conf){
+            var target = conf.target;
+            var defaultValue = conf.hasOwnProperty('default')? conf.default:0;
+            var maxValue = conf.hasOwnProperty('max')? conf.max:null;
+            var minValue = conf.hasOwnProperty('min')? conf.min:null;
+
+            var number = target.find('.ga-number-bar-input input');
+            number.val( defaultValue );
+            _checkLimit({
+                targetInput: number
+            });
+
+            function _isInteger(s){
+                var i = +s; // convert to a number
+                if (i != ~~i) return false; // make sure there's no decimal part
+                return true;
+            } // end _isInteger function
+
+            function _checkLimit(config){
+                var targetInput = config.targetInput;
+
+                var currentVal = targetInput.val();
+
+                if( _isInteger(currentVal) ){
+
+                    if( maxValue!== null && currentVal >= maxValue ){
+                        target.find('.ga-number-bar-plus').addClass('ga-disabled');
+                        target.find('.ga-number-bar-minus').removeClass('ga-disabled');
+                        targetInput.val( maxValue );
+                    } else if( minValue!== null && currentVal <= minValue ){
+                        target.find('.ga-number-bar-minus').addClass('ga-disabled');
+                        target.find('.ga-number-bar-plus').removeClass('ga-disabled');
+                        targetInput.val( minValue );
+                    } else {
+                        target.find('.ga-number-bar-plus, .ga-number-bar-minus').removeClass('ga-disabled');
+                    }
+                } else {
+                    targetInput.val( defaultValue );
+                }
+            } // end _checkLimit function
+
+            function _checkNumber(config){
+                var targetInput = config.targetInput;
+                var event = config.hasOwnProperty('event')? config.event:'';
+
+                var currentVal = targetInput.val();
+
+                if( _isInteger(currentVal) ){
+
+                    if( event == 'plus' ){
+                        ++currentVal;
+                    } else if( event == 'minus' ){
+                        --currentVal;
+                    }
+
+                    targetInput.val( currentVal );
+
+                    _checkLimit({
+                        targetInput: targetInput
+                    });
+                } else {
+                    targetInput.val( defaultValue );
+                    _checkNumber({
+                        targetInput: targetInput
+                    });
+                }
+            } // end _checkNumber function
+
+            number.on('blur', function(){
+                _checkNumber({
+                    targetInput: $(this)
+                });
+            });
+
+            number.on('keypress', function(e){
+                if (e.keyCode == 13) {
+                    _checkNumber({
+                        targetInput: $(this)
+                    });
+                }
+            });
+
+            target.find('.ga-number-bar-plus, .ga-number-bar-minus').on('click', function(e){
+                e.preventDefault();
+
+                _checkNumber({
+                    targetInput: $(this).parents('.ga-number-bar-container').find('.ga-number-bar-input input'),
+                    event: $(this).hasClass('ga-number-bar-plus')? 'plus':'minus'
+                });
+            });
+        }, // end numberBar function
+
+        collapse: function(conf){
+            var target = conf.target;
+
+            target.on('click', function(e){
+                e.preventDefault();
+
+                var collapseTarget_class = target.attr('ga-collapse-target');
+                var collapseTarget = $('.'+collapseTarget_class);
+
+
+                if( !collapseTarget.hasClass('active') ){
+                    $(this).removeClass('active');
+                }
+
+                $(this).toggleClass('active');
+
+                function _calculateHeight(config){
+                    var isResize = config.hasOwnProperty('isResize')? config.isResize:false;
+
+                    collapseTarget.each(function(){
+                        var ele = $(this);
+                        var h = ele.height();
+
+                        if (!isResize){
+                            ele.toggleClass('active');
+                        }
+
+                        if( isResize && h == 0 || !isResize && h > 0 ) {
+                            ele.css('height','0');
+                        } else {
+                            var clone_class = 'collapseClone';
+                            var clone = ele.clone()
+                                .css({'position':'absolute','visibility':'hidden','height':'auto'})
+                                .addClass(clone_class)
+                                .appendTo( ele.parent() );
+
+                            var newHeight = $('.'+clone_class).outerHeight();
+                            $('.'+clone_class).remove();
+                            ele.css('height', newHeight + 'px');
+                        }
+                                 
+                    }); // end each: collapse target
+                } // end _calculateHeight function
+
+                _calculateHeight({
+                    isResize: false
+                });
+
+                $(window).resize(function(){
+                    _calculateHeight({
+                        isResize: true
+                    });
+                });
+
+            }); // end click: collapse btn
+
+            if( target.hasClass('active') ){
+                target.trigger('click');
+            }
+        } // end collapse function
     },
     ajax: {
         loading : function(config) {
