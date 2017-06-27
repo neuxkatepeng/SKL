@@ -2731,8 +2731,29 @@ ul.dtr-details .dtr-data {
 .control-online-claims-inquiries-L2 .immediacontact-contentt-block{
 	margin: 0 0px; 
 }
+.cus-tab-collapse-block-comp .twobtn-1 a.active {
+    background-color: #9b9b9b !important;
+    color: #fff !important;
+}
 
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	.control-tarcollapse p.title{
+		padding-top: 30px;
+	}
+}
 
+.control-tarcollapse .immediacontact-contentt-block .imme-contentt-Left .contentt-Left-top{
+	padding-top: 6px;
+}
+@media only screen and (min-width: 1024px) and (max-width:1199px) {
+	.control-tarcollapse .immediacontact-contentt-block{
+		padding: 9px 0;
+	}
+	
+	.control-tarcollapse .immediacontact-contentt-block .imme-contentt-Left .contentt-Left-down .listss .listss-L{
+		padding-left: 0;
+	}
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;
