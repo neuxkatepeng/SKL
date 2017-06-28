@@ -2544,7 +2544,7 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
   	if( tables.length > 0 ){
   		tables.each(function(){
-  			$(this).trigger('resize');
+  			// $(this).trigger('resize');
   			var table_w = $(this).width();
   			var th_w = 0;
   			$(this).find('th').each(function(){

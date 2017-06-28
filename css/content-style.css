@@ -2736,11 +2736,6 @@ ul.dtr-details .dtr-data {
     color: #fff !important;
 }
 
-@media only screen and (min-width: 320px) and (max-width:768px) {
-	.control-tarcollapse p.title{
-		padding-top: 30px;
-	}
-}
 
 .control-tarcollapse .immediacontact-contentt-block .imme-contentt-Left .contentt-Left-top{
 	padding-top: 6px;
@@ -2754,6 +2749,161 @@ ul.dtr-details .dtr-data {
 		padding-left: 0;
 	}
 }
+
+.control-claims-documents-ready-inquiries-btn .twobtn-1 a{
+	margin-top: 0;
+}
+.control-online-claims-app-process-progr-desc-btn .twobtn-1 a{
+	margin-top: 0;
+}
+.control-online-claims-app-process-progr-descs-first .name-txt-bgcolor-comp .ul-items{
+	padding: 30px 40px;
+}
+.control-online-claims-app-process-progr-descs-first .name-txt-bgcolor-comp .ul-items .ul-li-items{
+	padding-top: 0px;
+}
+.control-online-claims-app-process-progr-desc-second .oltxt-right-btn-comp{
+	margin-left: 12px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-app-process-progr-desc-second .oltxt-right-btn-comp{
+		margin-left: 0;
+	}
+}
+
+.online-claims-apply-steppage-third-step-colla{
+	padding: 30px 20px;
+	position: relative;
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.online-claims-apply-steppage-third-step-colla{
+		padding: 30px 10px;
+		position: relative;
+	}
+}
+.online-claims-apply-steppage-third-step-colla .collapse-sty-1{
+	margin-bottom: 0;
+}
+.online-claims-apply-steppage-third-step-colla .collapse-sty-1 .collapse-sty-1-btn{
+	position: absolute;
+	width: 233px;
+	left: 0;
+	right: 0;
+	margin: auto; 
+	bottom: -20px;
+	margin-bottom: 0;
+}
+.online-claims-apply-steppage-third-step-colla .panel-body{
+	padding: 0;
+}
+
+.control-online-claims-apply-steppage-first-step .control-online-claims-apply-steppage-second-part .input-radio-items-two-1 .radio-inline{
+	margin-right: 80px;
+}
+
+
+
+
+.control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .left{
+	width: 160px;
+	max-width: 160px;
+}
+.control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right{
+	width: 375px;
+	max-width: 375px;
+}
+.control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right .right-input{
+	position: relative;
+	padding-right: 125px;
+}
+.control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right .right-input .deletebtn{
+	position: absolute;
+	top: 8px;
+	right: 102px;
+	width: 16px;
+	height: 16px;
+}
+
+.control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .left{
+	width: 160px;
+	max-width: 160px;
+}
+.control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right{
+	width: 375px;
+	max-width: 375px;
+}
+.control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right .right-input{
+	position: relative;
+	padding-right: 125px;
+}
+.control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right .right-input .deletebtn{
+	position: absolute;
+	top: 8px;
+	right: 102px;
+	width: 16px;
+	height: 16px;
+}
+
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .input-radio-items-two-1{
+	margin-bottom: 0;
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .input-radio-items-two-1 .radio-inline{
+	margin-bottom: 0;
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .check-input{
+	margin-bottom: 0;
+}
+.control-online-claims-apply-steppage-second-part .name-input-fill-block-2 .input-check-items-two-1 .check-input{
+	margin-bottom: 0;
+}
+
+
+
+.name-input-fill-block-1.adjust-name-input-fill .fill-title-name{
+	width: 145px;
+	max-width: 145px;
+}
+.name-input-fill-block-1.adjust-name-input-fill .fill-txt-input{
+	width: 430px;
+	max-width: 430px;
+}
+
+.control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn{
+	width: 210px;
+	margin-right: 165px;
+	position: relative;
+}
+.control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .right-btn{
+	position: absolute;
+	right: -110px;
+	top: 7px;
+}
+.control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .right-btn a{
+	font-size: 15px;
+	padding: 7px 5px;
+    border-radius: 4px;
+}
+.control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .condition-reset-btn{
+	position: absolute;
+	right: -200px;
+	top: 7px;
+	font-size: 15px;
+}
+.control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .condition-reset-btn img {
+    width: 15px;
+    height: 15px;
+    margin-left: 4px;
+    margin-top: 2px;
+    vertical-align: top;
+}
+
+.name-input-fill-block-1.nopaddingtop .fill-title-name{
+	padding-top: 0 !important;
+}
+.name-input-fill-block-2.nopaddingtop .left{
+	padding-top: 0 !important;
+}
+
 /* 170428 */
 .radio-inline label {
 	width: 100%;
