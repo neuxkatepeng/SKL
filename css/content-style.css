@@ -2802,6 +2802,73 @@ ul.dtr-details .dtr-data {
 }
 
 
+.control-online-claims-apply-steppage-first-part{
+	padding-left: 12px;
+}
+.control-online-claims-apply-steppage-first-part .select-fill-block-three-1 .fill-title-name{
+	width: 65px;
+	max-width: 65px;
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-title-name{
+	width: 65px;
+	max-width: 65px;
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1.adjust-name-input-fill .fill-title-name{
+	width: 144px;
+	max-width: 144px;
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input{
+	width: 508px;
+    max-width: 508px; 
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1.adjust-name-input-fill .fill-txt-input{
+	width: 428px;
+	max-width: 428px;
+}
+.control-online-claims-apply-steppage-first-part .select-fill-block-three-1 .fill-select-three-1{
+	width: 508px;
+    max-width: 508px; 
+}
+.control-online-claims-apply-steppage-first-part .select-fill-block-three-1 .fill-select-three-1 .fill-select-item{
+	max-width: 155px;
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .input-radio-items-two-1{
+	margin-bottom: 0;
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .input-radio-items-two-1 .radio-inline{
+	margin-bottom: 0;
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .check-input{
+	margin-bottom: 0;
+}
+.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .check-input:last-child{
+	margin-right: 0;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+
+}
+
+.control-online-claims-apply-steppage-second-part .name-input-fill-block-2 .input-check-items-two-1 .check-input{
+	margin-bottom: 0;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-first-part .name-input-fill-block-1.adjust-name-input-fill .fill-title-name{
+		width: 100%;
+		max-width: 100%;
+	}
+	.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input{
+		width: 100%;
+	    max-width: 100%; 
+	}
+	.control-online-claims-apply-steppage-first-part .name-input-fill-block-1.adjust-name-input-fill .fill-txt-input{
+		width: 100%;
+		max-width: 100%;
+	}
+	.control-online-claims-apply-steppage-first-part .select-fill-block-three-1 .fill-select-three-1{
+		width: 100%;
+	    max-width: 100%; 
+	}
+}
 
 
 .control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .left{
@@ -2815,6 +2882,7 @@ ul.dtr-details .dtr-data {
 .control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right .right-input{
 	position: relative;
 	padding-right: 125px;
+	margin-bottom: 20px;
 }
 .control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right .right-input .deletebtn{
 	position: absolute;
@@ -2822,6 +2890,28 @@ ul.dtr-details .dtr-data {
 	right: 102px;
 	width: 16px;
 	height: 16px;
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right {
+	    width: 100%;
+	    max-width: 294px;
+	}
+	.control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right .right-input {
+	    padding-right: 39px;
+	}
+	.control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right .right-input .deletebtn{
+		top: 15px;
+		right: 13px;
+	}
+	.control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right .right-btn{
+		position: relative;
+    	width: 100%;
+    	text-align: right;
+    	margin-left: 0;
+	}
+	.control-send-by-mail-name-input-fill.checkyes .name-input-fill-block-2 .right .right-btn a{
+		padding: 7px 25px;
+	}
 }
 
 .control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .left{
@@ -2835,6 +2925,7 @@ ul.dtr-details .dtr-data {
 .control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right .right-input{
 	position: relative;
 	padding-right: 125px;
+	margin-bottom: 20px;
 }
 .control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right .right-input .deletebtn{
 	position: absolute;
@@ -2843,31 +2934,6 @@ ul.dtr-details .dtr-data {
 	width: 16px;
 	height: 16px;
 }
-
-.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .input-radio-items-two-1{
-	margin-bottom: 0;
-}
-.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .input-radio-items-two-1 .radio-inline{
-	margin-bottom: 0;
-}
-.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input .check-input{
-	margin-bottom: 0;
-}
-.control-online-claims-apply-steppage-second-part .name-input-fill-block-2 .input-check-items-two-1 .check-input{
-	margin-bottom: 0;
-}
-
-
-
-.name-input-fill-block-1.adjust-name-input-fill .fill-title-name{
-	width: 145px;
-	max-width: 145px;
-}
-.name-input-fill-block-1.adjust-name-input-fill .fill-txt-input{
-	width: 430px;
-	max-width: 430px;
-}
-
 .control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn{
 	width: 210px;
 	margin-right: 165px;
@@ -2876,12 +2942,13 @@ ul.dtr-details .dtr-data {
 .control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .right-btn{
 	position: absolute;
 	right: -110px;
-	top: 7px;
+	top: -1px;
 }
 .control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .right-btn a{
 	font-size: 15px;
 	padding: 7px 5px;
     border-radius: 4px;
+    display: block;
 }
 .control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .condition-reset-btn{
 	position: absolute;
@@ -2897,6 +2964,100 @@ ul.dtr-details .dtr-data {
     vertical-align: top;
 }
 
+@media only screen and (min-width: 320px) and (max-width:767px) {
+
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn{
+		width: 100%;
+		margin-right: 0;
+		position: relative;
+	}
+	.control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .right-btn{
+		position: relative;
+		right: auto;
+		top: auto;
+		display: inline-block;
+		margin-right: 15px;
+		margin-top: 10px;
+	}
+	.control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .condition-reset-btn{
+		position: relative;
+		right: auto;
+		top: auto;
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 8px;
+		margin-top: 10px;
+	}
+	.control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right {
+	    width: 100%;
+	    max-width: 294px;
+	}
+	.control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right .right-input {
+	    padding-right: 39px;
+	}
+	.control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right .right-input .deletebtn{
+		top: 15px;
+		right: 13px;
+	}
+	.control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right .right-btn{
+		position: relative;
+    	width: 100%;
+    	text-align: right;
+    	margin-left: 0;
+	}
+	.control-send-by-mail-name-input-fill.checkno .name-input-fill-block-2 .right .right-btn a{
+		padding: 7px 25px;
+	}
+}
+
+
+
+
+
+.name-input-fill-block-1.adjust-name-input-fill .fill-title-name{
+	width: 145px;
+	max-width: 145px;
+}
+.name-input-fill-block-1.adjust-name-input-fill .fill-txt-input{
+	width: 430px;
+	max-width: 430px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.name-input-fill-block-1.adjust-name-input-fill .fill-title-name{
+		width: 100%;
+		max-width: 100%;
+	}
+	.name-input-fill-block-1.adjust-name-input-fill .fill-txt-input{
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-first-part .fill-title-name{
+		padding-bottom: 10px;
+	}
+	.control-online-claims-apply-steppage-second-part .fill-title-name{
+		padding-bottom: 10px;
+	}
+	.control-online-claims-apply-steppage-second-part .name-input-fill-block-2 .left{
+		padding-bottom: 10px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-online-claims-apply-steppage-first-part .select-fill-block-three-1 .fill-select-three-1 .fill-select-item select{
+		height: 45px;
+	}
+	.control-online-claims-apply-steppage-first-part .name-input-fill-block-1 .fill-txt-input input{
+		height: 45px;
+	}
+	.control-online-claims-apply-steppage-second-part .name-input-fill-block-1 .fill-txt-input input{
+		height: 45px;
+	}
+}
 .name-input-fill-block-1.nopaddingtop .fill-title-name{
 	padding-top: 0 !important;
 }
@@ -2904,6 +3065,288 @@ ul.dtr-details .dtr-data {
 	padding-top: 0 !important;
 }
 
+
+
+
+.control-online-claims-apply-steppage-second-step-b-beforefirst-part{
+	padding-left: 10px;
+}
+.control-online-claims-apply-steppage-second-step-b-first-part{
+	padding-left: 10px;
+}
+.control-online-claims-apply-steppage-second-step-b-second-part{
+	padding-left: 10px;
+}
+.control-online-claims-apply-steppage-second-step-b-third-part{
+	padding-left: 10px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-second-step-b-beforefirst-part{
+		padding-left: 0px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-first-part{
+		padding-left: 0px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-second-part{
+		padding-left: 0px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-third-part{
+		padding-left: 0px;
+	}
+}
+
+.control-online-claims-apply-steppage-second-step-b{
+	padding: 15px 20px 15px 10px;
+	background-color: #ffffff;
+  	box-shadow: 4px 0 4px 0 rgba(0, 0, 0, 0.21);
+ 	border: solid 1px #f2f2f2;
+ 	margin-bottom: 30px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-second-step-b{
+		padding: 15px 10px 15px 10px;
+		margin-bottom: 0px;
+	}
+}
+.control-send-by-mail-step2 .bordere1e1e1{
+	padding: 20px 20px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-send-by-mail-step2 .bordere1e1e1{
+		padding: 20px 10px;
+	}
+}
+
+
+
+.control-online-claims-apply-steppage-second-step-b-beforefirst-part .name-input-fill-block-1 .fill-title-name{
+	width: 96px;
+	max-width: 96px;
+}
+.control-online-claims-apply-steppage-second-step-b-beforefirst-part .name-input-fill-block-1 .fill-txt-input{
+	width: 445px;
+	max-width: 445px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-second-step-b-beforefirst-part .name-input-fill-block-1 .fill-title-name{
+		width: 100%;
+		max-width: 100%;
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-beforefirst-part .name-input-fill-block-1 .fill-txt-input{
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+
+
+.control-online-claims-apply-steppage-second-step-b-first-part .control-send-by-mail-step2 .name-input-fill-block-1 .fill-title-name {
+    width: 48px;
+    max-width: 48px;
+    padding-top: 5px;
+}
+.control-online-claims-apply-steppage-second-step-b-first-part .control-send-by-mail-step2 .name-input-fill-block-1 .fill-txt-input {
+    width: 450px;
+    max-width: 450px;
+}
+.control-online-claims-apply-steppage-second-step-b-first-part .control-send-by-mail-step2 .control-sent-by-mail-step2-cont:last-child .name-input-fill-block-1:last-child{
+	margin-bottom: 0;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-second-step-b-first-part .control-send-by-mail-step2 .name-input-fill-block-1 .fill-title-name {
+	    width: 100%;
+	    max-width: 100%;
+	    padding-top: 0;
+	    padding-bottom: 10px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-first-part .control-send-by-mail-step2 .name-input-fill-block-1 .fill-txt-input {
+	    width: 100%;
+	    max-width: 100%;
+	}
+}
+
+
+.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-title-name{
+	width: 112px;
+	max-width: 112px;
+}
+.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input{
+	width: 430px;
+	max-width: 430px;
+}
+.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
+	width: 140px;
+	max-width: 140px;
+	margin-right: 10px;
+}
+.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item:last-child{
+	margin-right: 0px;
+}
+.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .input-check-items-two-1{
+	display: inline-block;
+	width: auto;
+}
+.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .input-check-items-two-1 .check-input{
+	margin-right: 0;
+	margin-bottom: 0;
+	padding-top: 5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-title-name{
+		width: 100%;
+		max-width: 100%;
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input{
+		width: 100%;
+		max-width: 100%;
+	}
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
+		width: 50%;
+		max-width: 140px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1.control-chainrule-checkbox .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
+		width: 35%;
+		max-width: 140px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
+		width: 50%;
+		max-width: 154px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1.control-chainrule-checkbox .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
+		width: 35%;
+		max-width: 86px;
+	}
+}
+
+.control-online-claims-apply-steppage-second-step-b-third-part .control-send-by-mail-step2 .name-input-fill-block-1 .fill-title-name {
+    width: 64px;
+    max-width: 64px;
+    padding-top: 5px;
+}
+.control-online-claims-apply-steppage-second-step-b-third-part .control-send-by-mail-step2 .name-input-fill-block-1 .fill-txt-input {
+    width: 434px;
+    max-width: 434px;
+}
+
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-second-step-b-third-part .control-send-by-mail-step2 .name-input-fill-block-1 .fill-title-name {
+	    width: 100%;
+	    max-width: 100%;
+	    padding-top: 0;
+	    padding-bottom: 10px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-third-part .control-send-by-mail-step2 .name-input-fill-block-1 .fill-txt-input {
+	    width: 100%;
+	    max-width: 100%;
+	}
+}
+.control-online-claims-apply-steppage-second-step-b-third-part .name-input-fill-block-1 .fill-txt-input .fill-select-one-1{
+	width: 160px;
+	display: inline-block;
+	vertical-align: top;
+}
+.control-online-claims-apply-steppage-second-step-b-third-part .name-input-fill-block-1 .fill-txt-input .chainrule-name-input-fill-in{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 26px;
+}
+.control-online-claims-apply-steppage-second-step-b-third-part .name-input-fill-block-1 .fill-txt-input .chainrule-name-input-fill-in .fill-title-name{
+
+}
+.control-online-claims-apply-steppage-second-step-b-third-part .name-input-fill-block-1 .fill-txt-input .chainrule-name-input-fill-in .fill-txt-input{
+	width: auto;
+	max-width: none;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-second-step-b-third-part .name-input-fill-block-1 .fill-txt-input .fill-select-one-1{
+		width: 100%;
+	}
+	.control-online-claims-apply-steppage-second-step-b-third-part .name-input-fill-block-1 .fill-txt-input .chainrule-name-input-fill-in{
+		width: 100%;
+		padding-left: 0px;
+		margin-top: 10px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-third-part .name-input-fill-block-1 .fill-txt-input .chainrule-name-input-fill-in .fill-txt-input{
+		width: 100%;
+	}
+	.control-online-claims-apply-steppage-second-step-b-third-part .control-send-by-mail-step2 .name-input-fill-block-1.nochange-iphone .fill-title-name{
+		display: inline-block;
+		width: 64px;
+    	max-width: 64px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-third-part .control-send-by-mail-step2 .name-input-fill-block-1.nochange-iphone .fill-txt-input{
+		display: inline-block;
+		width: auto;
+		padding-left: 12px;
+	}
+}
+
+.control-online-claims-apply-steppage-second-step-b .twobtn-1 a:nth-child(1){
+	margin: 0 35px 0 10px;
+}
+.control-online-claims-apply-steppage-second-step-b .twobtn-1 a:nth-child(2){
+	margin: 0 0 0 35px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.control-online-claims-apply-steppage-second-step-b .twobtn-1 a:nth-child(1){
+		width: 140px;
+		margin: 0 10px 0 0px;
+	}
+	.control-online-claims-apply-steppage-second-step-b .twobtn-1 a:nth-child(2){
+		width: 140px;
+		margin: 0 0 0 10px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:345px) {
+	.control-online-claims-apply-steppage-second-step-b .twobtn-1 a:nth-child(1){
+		width: 130px;
+		margin: 0 1% 0 0px;
+	}
+	.control-online-claims-apply-steppage-second-step-b .twobtn-1 a:nth-child(2){
+		width: 130px;
+		margin: 0 0 0 1%;
+	}
+}
+
+.modal-web-trans-bind-account-listitem .name-txt-bgcolor-comp{
+	background-color: transparent;
+}
+.modal-web-trans-bind-account-listitem .name-txt-bgcolor-comp .ul-items .ul-li-items {
+    padding-top: 0px;
+}
+.modal-web-trans-bind-account-listitem .checkitems-flow-comp .ul-items .ul-li-items .check-input {
+    margin-right: 0px;
+}
+
+.modal-web-trans-bind-account-listitem .cus-tab-collapse-block-comp .ul-items .ul-li-items{
+	border-bottom: 0;
+	border-left: 0;
+	padding-bottom: 0;
+}
+.modal-web-trans-bind-account-listitem .cus-tab-collapse-block-comp .ul-items .ul-li-items .items-in .desc {
+    width: 115px;
+    height: 48px;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 0;
+}
+.modal-web-trans-bind-account-listitem .cus-tab-collapse-block-comp .ul-items .ul-li-items .twobtn-1 a{
+	margin-top: 5px;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.modal-web-trans-bind-account-listitem .cus-tab-collapse-block-comp .ul-items .ul-li-items .items-in .pic img {
+	    width: 108px;
+	    height: 108px;
+	}
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;

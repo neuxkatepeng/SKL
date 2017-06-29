@@ -6086,6 +6086,12 @@ ul.ul-li-in-table li{
 	.check-two-line-comp .input-check-items-two-1 .check-input .check-input-custxtinput input{
 		width: 65%;
 	}
+	.check-two-line-comp .ul-li-item .li-items .li-items-in{
+		padding-right: 5px;
+	}
+	.check-two-line-comp .ul-li-item .li-items .li-items-in p{
+		padding-right: 0;
+	}
 }
 
 
@@ -6866,6 +6872,42 @@ ul.ul-li-in-table li{
 
 
 
+.checkitems-flow-comp{
+
+}
+.checkitems-flow-comp .ul-items{
+	font-size: 0;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 0;
+}
+.checkitems-flow-comp .ul-items .ul-li-items{
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+}
+.checkitems-flow-comp .ul-items .ul-li-items .input-check-items-two-1{
+	width: 190px;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.checkitems-flow-comp .ul-items{
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.checkitems-flow-comp .ul-items .ul-li-items{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.checkitems-flow-comp .ul-items:last-child .ul-li-items:last-child{
+		margin-bottom: 0px;
+	}
+	.checkitems-flow-comp .ul-items .ul-li-items .input-check-items-two-1{
+		width: 100%;
+	}
+
+}
+
+
 .search-date-input-comp .search-date-input{
 	position: relative; 
 }
@@ -6887,7 +6929,11 @@ ul.ul-li-in-table li{
 	position: absolute;
 	right: 13px;
 }
-
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.search-date-input-comp .search-date-input a{
+		top: 12px;
+	}
+}
 
 .titleandtable-comp{
 	border: 1px solid #bebec0;
@@ -7404,9 +7450,42 @@ span.bold{
 		margin: 0 10px;
 	}
 }
+.modal-mar-134-60-40{
+	margin: 0 134px;
+}
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	.modal-mar-134-60-40{
+		margin: 0 60px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.modal-mar-134-60-40{
+		margin: 0 40px;
+	}
+}
+
+.modal-mar-134-60-10{
+	margin: 0 134px;
+}
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	.modal-mar-134-60-10{
+		margin: 0 60px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+	.modal-mar-134-60-10{
+		margin: 0 10px;
+	}
+}
 
 .modal-content-block-minheight70{
 	min-height: 70px;
+}
+.modal-content-block-minheight200{
+	min-height: 200px;
+}
+.modal-content-block-minheight150{
+	min-height: 150px;
 }
 .minheight660px{
 	min-height: 660px;
