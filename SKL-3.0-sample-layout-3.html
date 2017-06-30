@@ -7099,14 +7099,14 @@ GardenUtils.plugin.datePicker({
     target: $('#datepicker1'),
     maxMonth: '0',
     minMonth: '-3',
-    defaultDate: '2017-05-05'
+    defaultDate: '2017/05/05'
 });
 
 GardenUtils.plugin.datePicker({
     target: $('#datepicker2'),
     maxMonth: '0',
     minMonth: '-3',
-    defaultDate: '2017-05-05'
+    defaultDate: '2017/05/05'
 });
 
 
@@ -7137,21 +7137,23 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
   	if( tables.length > 0 ){
   		tables.each(function(){
-  			// $(this).trigger('resize');
+  			//$(this).trigger('resize');
   			var table_w = $(this).width();
+  			var content_w = $(this).parents().width();
   			var th_w = 0;
   			$(this).find('th').each(function(){
   				if( $(this).is(':visible') ){
   					th_w += $(this).width();
   				}
   			});
-
-  			if( table_w != th_w ){
+  			// if( table_w != th_w ){
+  			if( content_w < th_w ){
   				$(this).trigger('resize');
   			}
   		});
   	}
 });
+
 
 $('.dropdown-menu').on('click', 'li a', function(){
 

@@ -16,6 +16,9 @@ select{
 	position: relative;
 	background: transparent;
 }
+.form-control[disabled]{
+	background-color: transparent;
+}
 /*select::-ms-expand {
     display: none;
 }*/
@@ -1091,6 +1094,7 @@ ul.subtab-sty-white li.active a span{
 	color: #000;
 	display: inline-block;
 	margin: 0 85px 0 0;
+	text-decoration: none;
 }
 .twostylemix-twobtn-1 .rectangle-style{
 	display: inline-block;
@@ -5858,6 +5862,13 @@ ul.ul-li-in-table li{
 	.card-item-collapse-1-comp .top-title .right{
 		text-align: right;
 		padding-left: 25px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:345px) {
+	.card-item-collapse-1-comp .top-title .left{
+		width: auto;
+		max-width: 168px;
+		word-wrap: break-word;
 	}
 }
 

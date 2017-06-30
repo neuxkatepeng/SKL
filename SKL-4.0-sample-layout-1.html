@@ -247,7 +247,7 @@
 																		<p class="h5txt">事故者身分證</p>
 																	</div>
 																	<div class="fill-txt-input">
-																		<input type="" class="form-control" name="" placeholder="" value="F000000000">
+																		<input type="" class="form-control" name="" placeholder="" value="F000000000" disabled="">
 																	</div>
 																</div>
 																<div class="name-input-fill-block-1">
@@ -255,7 +255,7 @@
 																		<p class="h5txt">事故者姓名</p>
 																	</div>
 																	<div class="fill-txt-input">
-																		<input type="" class="form-control" name="" placeholder="" value="陳新光">
+																		<input type="" class="form-control" name="" placeholder="" value="陳新光" disabled="">
 																	</div>
 																</div>
 																<div class="name-input-fill-block-1">
@@ -263,7 +263,7 @@
 																		<p class="h5txt">事故者出生日期</p>
 																	</div>
 																	<div class="fill-txt-input">
-																		<input type="" class="form-control" name="" placeholder="" value="1990/07/09">
+																		<input type="" class="form-control" name="" placeholder="" value="1990/07/09" disabled="">
 																	</div>
 																</div>
 																<p class="h5txt font-weight800 colorred padding-bottom20">若事故人為從被保險人，或投保旅行平安險 / 無記名保單者，請填寫下欄</p>
@@ -421,7 +421,7 @@
 																			<a href="#">
 																	          	<p class="change displayblock">變更</p>
 																	        </a>
-																	        <a href="#" class="bgwhite colorblack borderccc">
+																	        <a href="#" class="bgwhite colorblack borderccc" data-toggle="modal" data-target="#Modal-systemmessege-7">
 																	          	<p class="change displayblock">刪除</p>
 																	        </a>
 																		</div>	
@@ -450,7 +450,7 @@
 																			<a href="#">
 																	          	<p class="change displayblock">變更</p>
 																	        </a>
-																	        <a href="#" class="bgwhite colorblack borderccc">
+																	        <a href="#" class="bgwhite colorblack borderccc" data-toggle="modal" data-target="#Modal-systemmessege-7">
 																	          	<p class="change displayblock">刪除</p>
 																	        </a>
 																		</div>
@@ -1074,7 +1074,7 @@
 												<div class="control-fund-part-redemption-draw-first-step-btn">
 													<div class="twostylemix-twobtn-1">
 														<a href="#" class="original-style">上一步</a>
-														<a href="#" class="rectangle-style bgred">確認完成</a>
+														<a href="#" class="rectangle-style bgred" data-toggle="modal" data-target="#Modal-waitmail-1">確認完成</a>
 													</div>
 												</div>
 											</div>	
@@ -1127,6 +1127,98 @@
 
 		
 
+
+	<!-- Modal-systemmessege-7-系統訊息 -->
+
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal-systemmessege-7">
+			  系統訊息
+			</button>
+
+			<div class="modal fade model-style-1" id="Modal-systemmessege-7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        	<h4 class="modal-title" id="myModalLabel"><span>系統訊息</span></h4>
+			      </div>
+			      <div class="modal-body">
+				        <div class="modal-mar-85-85-5 padding-top10">
+				        	<div class="modal-systemmessege">
+				        		<p class="h6txt margin-bottom10 text-align-center">查詢日期：2017/01/18</p>
+				        		<div class="systemmessege-cont">
+				        			<div class="items">
+				        				<div class="left">
+				        					<p class="h5txt font-weight800">訊息說明</p>
+				        				</div>
+				        				<div class="right">
+				        					<p class="h5txt">您即將要刪除此筆資料，刪除後將無法恢復</p>
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+				        </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="Modal-cancel-fav-btn" data-dismiss="modal" aria-label="Close">取消</button>
+			        	<button type="button" class="Modal-cancel-fav-btn bgred colorwhite border0" data-dismiss="modal" aria-label="Close">確認</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+	<!-- Modal-systemmessege-7-系統訊息 -->
+
+
+	<!-- Modal-waitmail-1-等待郵寄理賠文件 -->
+
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal-waitmail-1">
+			  等待郵寄理賠文件
+			</button>
+
+			<div class="modal fade model-style-2" id="Modal-waitmail-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        		<span aria-hidden="true"><img src="img/gray-x.png"></span>
+			        	</button>
+			        	<div class="index-title margin-bottom0 font-weight800">
+							<p>等待郵寄理賠文件</p>
+							<span class="red-line"></span>
+						</div>
+			      </div>
+			      <div class="modal-body">
+			      		<div class="modal-mar-134-40-10 modal-web-trans-bind-account-listitem modal-content-block-minheight200">
+			      			<div class="name-txt-bgcolor-comp margin-bottom30">
+								<ul class="ul-items">
+									<li class="ul-li-items">
+										<div class="left">
+											<p class="h5txt font-weight800 text-align-left">理賠案號</p>
+										</div>
+										<div class="right">
+											<p class="h5txt">F000000000</p>
+										</div>
+									</li>
+									<li class="ul-li-items">
+										<div class="left">
+											<p class="h5txt font-weight800 text-align-left">狀態</p>
+										</div>
+										<div class="right">
+											<p class="h5txt">等待證明文件送達</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<p class="h5txt text-align-center colorred font-weight800">提醒您，需待理賠文件送達，本公司理賠單位始為正式受理。評估結果及保障金額範圍，需視最終您提供之理賠申請書及檢附證明文件而定。</p>
+				        </div>
+			      </div>
+			      <div class="modal-footer text-align-center">
+			        	<button type="button" class="Modal-cancel-fav-btn bgorange colorwhite" data-dismiss="modal" aria-label="Close">確認</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+	<!-- Modal-waitmail-1-等待郵寄理賠文件 -->
 
 
 	<!-- Modal -->
@@ -1350,14 +1442,14 @@ GardenUtils.plugin.datePicker({
     target: $('#datepicker1'),
     maxMonth: '0',
     minMonth: '-3',
-    defaultDate: '2017-05-05'
+    defaultDate: '2017/05/05'
 });
 
 GardenUtils.plugin.datePicker({
     target: $('#datepicker2'),
     maxMonth: '0',
     minMonth: '-3',
-    defaultDate: '2017-05-05'
+    defaultDate: '2017/05/05'
 });
 
 

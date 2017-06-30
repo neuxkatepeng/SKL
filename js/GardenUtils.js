@@ -1775,8 +1775,8 @@ var GardenUtils = {
             var target = conf.target,
                 options = $.extend({
                     val: 70,               
-                    min: 0,    
-                    max: 100,             
+                    // min: -100,    
+                    // max: 0,             
                     fgColor: "#337ab7",
                     bgColor: '#d8d8d8',
                     text: 'none',          
@@ -1784,6 +1784,10 @@ var GardenUtils = {
                     readonly: true
                 }, conf.options);
             if(type=='line'){
+                options = $.extend({
+                    min: 0,
+                    max: 100
+                }, options);
                 if(options.width.split('%').length>=2){
                     $('<div class="progress" style="width:'+options.width+';"></div>').appendTo(target);
                 }
@@ -1808,10 +1812,23 @@ var GardenUtils = {
                 // if(options.text=='no'||options.text=='out'){
                 //     displayInput = false;
                 // }
+
+                if(options.val < 0){
+                    options = $.extend({
+                        min: -100,
+                        max: 0
+                    }, options);
+                } else {
+                    options = $.extend({
+                        min: 0,
+                        max: 100
+                    }, options);
+                }
+
                 $('<input type="text" class="dial" value="'+options.val+'">').appendTo(target);
                 $(".dial").knob({
-                    // 'min':options.min,
-                    // 'max':options.max,
+                    'min':options.min,
+                    'max':options.max,
                     'fgColor':options.fgColor,
                     'bgColor': options.bgColor,
                     'readOnly':options.readonly,
@@ -1909,7 +1926,7 @@ var GardenUtils = {
         datePicker: function(conf){
 
             var target = conf.target;
-            var dateFormat = conf.hasOwnProperty('dateFormat')? conf.dateFormat:'yy-mm-dd';
+            var dateFormat = conf.hasOwnProperty('dateFormat')? conf.dateFormat:'yy/mm/dd';
             var maxMonth = conf.hasOwnProperty('maxMonth')? conf.maxMonth:'';
             var minMonth = conf.hasOwnProperty('minMonth')? conf.minMonth:'';
             var defaultDate = conf.hasOwnProperty('defaultDate')? conf.defaultDate:'';

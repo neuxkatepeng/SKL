@@ -2949,6 +2949,7 @@ ul.dtr-details .dtr-data {
 	padding: 7px 5px;
     border-radius: 4px;
     display: block;
+    text-decoration: none;
 }
 .control-send-by-mail-name-input-fill.checkno .adjust-fill-txt-input-btn .condition-reset-btn{
 	position: absolute;
@@ -3215,6 +3216,9 @@ ul.dtr-details .dtr-data {
 	}
 }
 @media only screen and (min-width: 320px) and (max-width:480px) {
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .input-check-items-two-1{
+		padding-top: 5px;
+	}
 	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
 		width: 50%;
 		max-width: 154px;
@@ -3345,6 +3349,25 @@ ul.dtr-details .dtr-data {
 	.modal-web-trans-bind-account-listitem .cus-tab-collapse-block-comp .ul-items .ul-li-items .items-in .pic img {
 	    width: 108px;
 	    height: 108px;
+	}
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.control-online-claims-apply-steppage-second-step-b .name-input-fill-block-1 .fill-txt-input input{
+		height: 45px;
+	}
+	.control-online-claims-apply-steppage-second-step-b .name-input-fill-block-1 .fill-txt-input select{
+		height: 45px;
+	}
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.control-select-to-contact-salesman-second .name-input-fill-block-1 .fill-txt-input input{
+		height: 45px;
+	}
+	.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-txt-input input{
+		height: 45px;
+	}
+	.control-send-by-mail-name-input-fill .name-input-fill-block-1 .fill-txt-input select{
+		height: 45px;
 	}
 }
 /* 170428 */

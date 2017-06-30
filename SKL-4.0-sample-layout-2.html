@@ -66,7 +66,7 @@
 
 
 							<!-- 線上理賠查詢 -->
-							<!-- <div class="skl-60-layout-2 block-style minheight660px margin-bottom30">
+							<div class="skl-60-layout-2 block-style minheight660px margin-bottom30">
 						  		<div class="favorite-btn-block">
 							  		<a href="#" class="favorite-btn"></a>
 						  		</div>
@@ -103,7 +103,7 @@
 												                <td>YYYY/MM/DD</td>
 												                <td><a href="#" class="table-ratio-configuration-btn borderorange bglightorange margin-topbottom5">修改</a></td>
 												                <td><a href="#" class="table-ratio-configuration-btn borderorange bglightorange margin-topbottom5">列印</a></td>
-												                <td><a href="#" class="table-ratio-configuration-btn borderorange bglightorange margin-topbottom5">刪除</a></td>
+												                <td><a href="#" class="table-ratio-configuration-btn borderorange bglightorange margin-topbottom5"  data-toggle="modal" data-target="#Modal-systemmessege-7">刪除</a></td>
 												            </tr>
 												            <tr>
 												                <td>8888888888</td>
@@ -112,7 +112,7 @@
 												                <td>YYYY/MM/DD</td>
 												                <td><a href="#" class="table-ratio-configuration-btn borderorange bglightorange margin-topbottom5">修改</a></td>
 												                <td><a href="#" class="table-ratio-configuration-btn borderorange bglightorange margin-topbottom5">列印</a></td>
-												                <td><a href="#" class="table-ratio-configuration-btn borderorange bglightorange margin-topbottom5">刪除</a></td>
+												                <td><a href="#" class="table-ratio-configuration-btn borderorange bglightorange margin-topbottom5"  data-toggle="modal" data-target="#Modal-systemmessege-7">刪除</a></td>
 												            </tr>
 												        </tbody>
 													</table>
@@ -133,7 +133,7 @@
 										</div>
 									</div>
 								</div>
-						  	</div> -->
+						  	</div>
 
 							<!-- 線上理賠查詢-我要申請理賠 -->
 						  	<div class="skl-60-layout-2 block-style minheight660px margin-bottom50">
@@ -262,7 +262,7 @@
 												</div>
 												<p class="h5txt font-weight800 colorred">您若僅有投保公司團體保險，請洽要保公司窗口或服務人員協助辦理</p>
 												<div class="twobtn-1 margin-top30">
-													<a href="#" class="bgred colorwhite">立即申請</a>
+													<a href="#" class="bgred colorwhite" data-toggle="modal" data-target="#Modal-choosedocsent-1">立即申請</a>
 												</div>
 											</div>
 											
@@ -725,7 +725,118 @@
 	</div>
 
 		
+	
+	<!-- Modal-systemmessege-7-系統訊息 -->
 
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal-systemmessege-7">
+			  系統訊息
+			</button>
+
+			<div class="modal fade model-style-1" id="Modal-systemmessege-7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        	<h4 class="modal-title" id="myModalLabel"><span>系統訊息</span></h4>
+			      </div>
+			      <div class="modal-body">
+				        <div class="modal-mar-85-85-5 padding-top10">
+				        	<div class="modal-systemmessege">
+				        		<p class="h6txt margin-bottom10 text-align-center">查詢日期：2017/01/18</p>
+				        		<div class="systemmessege-cont">
+				        			<div class="items">
+				        				<div class="left">
+				        					<p class="h5txt font-weight800">訊息說明</p>
+				        				</div>
+				        				<div class="right">
+				        					<p class="h5txt">您即將要刪除此筆資料，刪除後將無法恢復</p>
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+				        </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="Modal-cancel-fav-btn" data-dismiss="modal" aria-label="Close">取消</button>
+			        	<button type="button" class="Modal-cancel-fav-btn bgred colorwhite border0" data-dismiss="modal" aria-label="Close">確認</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+	<!-- Modal-systemmessege-7-系統訊息 -->
+
+	<!-- Modal-choosedocsent-1-請先選擇理賠文件遞交方式 -->
+
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal-choosedocsent-1">
+			  請先選擇理賠文件遞交方式
+			</button>
+
+			<div class="modal fade model-style-2" id="Modal-choosedocsent-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        		<span aria-hidden="true"><img src="img/gray-x.png"></span>
+			        	</button>
+			        	<div class="index-title margin-bottom0 font-weight800">
+							<p>請先選擇理賠文件遞交方式</p>
+							<span class="red-line"></span>
+						</div>
+			      </div>
+			      <div class="modal-body">
+			      		<div class="modal-mar-134-60-10 modal-web-trans-bind-account-listitem">
+			      			<div class="cus-tab-collapse-block-comp margin-bottom15 margin-top30">
+								<ul class="ul-items">
+									<li class="ul-li-items">
+										<div class="items-in">
+											<div class="pic">
+												<img src="img/group-7.png">
+											</div>
+											<div class="desc text-align-center">
+												<p class="h5txt">自行郵寄遞交</p>
+											</div>
+											<div class="twobtn-1">
+												<a href="" class="bgred borderccc colorwhite">選擇此方式</a>
+											</div>
+										</div>
+									</li>
+									<li class="ul-li-items">
+										<div class="items-in">
+											<div class="pic">
+												<img src="img/group-8.png">
+											</div>
+											<div class="desc text-align-center">
+												<p class="h5txt">聯絡業務員收件</p>
+											</div>
+											<div class="twobtn-1">
+												<a href="" class="bgwhite borderccc colorblack">選擇此方式</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="titledescr">
+								<p class="title">注意事項</p>
+								<div class="descr padding-top13">
+									<p class="h5txt">親愛的客戶您好：<br>
+										歡迎您使用線上填寫理賠申請書，在您開始進行內容填寫前，請先閱讀下列事項：<br>
+										一、請務必確認您的電腦已安裝PDF軟體<a href="#">Acrobat Reader</a>方能開啟/列印【理賠申請書】。<br>
+										二、填寫申請書時我們將自動帶入您的基本資料，您可再進行確認或變更您的基本資料，但請注意：<span class="colorred">您於此頁面所變更的資料僅供此次理賠申請使用，將不影響您於公司留存的基本資料。</span><br>
+										三、如事故者非您本人，請點選重建資料後自行填入該位事故者之相關資料即可。<br>
+										<span class="colorred">四、您若已於本頁面填寫過申請內容並存檔，可點選【線上申請理賠/查詢】功能，查詢與修改您之前的存檔內容。</span><br>
+										五、<span class="colorred">您將系統產出之申請書列印完成簽名後，請務必連同診斷書等相關理賠申請必備文件</span>，遞送至離您最近的<a href="#">理賠單位</a>，<span class="colorred">方完成您的理賠申請。</span></p>
+								</div>
+							</div>
+				        </div>
+			      </div>
+			      <div class="modal-footer text-align-center displaynone">
+			        	
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+	<!-- Modal-choosedocsent-1-請先選擇理賠文件遞交方式 -->
 
 	<!-- Modal -->
 
@@ -921,14 +1032,14 @@ GardenUtils.plugin.tableCollapse({
 //     target: $('#datepicker1'),
 //     maxMonth: '0',
 //     minMonth: '-3',
-//     defaultDate: '2017-05-05'
+//     defaultDate: '2017/05/05'
 // });
 
 // GardenUtils.plugin.datePicker({
 //     target: $('#datepicker2'),
 //     maxMonth: '0',
 //     minMonth: '-3',
-//     defaultDate: '2017-05-05'
+//     defaultDate: '2017/05/05'
 // });
 
 GardenUtils.display.checkboxSelectAll({
