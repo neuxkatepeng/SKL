@@ -1116,6 +1116,33 @@ GardenUtils.display.collapse({
 GardenUtils.display.collapse({
 	target: $('[ga-collapse-target="target2"]')
 });
+// collapse to tab
+$('[ga-collapse-target]').on('click', function(){
+	var ele = $(this);
+	var targetClass = ele.attr('ga-collapse-target');
+	var target_ele = $('.'+targetClass);
 
+	var collapseTab = ['target1', 'target2'];
+
+	if( typeof targetClass !== typeof undefined && targetClass !== false ){
+		if( $.inArray(targetClass, collapseTab) != -1
+			&& !target_ele.hasClass('collpaseClose') ){
+			$.each(collapseTab, function(i, collapseClass){
+				var tmp_target = $('.'+collapseClass);
+
+				if( collapseClass != targetClass 
+					&& tmp_target.hasClass('active')){
+
+					tmp_target.addClass('collpaseClose');
+					$('[ga-collapse-target="'+collapseClass+'"]').trigger('click');
+
+				}
+			});
+		} // end if: targetClass in the collapseTab
+		else if( target_ele.hasClass('collpaseClose') ){
+			target_ele.removeClass('collpaseClose');
+		}
+	} // end if: targetClass exist
+}); // end click: ga-collapse-target
 </script>
 </html>

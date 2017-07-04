@@ -383,7 +383,8 @@ var GardenUtils = {
                     textMaxLength: 9,
                     pageClass: '',
                     containerClass: '',
-                    pageSpeed: 2000
+                    pageSpeed: 2000,
+                    disableResponsive: 1024
                 }, options.page);
 
                 options.navigation = $.extend({
@@ -398,6 +399,77 @@ var GardenUtils = {
                 }, options.event);
 
             //console.log('options', options);
+
+            function _verticalItemSlider(verticalConf){
+                var target = verticalConf.target;
+                var options = verticalConf.options;
+                var verticalItem = verticalConf.verticalItem;
+
+                delete options.verticalItem;
+
+                target.clone().addClass('ga-vertical-clone').insertAfter( target );
+                var verticalTarget = $('.ga-vertical-clone');
+                var itemTarget = $();
+                verticalTarget.find('.ga-item').each(function(i){
+                    var item = $(this);
+                    if( i%verticalItem.perItem != 0 ){
+                        item.children().clone().appendTo( itemTarget );
+                        item.remove();
+                    } else {
+                        itemTarget = item;
+                    }
+                }); // end each: ga-item
+
+                var original_carouselClass = options.carouselClass +' ga-vertical-origin';
+                var originalConf = $.extend(true, verticalConf, {
+                    options: {
+                        carouselClass: original_carouselClass
+                    }
+                });
+                GardenUtils.plugin.slider(originalConf);
+
+                var vertical_carouselClass = options.carouselClass.replace('ga-vertical-origin', 'ga-vertical-clone');
+                var verticalConf_clone = $.extend(true, verticalConf, {
+                    target: verticalTarget,
+                    options: {
+                        items: verticalItem.perItem,
+                        carouselClass: vertical_carouselClass
+                    }
+                });
+                GardenUtils.plugin.slider(verticalConf_clone);
+
+                function _verticalSliderResize(){
+                    if( $(window).width() < verticalItem.responsive ){
+                        $('.ga-vertical-origin').parents('.ga-slider-container').hide();
+                        $('.ga-vertical-clone').parents('.ga-slider-container').show();
+                    } else {
+                        $('.ga-vertical-clone').parents('.ga-slider-container').hide();
+                        $('.ga-vertical-origin').parents('.ga-slider-container').show();
+                    }
+                } // end _verticalSliderResize function
+
+                _verticalSliderResize();
+
+                $(window).resize(function(){
+                    _verticalSliderResize();
+                });
+
+            } // end _verticalItemSlider function
+
+
+            if( options.hasOwnProperty('verticalItem') ){
+                var verticalItem = $.extend({
+                    perItem: 2,
+                    responsive: 768
+                }, options.verticalItem);
+
+                _verticalItemSlider($.extend(conf, {
+                    target: target,
+                    options: options,
+                    verticalItem: verticalItem
+                }));
+                return false;
+            } // end if: verticalItem
 
             // create datas
             target.find('.ga-slider').each(function(i){
@@ -449,7 +521,7 @@ var GardenUtils = {
                 options.responsive = responsive_tmp;
             }
 
-            if ($(window).width() < 1024) {
+            if ($(window).width() < options.page.disableResponsive) {
                 if(options.page.isDisable) options['dots'] = false;
             }
 
@@ -504,7 +576,7 @@ var GardenUtils = {
                         $('<div class="ga-slider-prev '+options.navigation.prevClass+'"></div>').appendTo( target );
                         $('<div class="ga-slider-next '+options.navigation.nextClass+'"></div>').appendTo( target );
 
-                        if(!options.autoplay){
+                        if(!options.loop){
                             target.find('.ga-slider-prev').css('opacity', '.3');
                         }
 
@@ -570,11 +642,13 @@ var GardenUtils = {
                         $(target).find('.owl-nav').addClass('disabled');
                         // $(target).find('.owl-dots').addClass('disabled');
                         $(target).find('.owl-dots').addClass('hidden');
-                    } else if ($(window).width() < 1024) {
+                    } else if ($(window).width() < options.page.disableResponsive) {
                         $(target).find(".owl-controls").hide();
                         $(target).find('.owl-nav').addClass('disabled');
                         // $(target).find('.owl-dots').addClass('disabled');
                         $(target).find('.owl-dots').addClass('hidden');
+                    } else {
+                        $(target).find('.owl-dots').removeClass('hidden');
                     }
                 });
 
@@ -606,9 +680,9 @@ var GardenUtils = {
                 }
                 $owl.owlCarousel(options);
                 _createPage(options);
-            },500);
-            
+            },500);            
         }, //end slider function
+        
         listNews: function(conf){
 
             ///////////////////////////////////
@@ -1918,6 +1992,8 @@ var GardenUtils = {
                     openIndex: openIndex,
                     collapseBtn: collapseBtn
                 });
+                
+                target.css('opacity','1');
             } // end controlDetail function
             
             controlDetail();
@@ -4736,10 +4812,15 @@ var GardenUtils = {
             var totalWidth = 0;
 
             if( $target.find('.ga-hidden').length > 0 ){
-                var hidWidth = $target.find('.ga-hidden').width();
-                var Padding_right = parseInt($target.find('.ga-hidden').css('padding-right'));
-                var Padding_left = parseInt($target.find('.ga-hidden').css('padding-left'));
-                totalWidth = (hidWidth + Padding_left + Padding_right);
+                var ele = $target.parent();
+                var clone_class = 'helperClone';
+                var clone = ele.clone()
+                    .css({'position':'absolute','visibility':'hidden','width':'auto','display':'block'})
+                    .addClass(clone_class)
+                    .appendTo( ele.parent() );
+
+                totalWidth = $('.'+clone_class).find('.ga-hidden').outerWidth();
+                $('.'+clone_class).remove();
             }
             
 
@@ -5078,6 +5159,14 @@ var GardenUtils = {
                         }
 
                         if( isResize && h == 0 || !isResize && h > 0 ) {
+                            var tmp = ele;
+                            var tmp_h = ele.outerHeight();
+                            while( tmp.parents('.ga-collapse').length > 0 ){
+                                var parent_ele = tmp.parents('.ga-collapse').first();
+                                parent_ele.css('height', parent_ele.outerHeight() - tmp_h + 'px');
+                                tmp = parent_ele;
+                            };
+
                             ele.css('height','0');
                         } else {
                             var clone_class = 'collapseClone';
@@ -5089,6 +5178,16 @@ var GardenUtils = {
                             var newHeight = $('.'+clone_class).outerHeight();
                             $('.'+clone_class).remove();
                             ele.css('height', newHeight + 'px');
+
+                            console.warn('newHeight', newHeight);
+
+                            var tmp = ele;
+                            var tmp_h = newHeight;
+                            while( tmp.parents('.ga-collapse').length > 0 ){
+                                var parent_ele = tmp.parents('.ga-collapse').first();
+                                parent_ele.css('height', parent_ele.outerHeight() + tmp_h + 'px');
+                                tmp = parent_ele;
+                            };
                         }
                                  
                     }); // end each: collapse target

@@ -2553,8 +2553,9 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   					th_w += $(this).width();
   				}
   			});
-  			// if( table_w != th_w ){
-  			if( content_w < th_w ){
+  			
+  			// if( table_w != th_w &&  ){
+  			if( content_w != th_w ){
   				$(this).trigger('resize');
   			}
   		});

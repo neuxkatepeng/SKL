@@ -3375,3 +3375,7 @@ ul.dtr-details .dtr-data {
 	width: 100%;
 }
 /* 170428 end */
+
+.table-small-hide .table-small-hide-inside table.display{
+	opacity: 0;
+}
