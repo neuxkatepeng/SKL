@@ -628,8 +628,8 @@
 														<div class="fill-txt-input">
 															<div class="search-date-input-comp">
 																<div class="search-date-input">
-																	<input type="text" class="form-control" id="datepicker2" readonly="">
-																	<a href="#" class="datepicker2"><img src="img/date-icon.png"> </a>
+																	<input type="text" class="form-control" id="datepicker3" readonly="">
+																	<a href="#" class="datepicker3"><img src="img/date-icon.png"> </a>
 																</div>
 															</div>
 														</div>
@@ -639,8 +639,8 @@
 											<div class="margin-bottom50">
 												<div class="input-check-items-two-1">
 													<div class="check-input">
-														<input type="checkbox" name="" id="check-inlineRadio-1" value="">
-														<label for="check-inlineRadio-1"><span class="cusradio-sty"></span></label>
+														<input type="checkbox" name="" id="check-inlineRadio-z" value="">
+														<label for="check-inlineRadio-z"><span class="cusradio-sty"></span></label>
 														<p class="h5txt">我了解此查詢結果不等同於最後實際理賠結果</p>
 													</div>
 												</div>
@@ -2488,6 +2488,13 @@ GardenUtils.plugin.datePicker({
     defaultDate: '2017/05/05'
 });
 
+GardenUtils.plugin.datePicker({
+    target: $('#datepicker3'),
+    maxMonth: '0',
+    minMonth: '-3',
+    defaultDate: '1990/07/09'
+});
+
 GardenUtils.display.checkboxSelectAll({
     target: 'dataCheck1'
 });
@@ -2502,6 +2509,10 @@ $('a.datepicker1').on('click', function(ev){
 $('a.datepicker2').on('click', function(ev){
     ev.preventDefault();
     $("#datepicker2").datepicker("show");
+});
+$('a.datepicker3').on('click', function(ev){
+    ev.preventDefault();
+    $("#datepicker3").datepicker("show");
 });
 
 $('.dropdown-menu').on('click', 'li a', function(){

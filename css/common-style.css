@@ -1169,7 +1169,9 @@ ul.subtab-sty-white li.active a span{
 .titledescr ul.title-ol-list li{
 	list-style-type: disc; 
 }
-
+.titledescr ol.title-ol-list ul.sub-title-ol-list{
+	padding-left: 25px;
+}
 .titledescr ol.title-ol-list ul.sub-title-ol-list li{
 	list-style-type: disc; 
 }

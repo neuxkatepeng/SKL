@@ -151,12 +151,252 @@ span.bold{
 	color: #176ed4 !important;
 }
 
-header{
+.header{
 	
 }
-footer{
+.footer{
 
 }
+.content{
+	border: 1px solid #ccc;
+	font-size: 0;
+}
+.content .left-side{
+	border: 1px solid #aaa;
+	display: inline-block;
+	vertical-align: top;
+}
+.content .right-side{
+	border: 1px solid #aaa;
+	display: inline-block;
+	vertical-align: top;
+}
+.content .left-side .logo{
+	border: 1px solid #ff0;
+	font-size: 16px;
+}
+.catalog-component{
+	border: 1px solid #0ff;
+}
+.catalog-component .ul-items{
+	border: 1px solid #0aa;
+}
+.catalog-component .ul-items .ul-li-items{
+	border: 1px solid #a0a;
+}
+.catalog-component .ul-items .ul-li-items a{
+	
+}
+.catalog-component .ul-items .ul-li-items .sub-ul-items{
+	border: 1px solid #f0f;
+}
+.catalog-component .ul-items .ul-li-items .sub-ul-li-items{
+	border: 1px solid #f0f;
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+}
+
+.card-items-component{
+	border: 1px solid #ccc;
+}
+.card-items-component .ul-items{
+	border: 1px solid #aaa;
+	font-size: 0;
+}
+.card-items-component .ul-items .ul-li-items{
+	border:1px solid #000;
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+}
+.card-items-component .ul-items .ul-li-items .title{
+
+}
+.card-items-component .ul-items .ul-li-items .title p{
+
+}
+.card-items-component .ul-items .ul-li-items .postdate{
+
+}
+.card-items-component .ul-items .ul-li-items .postdate p{
+
+}
+.card-items-component .ul-items .ul-li-items .pic{
+
+}
+.card-items-component .ul-items .ul-li-items .pic img{
+
+}
+.card-items-component .ul-items .ul-li-items .des-block{
+
+}
+.card-items-component .ul-items .ul-li-items .des-block p{
+
+}
+.card-items-component .readmore-btn{
+
+}
+.card-items-component .readmore-btn a{
+	
+}
+.card-items-component .readmore-btn img{
+	
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+}
+.post-1-component{
+
+}
+.post-1-component .ul-items{
+	
+}
+.post-1-component .ul-items .ul-li-items{
+	
+}
+.post-1-component .ul-items .ul-li-items .conts{
+	
+}
+.post-1-component .ul-items .ul-li-items .conts .desc-pic{
+	font-size: 0;
+	border: 1px solid #ccc;
+}
+.post-1-component .ul-items .ul-li-items .conts .desc-pic .left{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	font-size: 16px;
+	border: 1px solid #000; 
+}
+.post-1-component .ul-items .ul-li-items .conts .desc-pic .right{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	font-size: 16px;
+	border: 1px solid #000; 
+}
+.post-1-component .ul-items .ul-li-items .conts .desc-pic .left .txt{
+
+}
+.post-1-component .ul-items .ul-li-items .conts .desc-pic .left .txt p{
+
+}
+.post-1-component .ul-items .ul-li-items .conts .desc-pic .right .pic{
+
+}
+.post-1-component .ul-items .ul-li-items .conts .desc-pic .right .pic img{
+
+}
+.post-1-component .g-map{
+
+}
+.post-1-component .readmore-btn{
+
+}
+.post-1-component .readmore-btn a{
+	
+}
+.post-1-component .readmore-btn img{
+	
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+}
+
+.post-2-component{
+
+}
+.post-2-component .ul-items{
+	
+}
+.post-2-component .ul-items .ul-li-items{
+	font-size: 0;
+	border: 1px solid #ccc;
+}
+.post-2-component .ul-items .ul-li-items .left{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	border: 1px solid #000;
+}
+.post-2-component .ul-items .ul-li-items .right{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	border: 1px solid #000;
+}
+.post-2-component .ul-items .ul-li-items .left .txt{
+
+}
+.post-2-component .ul-items .ul-li-items .left .txt p{
+
+}
+.post-2-component .ul-items .ul-li-items .right .pic{
+
+}
+.post-2-component .ul-items .ul-li-items .right .pic img{
+
+}
+.post-2-component .readmore-btn{
+
+}
+.post-2-component .readmore-btn a{
+	
+}
+.post-2-component .readmore-btn img{
+	
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+}
+
+
+.post-3-component{
+
+}
+.post-3-component .ul-items{
+	
+}
+.post-3-component .ul-items .ul-li-items{
+	font-size: 0;
+	border: 1px solid #ccc;
+}
+.post-3-component .ul-items .ul-li-items .left{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	border: 1px solid #000;
+}
+.post-3-component .ul-items .ul-li-items .right{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	border: 1px solid #000;
+}
+.post-3-component .ul-items .ul-li-items .left .txt{
+
+}
+.post-3-component .ul-items .ul-li-items .left .txt p{
+
+}
+.post-3-component .ul-items .ul-li-items .right .pic{
+
+}
+.post-3-component .ul-items .ul-li-items .right .pic img{
+
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+}
+
+
+
+
+
+
+
+
 
 
 /*IE10.11*/

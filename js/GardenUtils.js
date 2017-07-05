@@ -666,8 +666,24 @@ var GardenUtils = {
                 });
             }; // end  _createPage function
 
+            var _scrollToAutoPlay = function(options){
+                var slider_offset = target.offset();
+
+                if($(this).scrollTop() + window.innerHeight > slider_offset.top
+                    && options.autoplay){
+                    $owl.addClass('play.owl.autoplay');
+                    $owl.removeClass('stop.owl.autoplay');
+                    $owl.trigger('play.owl.autoplay');
+                } else {
+                    $owl.removeClass('play.owl.autoplay');
+                    $owl.addClass('stop.owl.autoplay');
+                    $owl.trigger('stop.owl.autoplay');
+                }
+            }; // end _scrollToAutoPlay function
+
             
             _createPage(options);
+            _scrollToAutoPlay(options);
             
             setTimeout(function(){
                 //console.debug('options', options);
@@ -680,7 +696,11 @@ var GardenUtils = {
                 }
                 $owl.owlCarousel(options);
                 _createPage(options);
-            },500);            
+            },500);
+
+            $(window).scroll(function(){
+                _scrollToAutoPlay(options);
+            });
         }, //end slider function
         
         listNews: function(conf){
@@ -1968,10 +1988,14 @@ var GardenUtils = {
                         collapseBtn.eq((openIndex+1)).trigger('click');
                     }
                 }
-            } // end openTabelWithIndex function
-            
+
+                setTimeout(function(){
+                    target.css('opacity','1');
+                }, 500);
+            } // end openTabelWithIndex function            
             
             function controlDetail() {
+                target.css('opacity', '0');
                 var hiddenLen = target.find('tbody tr:first td:not(:first-child):hidden').length;
                 var collapseBtn = target.find('.details-control');
 
@@ -1992,8 +2016,6 @@ var GardenUtils = {
                     openIndex: openIndex,
                     collapseBtn: collapseBtn
                 });
-                
-                target.css('opacity','1');
             } // end controlDetail function
             
             controlDetail();
@@ -5133,81 +5155,111 @@ var GardenUtils = {
 
         collapse: function(conf){
             var target = conf.target;
+            var disabledContent = conf.hasOwnProperty('disabledContent')? conf.disabledContent:{};
 
             target.on('click', function(e){
                 e.preventDefault();
+                var ele = $(this);
 
-                var collapseTarget_class = target.attr('ga-collapse-target');
+                var collapseTarget_class = ele.attr('ga-collapse-target');
                 var collapseTarget = $('.'+collapseTarget_class);
 
 
                 if( !collapseTarget.hasClass('active') ){
-                    $(this).removeClass('active');
+                    ele.removeClass('active');
                 }
 
-                $(this).toggleClass('active');
+                ele.toggleClass('active');
 
-                function _calculateHeight(config){
-                    var isResize = config.hasOwnProperty('isResize')? config.isResize:false;
-
-                    collapseTarget.each(function(){
-                        var ele = $(this);
-                        var h = ele.height();
-
-                        if (!isResize){
-                            ele.toggleClass('active');
-                        }
-
-                        if( isResize && h == 0 || !isResize && h > 0 ) {
-                            var tmp = ele;
-                            var tmp_h = ele.outerHeight();
-                            while( tmp.parents('.ga-collapse').length > 0 ){
-                                var parent_ele = tmp.parents('.ga-collapse').first();
-                                parent_ele.css('height', parent_ele.outerHeight() - tmp_h + 'px');
-                                tmp = parent_ele;
-                            };
-
-                            ele.css('height','0');
-                        } else {
-                            var clone_class = 'collapseClone';
-                            var clone = ele.clone()
-                                .css({'position':'absolute','visibility':'hidden','height':'auto'})
-                                .addClass(clone_class)
-                                .appendTo( ele.parent() );
-
-                            var newHeight = $('.'+clone_class).outerHeight();
-                            $('.'+clone_class).remove();
-                            ele.css('height', newHeight + 'px');
-
-                            console.warn('newHeight', newHeight);
-
-                            var tmp = ele;
-                            var tmp_h = newHeight;
-                            while( tmp.parents('.ga-collapse').length > 0 ){
-                                var parent_ele = tmp.parents('.ga-collapse').first();
-                                parent_ele.css('height', parent_ele.outerHeight() + tmp_h + 'px');
-                                tmp = parent_ele;
-                            };
-                        }
-                                 
-                    }); // end each: collapse target
-                } // end _calculateHeight function
+                if( collapseTarget.hasClass('hidden') ){
+                    ele.removeClass('active');
+                }
 
                 _calculateHeight({
                     isResize: false
                 });
-
-                $(window).resize(function(){
-                    _calculateHeight({
-                        isResize: true
-                    });
-                });
-
             }); // end click: collapse btn
+
+            var _calculateHeight = function(config){
+                var isResize = config.hasOwnProperty('isResize')? config.isResize:false;
+
+                var collapseTarget_class = target.attr('ga-collapse-target');
+                var collapseTarget = $('.'+collapseTarget_class);
+
+                collapseTarget.each(function(){
+                    var ele = $(this);
+                    var h = ele.height();
+
+                    if (!isResize && ele.is(':visible')){
+                        ele.toggleClass('active');
+                    }
+
+                    if( isResize && h == 0 || !isResize && h > 0 ) {
+                        var tmp = ele;
+                        var tmp_h = ele.outerHeight();
+                        while( tmp.parents('.ga-collapse').length > 0 ){
+                            var parent_ele = tmp.parents('.ga-collapse').first();
+                            parent_ele.css('height', parent_ele.outerHeight() - tmp_h + 'px');
+                            tmp = parent_ele;
+                        };
+
+                        ele.css('height','0');
+                    } else if( ele.is(':visible') ){
+                        var clone_class = 'collapseClone';
+                        var clone = ele.clone()
+                            .css({'position':'absolute','visibility':'hidden','height':'auto'})
+                            .addClass(clone_class)
+                            .appendTo( ele.parent() );
+
+                        var newHeight = $('.'+clone_class).outerHeight();
+                        $('.'+clone_class).remove();
+                        ele.css('height', newHeight + 'px');
+
+                        // console.warn('newHeight', newHeight);
+
+                        var tmp = ele;
+                        var tmp_h = newHeight;
+                        while( tmp.parents('.ga-collapse').length > 0 ){
+                            var parent_ele = tmp.parents('.ga-collapse').first();
+                            parent_ele.css('height', parent_ele.outerHeight() + tmp_h + 'px');
+                            tmp = parent_ele;
+                        };
+                    }
+                             
+                }); // end each: collapse target
+            }; // end _calculateHeight function
+
+            var _displayContent = function(){
+                if(disabledContent.hasOwnProperty('type')
+                    && disabledContent.hasOwnProperty('responsive')){
+                    var type = disabledContent.type;
+                    var responsive = disabledContent.responsive;
+
+                    var window_w = $(window).width();
+                    var collapseTarget_class = target.attr('ga-collapse-target');
+                    var collapseTarget = $('.'+collapseTarget_class);
+                    if( type == 'GEQ' && window_w >= responsive ){
+                        collapseTarget.addClass('hidden');
+                    } else if( type == 'LEQ' && window_w <= responsive ){
+                        collapseTarget.addClass('hidden');
+                    } else {
+                        collapseTarget.removeClass('hidden');
+                    }
+                } // end if: disabledContent when resize
+            }; // end _displayContent function
+
+            _displayContent();
 
             if( target.hasClass('active') ){
                 target.trigger('click');
             }
+
+            $(window).resize(function(){                
+                _displayContent();
+                _calculateHeight({
+                    isResize: true
+                });
+            });
         } // end collapse function
     },
     ajax: {
