@@ -3370,6 +3370,22 @@ ul.dtr-details .dtr-data {
 		height: 45px;
 	}
 }
+.control-claims-documents-ready-inquiries-second .panel-body{
+	padding: 0;
+
+}
+.control-claims-documents-ready-inquiries-second .collapse-sty-1 .collapse-sty-1-btn a[aria-expanded="false"] {
+    background-color: #f6a623;
+}
+
+.control-claims-documents-ready-inquiries-second.test .panel-collapse.collapse{
+	height: 312px !important;
+	overflow: hidden;
+	display: block !important;
+}
+.control-claims-documents-ready-inquiries-second.test .panel-collapse.collapse.in{
+	height: auto !important;
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;
