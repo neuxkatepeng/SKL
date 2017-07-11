@@ -216,7 +216,7 @@
 											<div class="titledescr">
 												<p class="title">備註</p>
 												<ol class="title-ol-list padding-top13 h5txt colorred font-weight800">
-													<li>（文字待人壽確認）以上為一般理賠須檢附之文件，實際仍須依理賠審核需求由理賠人員通知再行檢附相關文件</li>
+													<li>以上為一般理賠須檢附之文件，實際仍須依理賠審核需求由理賠人員通知再行檢附相關文件</li>
 													<li>若有下列狀況，可一併提供相對應的文件：</li>
 													<ul class="sub-title-ol-list">
 														<li>骨折/骨裂時－X光片</li>
@@ -285,7 +285,7 @@
 														<div class="panel-group" id="accordion-1" role="tablist" aria-multiselectable="true">
 															<div class="panel panel-default">
 															    
-															    <div id="test-collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="test-col-1" aria-expanded="false">
+															    <div id="test-collapse-1" class="panel-collapse collapse height312" role="tabpanel" aria-labelledby="test-col-1" aria-expanded="false">
 																    <div class="panel-body">
 																    	<div class="table-small-hide">
 																			<div class="table-small-hide-inside">
@@ -367,7 +367,7 @@
 											<div class="titledescr">
 												<p class="title">備註</p>
 												<ol class="title-ol-list padding-top13 h5txt colorred font-weight800">
-													<li>（文字待人壽確認）以上為一般理賠須檢附之文件，實際仍須依理賠審核需求由理賠人員通知再行檢附相關文件</li>
+													<li>以上為一般理賠須檢附之文件，實際仍須依理賠審核需求由理賠人員通知再行檢附相關文件</li>
 													<li>若有下列狀況，可一併提供相對應的文件：</li>
 													<ul class="sub-title-ol-list">
 														<li>骨折/骨裂時－X光片</li>
@@ -943,7 +943,18 @@ $(function(){
 
 
 
+$('#test-collapse-1').on('shown.bs.collapse', function (ev) {
+	console.warn('show.bs.collapse', $(this), ev);
+	var target = ev.target;
+	$(target).height('auto');
+});
 
+$('#test-collapse-1').on('hidden.bs.collapse hide.bs.collapse', function (ev) {
+	var target = ev.target;
+	$(target).animate({
+		height: '315px'
+	}, 700);
+});
 
 
 $('#Modal-immediacontact .topbtn.topbtnstydot > a').click(function (ev) {

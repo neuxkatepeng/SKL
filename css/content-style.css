@@ -3379,12 +3379,26 @@ ul.dtr-details .dtr-data {
 }
 
 .control-claims-documents-ready-inquiries-second.test .panel-collapse.collapse{
-	height: 312px !important;
 	overflow: hidden;
 	display: block !important;
 }
+.control-claims-documents-ready-inquiries-second.test .panel-collapse.collapse.height312{
+	height: 315px;
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.control-claims-documents-ready-inquiries-second.test .panel-collapse.collapse.height312{
+		height: 418px;
+	}
+}
+
+.control-claims-documents-ready-inquiries-second.test .panel-body{
+	padding: 0 2px;
+}
+.control-claims-documents-ready-inquiries-second.test .panel-collapse.collapse.heightauto{
+	height: auto;
+}
 .control-claims-documents-ready-inquiries-second.test .panel-collapse.collapse.in{
-	height: auto !important;
+	
 }
 /* 170428 */
 .radio-inline label {
