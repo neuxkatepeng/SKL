@@ -3225,10 +3225,22 @@ ul.dtr-details .dtr-data {
 	}
 	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1.control-chainrule-checkbox .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
 		width: 35%;
-		max-width: 86px;
+		max-width: 88px;
 	}
 }
-
+@media only screen and (min-width: 320px) and (max-width:350px) {
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
+		width: 50%;
+		max-width: 133px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1.control-chainrule-checkbox .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .fill-select-two-1-item{
+		width: 35%;
+		max-width: 73px;
+	}
+	.control-online-claims-apply-steppage-second-step-b-second-part .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .input-check-items-two-1 .check-input label{
+		width: auto;
+	}
+}
 .control-online-claims-apply-steppage-second-step-b-third-part .control-send-by-mail-step2 .name-input-fill-block-1 .fill-title-name {
     width: 64px;
     max-width: 64px;
@@ -3400,9 +3412,259 @@ ul.dtr-details .dtr-data {
 .control-claims-documents-ready-inquiries-second.test .panel-collapse.collapse.in{
 	
 }
+
+
+.control-online-claims-apply-steppage .check-input {
+	position: relative;
+}
+.control-online-claims-apply-steppage .check-input label{
+	width: 100%;
+}
+.control-online-claims-apply-steppage .input-check-items-two-1 .check-input{
+	position: relative;
+}
+.control-online-claims-apply-steppage .input-check-items-two-1 .check-input label{
+	width: 100%;
+}
+.control-send-by-mail-first .check-two-line-comp .check-input{
+	position: relative;
+}
+.control-send-by-mail-first .check-two-line-comp .check-input label{
+	width: 100%;
+}
+.control-send-by-mail .control-send-by-mail-fourth .check-input{
+	position: relative;
+}
+.control-send-by-mail .control-send-by-mail-fourth .check-input label{
+	width: 100%;
+}
+.cus-lefttxt-rightinput-comp .check-input{
+	position: relative;
+}
+.cus-lefttxt-rightinput-comp .check-input label{
+	width: 100%;
+}
+
+
+.control-fund-distriratios-first.correctinputcheckbox .control-fund-distriratios-first-input .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline {
+    margin-right: 0px;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.control-fund-distriratios-first.correctinputcheckbox .control-fund-distriratios-first-input .name-checkradio-fill-block-1 .fill-txt-checkradio .input-radio-items-1 .radio-inline {
+	    margin-right: 20px;
+	}
+}
+
+
+
+.correctinputcheckbox .radio-inline{
+	display: inline-block;
+    vertical-align: top;
+    padding-right: 12px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 500;
+}
+.correctinputcheckbox .radio-inline label{
+    position: relative !important;
+    font-weight: 500;
+    margin-left: 36px;
+    width: auto;
+    line-height: 24px;
+    font-size: 15px;
+}
+.correctinputcheckbox .radio-inline label span.cusradio-sty{
+	margin-right: 12px;
+	position: absolute !important;
+	top: 0px;
+	left: -36px;
+}
+.correctinputcheckbox .check-input{
+	display: inline-block;
+    vertical-align: top;
+    padding-right: 12px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 500;
+}
+.correctinputcheckbox .check-input label{
+    position: relative !important;
+    font-weight: 500;
+    margin-left: 36px;
+    width: auto;
+    line-height: 24px;
+    font-size: 15px;
+}
+.correctinputcheckbox .check-input label span.cusradio-sty{
+	margin-right: 12px;
+	position: absolute !important;
+	top: 0px;
+	left: -36px;
+}
+.correctinputcheckbox .check-input .check-input-custxtinput{
+	display: inline-block;
+}
+.correctinputcheckbox .check-input .check-input-custxtinput input{
+	margin-left: 0;
+	border: 1px solid #ddd !important; 
+}
+.correctinputcheckbox .input-line-comp .input-radio-items-two-1 .radio-inline{
+	margin-right: 0;
+}
+.correctinputcheckbox .input-line-comp .input-radio-items-two-1 .radio-inline label{
+	height: auto !important;
+	vertical-align: middle !important;
+	padding-left: 36px !important;
+	padding-right: 0;
+}
+.correctinputcheckbox .input-line-comp .input-radio-items-two-1 .radio-inline label span.cusradio-sty{
+	bottom: 0;
+	margin:auto;
+	left: 0;
+}
+.correctinputcheckbox .input-line-comp .input-radio-items-two-1 .radio-inline label span.cusradio-sty:before{
+	content: '';
+	width: 0;
+	height: 100%;
+}
+.correctinputcheckbox .check-two-line-comp .input-check-items-two-1 .check-input label{
+	height: auto !important;
+	vertical-align: middle !important;
+	padding-left: 36px !important;
+	padding-right: 0;
+}
+.correctinputcheckbox .check-two-line-comp .input-check-items-two-1 .check-input label span.cusradio-sty{
+	bottom: 0;
+	margin:auto;
+	left: 0;
+}
+.correctinputcheckbox .check-two-line-comp .input-check-items-two-1 .check-input label span.cusradio-sty:before{
+	content: '';
+	width: 0;
+	height: 100%;
+}
+
+.correctinputcheckbox .cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline{
+	padding-right: 0;
+}
+.correctinputcheckbox .cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline label{
+	padding-right: 0;
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.correctinputcheckbox .cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show {
+	    position: absolute;
+	    top: auto;
+	    bottom: -65px;
+	    right: auto;
+	    left: -175px;
+	    width: 330px;
+	}
+	.correctinputcheckbox .cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show .partradio-input {
+	    width: 80%;
+	    max-width: 270px;
+	}
+}
+@media only screen and (max-width: 350px) and (min-width: 320px){
+	.correctinputcheckbox .cus-input-belowtable-1-comp .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show .partradio-input {
+	    width: 80%;
+	    max-width: 220px;
+	}
+}
+
+.correctinputcheckbox .cus-input-belowtable-comp .putcont .left .input-radio-items-1 .radio-inline{
+	padding-right: 0;
+	margin-right: 0;
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.correctinputcheckbox .cus-input-belowtable-comp .putcont .left .input-radio-items-1 .radio-inline label{
+		padding-right: 20px;
+	}
+}
+
+.control-fund-part-redemption-draw-first-step.correctinputcheckbox .cus-input-belowtable-2-comp .putcont .input-radio-items-1 .radio-inline{
+	padding-right: 0;
+}
+.control-fund-part-redemption-draw-first-step.correctinputcheckbox .cus-input-belowtable-2-comp .putcont .input-radio-items-1 .radio-inline label{
+	padding-right: 0;
+}
+@media only screen and (max-width: 767px) and (min-width: 481px){
+	.correctinputcheckbox .cus-input-belowtable-2-comp .putcont .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline {
+	    position: relative;
+	    width: 250px;
+	    margin-right: 0;
+	    /* display: block; */
+	    margin-bottom: 10px;
+	}
+}
+
+.control-online-claims-apply-steppage.correctinputcheckbox .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .input-check-items-two-1 .check-input{
+	padding-right: 0;
+}
+.control-online-claims-apply-steppage.correctinputcheckbox .name-input-fill-block-1 .fill-txt-input .fill-select-two-and-one .fill-select-two-1 .input-check-items-two-1 .check-input label{
+	padding-right: 0;
+}
+.control-online-claims-apply-steppage.correctinputcheckbox .input-radio-items-two-1 .radio-inline{
+	padding-right: 0;
+}
+.control-online-claims-apply-steppage.correctinputcheckbox .input-radio-items-two-1 .radio-inline label{
+	padding-right: 0;
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.correctinputcheckbox .cus-input-belowtable-2-comp .putcont .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input{
+		max-width: 170px;
+	}
+}
+@media only screen and (max-width: 350px) and (min-width: 320px){
+	.correctinputcheckbox .cus-input-belowtable-2-comp .putcont .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input{
+		max-width: 140px;
+	}
+	.correctinputcheckbox .cus-input-belowtable-2-comp .putcont .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show{
+		width: 73%;
+	}
+}
+
+.correctinputcheckbox .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline{
+	padding-right: 0;
+}
+.correctinputcheckbox .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline label{
+	padding-right: 0;
+}
+.correctinputcheckbox .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern {
+    top: -5px;
+    margin-left: 12px;
+    display: inline;
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.correctinputcheckbox .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern {
+	    top: -10px;
+	}
+}
+.correctinputcheckbox .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-first{
+    width: 21%;
+}
+.correctinputcheckbox .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-third{
+    width: 21%;
+}
+.correctinputcheckbox .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-first input{
+    padding: 6px;
+}
+.correctinputcheckbox .cus-mix-inputsradios .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .mix-input-pattern .input-third input{
+    padding: 6px;
+}
+.correctinputcheckbox .card-item-collapse-1-comp .bottom-cont .input-radio-items-1 .radio-inline{
+	padding-right: 0;
+}
+.correctinputcheckbox .card-item-collapse-1-comp .bottom-cont .input-radio-items-1 .radio-inline label{
+	padding-right: 0;
+}
 /* 170428 */
 .radio-inline label {
-	width: 100%;
+	/*width: 100%;*/
+	width: auto;
 }
 /* 170428 end */
 

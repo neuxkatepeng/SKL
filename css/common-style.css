@@ -1665,8 +1665,6 @@ ul.subtab-sty-white li.active a span{
 }
 
 
-
-
 .input-radio-items-1{
 	font-size: 0;
 }
@@ -1687,6 +1685,7 @@ ul.subtab-sty-white li.active a span{
 	padding-right: 12px;
 	margin-bottom: 0;
 	position: absolute;
+	z-index: 10
 }
 .input-radio-items-1 .radio-inline label span.cusradio-sty{
 	width: 24px;
@@ -1977,6 +1976,7 @@ ul.subtab-sty-white li.active a span{
 	margin-bottom: 0;
 	position: absolute;
 	/*width: 100%;*/
+	z-index: 50;
 }
 .input-check-items-two-1 .check-input label span.cusradio-sty{
 	width: 24px;
@@ -6920,6 +6920,100 @@ ul.ul-li-in-table li{
 
 }
 
+.fixinputcheck .radio-inline{
+	display: inline-block;
+    vertical-align: top;
+    padding-right: 12px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 0;
+}
+.fixinputcheck .radio-inline label{
+    position: relative !important;
+    font-weight: 500;
+    margin-left: 36px;
+    width: auto;
+    line-height: 24px;
+    font-size: 15px;
+    padding-right: 0;
+}
+.fixinputcheck .radio-inline label span.cusradio-sty{
+	margin-right: 12px;
+	position: absolute !important;
+	top: 0px;
+	left: -36px;
+}
+.fixinputcheck .check-input{
+	display: inline-block;
+    vertical-align: top;
+    padding-right: 12px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 0;
+}
+.fixinputcheck .check-input label{
+    position: relative !important;
+    font-weight: 500;
+    margin-left: 36px;
+    width: auto;
+    line-height: 24px;
+    font-size: 15px;
+    padding-right: 0;
+}
+.fixinputcheck .check-input label span.cusradio-sty{
+	margin-right: 12px;
+	position: absolute !important;
+	top: 0px;
+	left: -36px;
+}
+.fixinputcheck .check-input .check-input-custxtinput{
+	display: inline-block;
+}
+.fixinputcheck .check-input .check-input-custxtinput input{
+	margin-left: 0;
+	border: 1px solid #ddd !important; 
+}
+.fixinputcheck .input-line-comp .input-radio-items-two-1 .radio-inline{
+	margin-right: 0;
+}
+.fixinputcheck .input-line-comp .input-radio-items-two-1 .radio-inline label{
+	height: auto !important;
+	vertical-align: middle !important;
+	padding-left: 36px !important;
+	padding-right: 0;
+}
+.fixinputcheck .input-line-comp .input-radio-items-two-1 .radio-inline label span.cusradio-sty{
+	bottom: 0;
+	margin:auto;
+	left: 0;
+}
+.fixinputcheck .input-line-comp .input-radio-items-two-1 .radio-inline label span.cusradio-sty:before{
+	content: '';
+	width: 0;
+	height: 100%;
+}
+.fixinputcheck .check-two-line-comp .input-check-items-two-1 .check-input label{
+	height: auto !important;
+	vertical-align: middle !important;
+	padding-left: 36px !important;
+	padding-right: 0;
+}
+.fixinputcheck .check-two-line-comp .input-check-items-two-1 .check-input label span.cusradio-sty{
+	bottom: 0;
+	margin:auto;
+	left: 0;
+}
+.fixinputcheck .check-two-line-comp .input-check-items-two-1 .check-input label span.cusradio-sty:before{
+	content: '';
+	width: 0;
+	height: 100%;
+}
 
 .search-date-input-comp .search-date-input{
 	position: relative; 
