@@ -80,7 +80,7 @@
 											<div class="check-two-line-comp padding-left12 padding-top13 padding-bottom50">
 												<ul class="ul-li-item">
 													<li class="li-items left">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-1" value="">
@@ -91,7 +91,7 @@
 														<p class="colorred h6txt font-weight800 padding-top5"></p>
 													</li>
 													<li class="li-items right">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-2" value="">
@@ -104,7 +104,7 @@
 												</ul>
 												<ul class="ul-li-item">
 													<li class="li-items left">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-3" value="">
@@ -115,7 +115,7 @@
 														<p class="colorred h6txt font-weight800 padding-top5"></p>
 													</li>
 													<li class="li-items right">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-4" value="">
@@ -128,7 +128,7 @@
 												</ul>
 												<ul class="ul-li-item">
 													<li class="li-items left">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-5" value="">
@@ -139,7 +139,7 @@
 														<p class="colorred h6txt font-weight800 padding-top5"></p>
 													</li>
 													<li class="li-items right">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-6" value="">
@@ -634,6 +634,14 @@ w3IncludeHTML(function(){
 // 	$('#myModal').modal('toggle');
 // });
 
+$('.checkitem-active, .checkitem-active label').on('click', function(ev){
+	ev.stopPropagation();
+
+	var ele = $(this);
+	if( ele.hasClass('checkitem-active') ){
+		ele.find('label').trigger('click');
+	}
+});
 
 $(function(){
 	$('.dropdown-toggle').dropdown();

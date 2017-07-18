@@ -1431,6 +1431,7 @@ ul.dtr-details .dtr-data {
     max-width: 100px;
     position: absolute;
     left: 0;
+    width: 100px;
 }
 .control-invest-insu-paper-trans .cashdetail-selectfilter .selectfilter-block .cashdetail-filter .currency-filter {
     width: auto;
@@ -1804,6 +1805,8 @@ ul.dtr-details .dtr-data {
 }
 .itemdetail-tagcard.noicon-sty .tagcard-inside .tagcard-inside-up .tag p{
 	font-size: 16px;
+	display: inline-block;
+	margin-right: 5px;
 }
 .control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items{
 	padding: 0 0px;
@@ -3514,12 +3517,17 @@ ul.dtr-details .dtr-data {
 }
 .correctinputcheckbox .input-line-comp .input-radio-items-two-1 .radio-inline{
 	margin-right: 0;
+	font-size: 0;
+    width: 100%;
 }
 .correctinputcheckbox .input-line-comp .input-radio-items-two-1 .radio-inline label{
-	height: auto !important;
+	/*height: auto !important;*/
 	vertical-align: middle !important;
 	padding-left: 36px !important;
 	padding-right: 0;
+	width: 100%;
+	height: 100%;
+    line-height: 60px;
 }
 .correctinputcheckbox .input-line-comp .input-radio-items-two-1 .radio-inline label span.cusradio-sty{
 	bottom: 0;
@@ -3661,10 +3669,49 @@ ul.dtr-details .dtr-data {
 .correctinputcheckbox .card-item-collapse-1-comp .bottom-cont .input-radio-items-1 .radio-inline label{
 	padding-right: 0;
 }
+
+.control-housing-secured-loan-interest-list table .input-check-items-two-1 .check-input{
+	margin-right: 0;
+	padding-right: 0;
+	margin-bottom: 0;
+}
+.control-housing-secured-loan-interest-list table .input-check-items-two-1 .check-input label{
+	position: relative;
+	padding-right: 0;
+}
+
+.control-loan-information-inquiries-allblock .itemdetail-tagcard.noicon-sty .tagcard-inside .tagcard-inside-up .tag {
+    padding: 8px 13px 8px 13px;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.control-loan-information-inquiries-allblock .control-tagcard-inside-items-block-2 .tagcard-inside-items .ul-items .ul-li-items .itemsLR .right {
+	    width: 63%;
+	    padding-left: 0px;
+	    text-align: left;
+	}
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.control-housing-secured-loan-interest-list .twobtn-1{
+		padding-top: 15px;
+	}
+	.control-loan-information-inquiries-allblock .titledescr{
+		padding-bottom: 0;
+	}
+	.control-insurance-health-services-allblock .titledescr{
+		padding-bottom: 0;
+	}
+
+}
+
+.control-loan-information-inquiries-allblock .totalmoney{
+	text-align: right;
+}
+
+
 /* 170428 */
 .radio-inline label {
-	/*width: 100%;*/
-	width: auto;
+	width: 100%;
+	/*width: auto;*/
 }
 /* 170428 end */
 

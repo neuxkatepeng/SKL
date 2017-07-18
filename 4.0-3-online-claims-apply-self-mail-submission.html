@@ -80,7 +80,7 @@
 											<div class="check-two-line-comp padding-left12 padding-top13 padding-bottom50">
 												<ul class="ul-li-item">
 													<li class="li-items left">
-														<div class="li-items-in active">
+														<div class="li-items-in active checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-1" value="" checked="">
@@ -91,7 +91,7 @@
 														<p class="colorred h6txt font-weight800 padding-top5">此申請項目所需文件較複雜，建議洽業務人員或臨櫃辦理，以減少後續連繫補件時間。</p>
 													</li>
 													<li class="li-items right">
-														<div class="li-items-in active">
+														<div class="li-items-in active checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-2" value="" checked="">
@@ -104,7 +104,7 @@
 												</ul>
 												<ul class="ul-li-item">
 													<li class="li-items left">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-3" value="">
@@ -115,7 +115,7 @@
 														<p class="colorred h6txt font-weight800 padding-top5"></p>
 													</li>
 													<li class="li-items right">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-4" value="">
@@ -128,7 +128,7 @@
 												</ul>
 												<ul class="ul-li-item">
 													<li class="li-items left">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-5" value="">
@@ -139,7 +139,7 @@
 														<p class="colorred h6txt font-weight800 padding-top5"></p>
 													</li>
 													<li class="li-items right">
-														<div class="li-items-in active">
+														<div class="li-items-in active checkitem-active">
 															<div class="input-check-items-two-1">
 																<div class="check-input">
 																	<input type="checkbox" name="apply-items" id="check-inlineRadio-6" value="" checked="">
@@ -160,7 +160,7 @@
 											<div class="input-line-comp padding-left12 padding-top13">
 												<ul class="ul-li-item margin-bottom20">
 													<li class="li-items">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-radio-items-two-1">
 																<div class="radio-inline">
 																	<input type="radio" name="national" id="login-inlineRadio-1" value="dos-option">
@@ -170,7 +170,7 @@
 														</div>
 													</li>
 													<li class="li-items">
-														<div class="li-items-in active">
+														<div class="li-items-in active checkitem-active">
 															<div class="input-radio-items-two-1">
 																<div class="radio-inline">
 																	<input type="radio" name="national" id="login-inlineRadio-2" value="dos-option" checked="">
@@ -180,7 +180,7 @@
 														</div>
 													</li>
 													<li class="li-items">
-														<div class="li-items-in">
+														<div class="li-items-in checkitem-active">
 															<div class="input-radio-items-two-1">
 																<div class="radio-inline">
 																	<input type="radio" name="national" id="login-inlineRadio-3" value="dos-option">
@@ -614,6 +614,14 @@ w3IncludeHTML(function(){
 // 	$('#myModal').modal('toggle');
 // });
 
+$('.checkitem-active, .checkitem-active label').on('click', function(ev){
+	ev.stopPropagation();
+
+	var ele = $(this);
+	if( ele.hasClass('checkitem-active') ){
+		ele.find('label').trigger('click');
+	}
+});
 
 $(function(){
 	$('.dropdown-toggle').dropdown();
