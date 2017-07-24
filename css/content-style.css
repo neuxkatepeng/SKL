@@ -3750,3 +3750,6 @@ ul.dtr-details .dtr-data {
 .tab-content .table-small-hide .table-small-hide-inside table.display{
 	opacity: 0;
 }
+.modal .table-small-hide .table-small-hide-inside table.display{
+	opacity: 0;
+}

@@ -570,7 +570,10 @@ var GardenUtils = {
 
                         $(target).find('.owl-nav').addClass('disabled');
                         // $(target).find('.owl-dots').addClass('disabled');
-                        $(target).find('.owl-dots').addClass('hidden');
+                        if(options.page.isDisable){
+                            $(target).find('.owl-dots').addClass('hidden');
+                        }
+                        
 
                         if( target.find('.ga-slider-prev').length > 0 ){
                             target.find('.ga-slider-prev').remove();
@@ -614,7 +617,8 @@ var GardenUtils = {
                             }
                         });
 
-                    } else {
+                    } 
+                    if( !options.page.isDisable ){
                         $(target).find('.owl-dots').addClass( options.page.containerClass );
                     
                         $(target).find('.owl-dot').each(function(i){
@@ -645,14 +649,20 @@ var GardenUtils = {
                     if( !options.navigation.isDisable ){
                         $(target).find('.owl-nav').addClass('disabled');
                         // $(target).find('.owl-dots').addClass('disabled');
-                        $(target).find('.owl-dots').addClass('hidden');
-                    } else if ($(window).width() < options.page.disableResponsive) {
+                        if( options.page.isDisable ){
+                            $(target).find('.owl-dots').addClass('hidden');
+                        }
+                    }
+
+                    if( !options.page.isDisable ){
+                        $(target).find('.owl-dots').removeClass('hidden');
+                    }
+                    
+                    if ($(window).width() < options.page.disableResponsive) {
                         $(target).find(".owl-controls").hide();
                         $(target).find('.owl-nav').addClass('disabled');
                         // $(target).find('.owl-dots').addClass('disabled');
                         $(target).find('.owl-dots').addClass('hidden');
-                    } else {
-                        $(target).find('.owl-dots').removeClass('hidden');
                     }
                 });
 
@@ -2011,7 +2021,7 @@ var GardenUtils = {
                         // collapseBtn.trigger('click');
                     }
                     collapseBtn.addClass('hidden');
-                } else if(hiddenLen > 0) {
+                } else if(target.is(':visible') && hiddenLen > 0) {
                     collapseBtn.removeClass('hidden');                    
                 } else {
                     collapseBtn.addClass('hidden');
