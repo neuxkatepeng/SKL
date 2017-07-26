@@ -3576,6 +3576,7 @@ ul.dtr-details .dtr-data {
 	vertical-align: middle !important;
 	padding-left: 36px !important;
 	padding-right: 0;
+	width: auto;
 }
 .correctinputcheckbox .check-two-line-comp .input-check-items-two-1 .check-input label span.cusradio-sty{
 	bottom: 0;

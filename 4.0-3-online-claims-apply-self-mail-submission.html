@@ -614,7 +614,8 @@ w3IncludeHTML(function(){
 // 	$('#myModal').modal('toggle');
 // });
 
-$('.checkitem-active, .checkitem-active label').on('click', function(ev){
+$('.checkitem-active, .checkitem-active label,'
+	+' .checkitem-active input').on('click', function(ev){
 	ev.stopPropagation();
 
 	var ele = $(this);
