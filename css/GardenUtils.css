@@ -628,44 +628,49 @@ tr.parent td.details-control {
 
 /* fade in fade out */
 .fadeOut {
-    display: none;
 
     -webkit-animation: fadeOut 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeOut 2s; /* Firefox < 16 */
         -ms-animation: fadeOut 2s; /* Internet Explorer */
          -o-animation: fadeOut 2s; /* Opera < 12.1 */
             animation: fadeOut 2s;
+
+    /*display: none;*/
+    visibility: hidden;
+}
+
+.fadeOut.hidden {
+    display: none;
 }
 
 @keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { visibility: visible; opacity: 1; }
+    to   { visibility: hidden; opacity: 0; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { visibility: visible; opacity: 1; }
+    to   { visibility: hidden; opacity: 0; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { visibility: visible; opacity: 1; }
+    to   { visibility: hidden; opacity: 0; }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { visibility: visible; opacity: 1; }
+    to   { visibility: hidden; opacity: 0; }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { visibility: visible; opacity: 1; }
+    to   { visibility: hidden; opacity: 0; }
 }
-
 
 /* number bar */
 .ga-number-bar-container {

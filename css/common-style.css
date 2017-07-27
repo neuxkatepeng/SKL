@@ -8176,6 +8176,15 @@ span.bold{
 	}
 }
 
+.table-width3{
+	width: 3% !important;
+}
+.table-width4{
+	width: 4% !important;
+}
+.table-width5{
+	width: 5% !important;
+}
 @media only screen and (min-width: 768px) {
 	.table-width3{
 		width: 3% !important;

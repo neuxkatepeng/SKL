@@ -1914,6 +1914,7 @@ var GardenUtils = {
                     $('<div class="progressOutText">'+options.val+'%</div>').appendTo(target);
                 }
                 else {
+                    target.find('.progressText').css('color', 'rgba(0,0,0,0)');
                 }
             }
             else if(type=='ring'){
@@ -5216,7 +5217,7 @@ var GardenUtils = {
                     var ele = reConf.target;
                     var clone_class = 'collapseClone';
                     var clone = ele.clone()
-                        .css({'position':'absolute','visibility':'hidden','height':'auto'})
+                        .css({/*'position':'absolute',*/'visibility':'hidden','height':'auto'})
                         .addClass(clone_class)
                         .appendTo( ele.parent() );
 
