@@ -3740,7 +3740,189 @@ ul.dtr-details .dtr-data {
 	text-align: right;
 }
 
+.control-interest-on-borrowing-tab-in .input-2col-comp .left{
+	width: 50%;
+}
+.control-interest-on-borrowing-tab-in .input-2col-comp .right{
+	width:50%;
+	padding-left: 0;
+}
 
+.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-left{
+	width: 113px;
+}
+.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-right{
+	width: 295px;
+}
+.control-interest-on-borrowing-tab-in .input-2col-comp .right .sub-left{
+	width: 113px;
+}
+.control-interest-on-borrowing-tab-in .input-2col-comp .right .sub-right{
+	width: 295px;
+}
+.control-interest-on-borrowing-tab-in .search-date-input-comp .search-date-input{
+	width: 255px;
+}
+.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-right .cusinput1{
+	display: inline-block;
+	vertical-align: top;
+	width: 255px;
+}
+.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-right .cusp1{
+	display: inline-block;
+	vertical-align: top;
+}
+.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-right .cusp1{
+	padding-top: 5px;
+	margin-bottom: 0;
+}
+.control-interest-on-borrowing-tab-in .itemdetail-tagcard.noicon-sty{
+	margin-bottom: 50px;
+}
+.control-interest-on-borrowing-tab-in .itemdetail-tagcard.noicon-sty .tagcard-inside .tagcard-inside-up .tag{
+	padding: 8px 30px 8px 30px;
+}
+.control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items .ul-li-items .itemsLR .left{
+	width: 46%;
+	vertical-align: bottom;
+}
+.control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items .ul-li-items .itemsLR .right{
+	width: 54%;
+	vertical-align: bottom;
+}
+.control-interest-on-borrowing-tab-in .adjust-input-2col-comp .left {
+	width: 100%;
+}
+.control-interest-on-borrowing-tab-in .adjust-input-2col-comp .left .sub-right{
+	width: 420px;
+}
+.control-interest-on-borrowing-tab-in .adjust-input-2col-comp .left .sub-right .search-date-input{
+	width: 100%;
+}
+@media only screen and (max-width: 1024px) and (min-width: 320px){
+	.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-right{
+		width: 218px;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp .right .sub-right{
+		width: 218px;
+	}
+	.control-interest-on-borrowing-tab-in .search-date-input-comp .search-date-input{
+		width: 180px;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-right .cusinput1{
+		width: 180px;
+	}
+	.control-interest-on-borrowing-tab-in .adjust-input-2col-comp .left .sub-right{
+		width: 336px;
+	}
+	.control-interest-on-borrowing-tab-in .adjust-input-2col-comp .left .sub-right .search-date-input{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.control-interest-on-borrowing-tab-in .input-2col-comp .left{
+		width: 100%;
+		margin-right: 10px;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp .right{
+		width: 100%;
+		margin-right: 10px;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp .left .search-date-input-comp{
+		margin-right: 10px;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp .right .search-date-input-comp{
+		margin-right: 10px;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp.padtop5 .left .sub-left{
+		width: 100%;
+		padding-left: 0;
+		text-align: left;
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp.padtop5 .right .sub-left{
+		width: 100%;
+		padding-left: 0;
+		text-align: left;
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-right{
+		width: 100%;
+		padding-left: 0;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp .right .sub-right{
+		width: 100%;
+		padding-left: 0;
+	}
+	
+	.control-interest-on-borrowing-tab-in .search-date-input-comp .search-date-input{
+		width: 100%;
+	}
+	.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-right .cusinput1{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.control-interest-on-borrowing-tab-in .input-2col-comp .left .sub-right .cusp1{
+		padding-top: 10px;
+	}
+	.control-interest-on-borrowing-tab-in .tagcard-inside-total .tagcard-inside-total-LR .total-LR{
+		width: auto;
+	}
+}
+
+.check-or-cancel-transaction-step2 .setmemberpasswordinputblock{
+	margin-bottom: 50px;
+}
+.check-or-cancel-transaction-step2 .setmemberpasswordinputblock .Left{
+	width: 41%;
+}
+.check-or-cancel-transaction-step2 .setmemberpasswordinputblock .Right{
+	width: 59%;
+}
+@media only screen and (max-width: 1024px) and (min-width: 320px){
+	.check-or-cancel-transaction-step2 .setmemberpasswordinputblock .Left{
+		width: 52%;
+	}
+	.check-or-cancel-transaction-step2 .setmemberpasswordinputblock .Right{
+		width: 48%;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.check-or-cancel-transaction-step2 .setmemberpasswordinputblock .Left{
+		width: 100%;
+	}
+	.check-or-cancel-transaction-step2 .setmemberpasswordinputblock .Right{
+		width: 100%;
+	}
+}
+
+.check-or-cancel-transaction-step3 .insu-service-finish-checkitem1{
+	margin: 0 64px;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.check-or-cancel-transaction-step3 .insu-service-finish-checkitem1{
+		margin: 0 20px;
+	}
+}
+.check-or-cancel-transaction-step3 .oltxt-right-btn-comp{
+	box-shadow: 4px 0 4px 0 rgba(0, 0, 0, 0.21);
+}
+.check-or-cancel-transaction-step3 .title-ol-list li{
+	list-style: disc;
+	margin-bottom: 10px;
+}
+
+.check-or-cancel-transaction-step3 .title-ol-list li:last-child{
+	margin-bottom: 0;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.check-or-cancel-transaction-step3 .title-ol-list{
+		padding-left: 20px;
+	}
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;
@@ -3753,4 +3935,11 @@ ul.dtr-details .dtr-data {
 }
 .modal .table-small-hide .table-small-hide-inside table.display{
 	opacity: 0;
+}
+table .input-radio-items-two-1 .radio-inline{
+	margin-right: 0;
+}
+table .fixinputcheck .radio-inline label span.cusradio-sty{
+	margin-right: 0;
+	left: -30px;
 }

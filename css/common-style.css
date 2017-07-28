@@ -7567,6 +7567,7 @@ ul.ul-li-in-table li{
 .search-date-input-comp .search-date-input a img{
 	width: 21px;
 	height: 21px;
+	vertical-align: top;
 }
 .search-date-input-comp .search-date-input:after{
 	content: '';
@@ -7669,6 +7670,10 @@ p.cuspstyle{
   	font-weight: 800;
   	color: #000;
   	color: #000;
+}
+
+.boxshadow-sty-1{
+	box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
 .h1txt{

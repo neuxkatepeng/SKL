@@ -3170,6 +3170,7 @@
 			</div>
 	<!-- Modal-attention-sty1-4-注意事項 -->
 
+
 	<!-- Modal-attention-sty1-5-貼心提醒 -->
 			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal-attention-sty1-5">
 			  貼心提醒
@@ -3227,6 +3228,77 @@
 			  </div>
 			</div>
 	<!-- Modal-attention-sty1-5-貼心提醒 -->
+
+
+	<!-- Modal-attention-sty1-6-注意事項 -->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal-attention-sty1-6">
+			  注意事項
+			</button>
+
+			<div class="modal fade model-style-2" id="Modal-attention-sty1-6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        		<span aria-hidden="true"><img src="img/gray-x.png"></span>
+			        	</button>
+			        	<div class="index-title margin-bottom0 font-weight800">
+							<p>注意事項</p>
+							<span class="red-line"></span>
+						</div>
+			      </div>
+			      <div class="modal-body">
+			      		<div class="modal-mar-18-18-10">
+							<p class="title">匯款時間</p>
+							<div class="modal-table-1">
+								<div class="table-small-hide">
+									<div class="table-small-hide-inside">
+										<table id="table-small-hide-99999" class="display" cellspacing="0" width="100%">
+									        <thead>
+									            <tr>
+									                <th>約定帳戶</th>
+									                <th>預約申請時間</th>
+									                <th>核定時間</th>
+									                <th>預計匯款時間</th>
+									                <th>可取消交易時間</th>
+									            </tr>
+									        </thead>
+									        <tbody>
+									            <tr>
+									                <td class="text-align-center">銀行</td>
+									                <td>營業日當日12:30（含）前</td>
+									                <td>當日13:00</td>
+									                <td>當日匯入約定帳戶</td>
+									                <td>當日13:00前</td>
+									            </tr>
+									            <tr>
+									                <td class="text-align-center">銀行</td>
+									                <td>營業日當日12:30後</td>
+									                <td>當日13:00</td>
+									                <td>次一營業日匯入約定帳戶</td>
+									                <td>當日22:00前</td>
+									            </tr>
+									            <tr>
+									                <td class="text-align-center">郵局</td>
+									                <td>營業日當日</td>
+									                <td>當日13:00</td>
+									                <td>次一營業日匯入約定帳戶</td>
+									                <td>當日22:00前</td>
+									            </tr>
+									        </tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+				        </div>
+			      </div>
+			      <div class="modal-footer text-align-center">
+			        	<button type="button" class="Modal-cancel-fav-btn bgwhite colorblack" data-dismiss="modal" aria-label="Close">確認</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	<!-- Modal-attention-sty1-6-注意事項 -->
 
 
 	<!-- Modal-unprepare-2-列印繳款通知書 -->
@@ -3384,7 +3456,9 @@ GardenUtils.plugin.tableCollapse({
     target: $('#table-small-hide-2')
 });
 
-
+GardenUtils.plugin.tableCollapse({
+    target: $('#table-small-hide-99999')
+});
 w3IncludeHTML(function(){
 
 	GardenUtils.plugin.mobileMenu({
@@ -3516,7 +3590,20 @@ $('.model-style-1').on('shown.bs.modal', function (e) {
 
   	if( tables.length > 0 ){
   		tables.each(function(){
-  			$(this).trigger('resize');
+  			//$(this).trigger('resize');
+  			var table_w = $(this).width();
+  			var content_w = $(this).parents().width();
+  			var th_w = 0;
+  			$(this).find('th').each(function(){
+  				if( $(this).is(':visible') ){
+  					th_w += $(this).width();
+  				}
+  			});
+  			// if( table_w != th_w ){
+  			// if( content_w != th_w ){
+  			if( content_w < th_w ){
+  				$(this).trigger('resize');
+  			}
   		});
   	}
 });
@@ -3529,7 +3616,20 @@ $('.model-style-2').on('shown.bs.modal', function (e) {
 
   	if( tables.length > 0 ){
   		tables.each(function(){
-  			$(this).trigger('resize');
+  			//$(this).trigger('resize');
+  			var table_w = $(this).width();
+  			var content_w = $(this).parents().width();
+  			var th_w = 0;
+  			$(this).find('th').each(function(){
+  				if( $(this).is(':visible') ){
+  					th_w += $(this).width();
+  				}
+  			});
+  			// if( table_w != th_w ){
+  			// if( content_w != th_w ){
+  			if( content_w < th_w ){
+  				$(this).trigger('resize');
+  			}
   		});
   	}
 });
@@ -3542,7 +3642,20 @@ $('.model-style-3').on('shown.bs.modal', function (e) {
 
   	if( tables.length > 0 ){
   		tables.each(function(){
-  			$(this).trigger('resize');
+  			//$(this).trigger('resize');
+  			var table_w = $(this).width();
+  			var content_w = $(this).parents().width();
+  			var th_w = 0;
+  			$(this).find('th').each(function(){
+  				if( $(this).is(':visible') ){
+  					th_w += $(this).width();
+  				}
+  			});
+  			// if( table_w != th_w ){
+  			// if( content_w != th_w ){
+  			if( content_w < th_w ){
+  				$(this).trigger('resize');
+  			}
   		});
   	}
 });
