@@ -3923,6 +3923,178 @@ ul.dtr-details .dtr-data {
 		padding-left: 20px;
 	}
 }
+
+.Policy-loan-application-step1 .twobtn-1{
+	padding-bottom: 20px;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.Policy-loan-application-step1 .name-input-fill-block-1.nopaddingtop .fill-title-name{
+		width: auto;
+		margin-right: 12px;
+	}
+	.Policy-loan-application-step1 .name-input-fill-block-1 .fill-txt-input{
+		width: auto;
+	}
+}
+.Policy-loan-application-step2 table .input-check-items-two-1{
+	height: 21px;
+}
+.Policy-loan-application-step2 .destxt{
+	text-align: right;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.Policy-loan-application-step2 .destxt{
+		text-align: left;
+	}
+}
+.Policy-loan-application-step3 .twobtn-1{
+	padding-bottom: 15px;
+}
+.Policy-loan-application-step3 .title-ol-list-1{
+	margin-bottom: 0;
+}
+.Policy-loan-application-step3 .destxt{
+	text-align: right;
+}
+.Policy-loan-application-step3 .insu-service-finish-checkitem4 .titledescr{
+	padding-bottom: 0;
+}
+.Policy-loan-application-step3 .setmemberpasswordinputblock .Left{
+	width: 142px;
+}
+.Policy-loan-application-step3 .setmemberpasswordinputblock .Right{
+	width: 405px;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.Policy-loan-application-step3 .destxt{
+		text-align: left;
+	}
+	.Policy-loan-application-step3 .setmemberpasswordinputblock .Left{
+		width: 100%;
+	}
+	.Policy-loan-application-step3 .setmemberpasswordinputblock .Right{
+		width: 100%;
+	}
+}
+.Policy-loan-application-step4 .destxt{
+	text-align: right;
+}
+.Policy-loan-application-step4 .title-ol-list{
+	padding-left: 20px;
+}
+.Policy-loan-application-step4 .title-ol-list li{
+	list-style: disc;
+	margin-bottom: 10px;
+}
+.Policy-loan-application-step4 .oltxt-right-btn-comp{
+	margin: 0 66px;
+}
+@media only screen and (max-width: 768px) and (min-width: 320px){
+	.Policy-loan-application-step4 .oltxt-right-btn-comp{
+		margin: 0 10px;
+	}
+	.Policy-loan-application-step4 .insu-service-finish-checkitem4 .twobtn-1{
+		padding-bottom: 0;
+	}
+	.Policy-loan-application-step4 .insu-service-finish-checkitem4 .twobtn-1 a{
+		margin-bottom: 0;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.Policy-loan-application-step4 .destxt{
+		text-align: left;
+	}
+	.Policy-loan-application-step4 .insu-service-finish-checkitem4 .twobtn-1 a{
+		margin-bottom: 5px;
+	}
+}
+.control-Pay-their-own-payment-orders-1 .name-desc-nowidth .ul-li-items .li-items{
+	margin-bottom: 20px;
+}
+
+.control-interest-on-borrowing-tab-in .twobtn-1{
+	padding-top: 10px;
+}
+.control-interest-on-borrowing-tab-in .twobtn-1 a{
+	margin-top: 0px;
+}
+.control-Loan-record-inquiries .partrefundtaketransrecord-search-block .search-date .cols-1{
+	width: 80px;
+}
+.control-Loan-record-inquiries .partrefundtaketransrecord-search-block .search-date .cols-2{
+	width: 90%;
+}
+.control-overview-of-borrowings .tagcard-inside-items .ul-items .ul-li-items .itemsLR .left{
+	width: 48%;
+	vertical-align: bottom;
+}
+.control-overview-of-borrowings .tagcard-inside-items .ul-items .ul-li-items .itemsLR .left p{
+	line-height: 22px;
+}
+.control-overview-of-borrowings .tagcard-inside-items .ul-items .ul-li-items .itemsLR .right{
+	width: 52%;
+}
+.control-overview-of-borrowings .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .right-desc{
+	right: auto;
+	left: 156px;
+	width: 230px;
+}
+
+.control-interest-on-borrowing-tab-in .itemdetail-tagcard.noicon-sty .tagcard-inside .tagcard-inside-up .tag p{
+	font-size: 21px;
+	margin-right: 0;
+}
+.control-overview-of-borrowings .tagcard-inside-items .ul-items .ul-li-items .itemsLR{
+	margin: 0 6px 0 6px;
+}
+@media only screen and (max-width: 768px) and (min-width: 320px){
+	
+}
+.control-overview-of-borrowings .tagcard-inside-items .ul-items:last-child .ul-li-items .itemsLR{
+	border-bottom: 2px solid #d6d6d6;
+}
+@media only screen and (max-width: 1024px) and (min-width: 320px){
+	.control-Loan-record-inquiries .partrefundtaketransrecord-search-block .search-date .cols-2{
+		width: 87%;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+	.control-Loan-record-inquiries .partrefundtaketransrecord-search-block .search-date .cols-2{
+		width: 100%;
+	}
+	.control-interest-on-borrowing-tab-in .itemdetail-tagcard{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items .ul-li-items .itemsLR{
+		margin: 0 50px 0 50px;
+	}
+	.control-interest-on-borrowing-tab-in .control-tagcard-inside-items-block .tagcard-inside-total{
+		margin: 0 50px;
+	}
+	.control-overview-of-borrowings .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .right-desc{
+		position: relative;
+		left: 0;
+		width: auto;
+		padding-left: 36px;
+		padding-right: 36px;
+	}
+	.control-overview-of-borrowings .tagcard-inside-items{
+		margin: 0 30px;
+	}
+	.control-overview-of-borrowings .tagcard-inside-items .ul-items:first-child .ul-li-items:first-child .itemsLR:first-child{
+		padding-top: 0px;
+	}
+
+}
+@media only screen and (max-width: 355px) and (min-width: 320px){
+	.control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items .ul-li-items .itemsLR{
+		margin: 0 30px 0 30px;
+	}
+	.control-interest-on-borrowing-tab-in .control-tagcard-inside-items-block .tagcard-inside-total{
+		margin: 0 30px;
+	}
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;
