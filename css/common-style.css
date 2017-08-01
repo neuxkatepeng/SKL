@@ -8035,7 +8035,7 @@ span.bold{
 	color: #e2231a !important;
 }
 .colororange{
-	color: #e4851e !important;
+	color: #f15f00 !important;
 }
 .colororangelight{
 	color: #f15f00 !important;
@@ -8273,6 +8273,27 @@ span.bold{
 	}
 	.table-width12{
 		width: 12% !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.each-table-1 ul.table-single-display li.table-width3{
+		width: 100% !important;
+	}
+	.each-table-1 ul.table-single-display li.table-width4{
+		width: 100% !important;
+	}
+	.each-table-1 ul.table-single-display li.table-width5{
+		width: 100% !important;
+	}
+	.each-table-1 ul.table-single-display li.table-width8{
+		width: 100% !important;
+	}
+	.each-table-1 ul.table-single-display li.table-width10{
+		width: 100% !important;
+	}
+	.each-table-1 ul.table-single-display li.table-width12{
+		width: 100% !important;
 	}
 }
 /*****************************************************************************************/

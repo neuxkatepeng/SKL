@@ -4095,6 +4095,43 @@ ul.dtr-details .dtr-data {
 		margin: 0 30px;
 	}
 }
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.cus-input-belowtable-1-comp.correctinputcheckbox .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show{
+		bottom: -60px;
+	    right: auto;
+	    left: -195px;
+	    width: 320px;
+	}
+	.cus-input-belowtable-1-comp.correctinputcheckbox .putcont .input-radio-items-1 .radio-inline label{
+		padding-right: 0;
+	}
+	.cus-input-belowtable-1-comp.correctinputcheckbox .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show .partradio-input{
+		max-width: 250px;
+	}
+	.cus-input-belowtable-2-comp.correctinputcheckbox .putcont .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show{
+		width: 74%;
+	}
+	.cus-input-belowtable-2-comp.correctinputcheckbox .putcont .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input{
+		width: 72%;
+	}
+}
+@media only screen and (max-width: 355px) and (min-width: 320px){
+	.cus-input-belowtable-1-comp.correctinputcheckbox .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show{
+	    width: 280px;
+	}
+	.cus-input-belowtable-1-comp.correctinputcheckbox .putcont .input-radio-items-1 .radio-inline.cusradio-sty .control-partradio-show .partradio-input{
+		max-width: 200px;
+	}
+	.cus-input-belowtable-2-comp.correctinputcheckbox .putcont .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show{
+		width: 70%;
+	}
+	.cus-input-belowtable-2-comp.correctinputcheckbox .putcont .input-radio-items-1 .cus-input-belowtable-2-radio-inline .radio-inline .control-partradio-show .partradio-input{
+		width: 68%;
+	}
+}
+ .input-radio-items-1 .cus-input-belowtable-2-radio-inline.fixinputcheck .radio-inline .control-partradio-show{
+	vertical-align: top;
+}
 /* 170428 */
 .radio-inline label {
 	width: 100%;
