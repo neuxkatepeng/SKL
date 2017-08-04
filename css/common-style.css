@@ -906,6 +906,9 @@ ul.subtab-sty-white li.active a span{
 	padding: 0;
 	width: auto;
 }
+.twobtn-1 .input-check-items-two-1.fixinputcheck a:hover{
+	text-decoration: underline;
+}
 .twobtn-1 .input-check-items-two-1.fixinputcheck p{
 	margin-left: 0;
 }

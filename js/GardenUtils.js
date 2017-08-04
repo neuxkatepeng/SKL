@@ -1996,8 +1996,10 @@ var GardenUtils = {
                 var openIndex = open_conf.openIndex;
                 var collapseBtn = open_conf.collapseBtn;
 
-                if( !collapseBtn.eq(1).parent().hasClass('parent') 
-                    && !collapseBtn.eq(1).hasClass('hidden') ){
+                console.log('openTabelWithIndex', openIndex, collapseBtn.eq(1));
+
+                if( !collapseBtn.eq(1).parent().hasClass('parent') ){
+                    // && !collapseBtn.eq(1).hasClass('hidden') ){
                     if( openIndex == -1 ){
                         collapseBtn.trigger('click');
                     } else if( openIndex > -1 ){
@@ -2008,7 +2010,7 @@ var GardenUtils = {
                 setTimeout(function(){
                     target.css('opacity','1');
                 }, 500);
-            } // end openTabelWithIndex function            
+            } // end openTabelWithIndex function           
             
             function controlDetail() {
                 target.css('opacity', '0');

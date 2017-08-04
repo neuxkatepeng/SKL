@@ -289,18 +289,19 @@ ul.dtr-details li {
 ul.dtr-details .dtr-title {
     width: 39%;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 0;
     border-right: 1px solid #d6d6d6;
     background-color: #f2f2f8;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    font-weight: 800;
 }
 ul.dtr-details .dtr-data {
     width: 60%;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     padding: 10px 0;
     text-align: center;
     display: table-cell;
@@ -1376,6 +1377,7 @@ ul.dtr-details .dtr-data {
 	}
 	.systemmessege-cont .items .right{
 		padding-left: 104px;
+		word-break: break-all;
 	}
 }
 @media only screen and (min-width: 320px) and (max-width:345px) {
@@ -1669,6 +1671,9 @@ ul.dtr-details .dtr-data {
 
 .control-insu-paper-detail-tabs-cont-top{
 
+}
+.control-insu-paper-detail-tabs-cont-top .tagcard-inside-items .ul-items .ul-li-items .itemsLR {
+    margin: 0 15px;
 }
 .control-insu-paper-detail-tabs-cont-top .tagcard-inside-items .ul-items:first-child .ul-li-items .itemsLR {
     border-bottom: 2px solid #d6d6d6;
@@ -3782,6 +3787,9 @@ ul.dtr-details .dtr-data {
 .control-interest-on-borrowing-tab-in .itemdetail-tagcard.noicon-sty .tagcard-inside .tagcard-inside-up .tag{
 	padding: 8px 30px 8px 30px;
 }
+.control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items .ul-li-items .itemsLR{
+	margin: 0 12px;
+}
 .control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items .ul-li-items .itemsLR .left{
 	width: 46%;
 	vertical-align: bottom;
@@ -4035,8 +4043,8 @@ ul.dtr-details .dtr-data {
 	width: 52%;
 }
 .control-overview-of-borrowings .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .right-desc{
-	right: auto;
-	left: 156px;
+	right: 122px;
+    top: 35px;
 	width: 230px;
 }
 
@@ -4047,7 +4055,11 @@ ul.dtr-details .dtr-data {
 .control-overview-of-borrowings .tagcard-inside-items .ul-items .ul-li-items .itemsLR{
 	margin: 0 6px 0 6px;
 }
+
 @media only screen and (max-width: 768px) and (min-width: 320px){
+	.control-interest-on-borrowing-tab-in .control-tagcard-inside-items-block .tagcard-inside-total{
+		margin: 0 25px;
+	}
 	
 }
 .control-overview-of-borrowings .tagcard-inside-items .ul-items:last-child .ul-li-items .itemsLR{
@@ -4059,6 +4071,12 @@ ul.dtr-details .dtr-data {
 	}
 }
 @media only screen and (max-width: 767px) and (min-width: 320px){
+	.control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items:last-child .ul-li-items .itemsLR{
+		border-bottom: 2px solid #d6d6d6;
+	}
+	.control-interest-on-borrowing-tab-in .control-tagcard-inside-items-block .tagcard-inside-total{
+		border-top: 0;
+	}
 	.control-Loan-record-inquiries .partrefundtaketransrecord-search-block .search-date .cols-2{
 		width: 100%;
 	}
@@ -4067,13 +4085,14 @@ ul.dtr-details .dtr-data {
 		padding-left: 0;
 	}
 	.control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items .ul-li-items .itemsLR{
-		margin: 0 50px 0 50px;
+		margin: 0 35px 0 35px;
 	}
 	.control-interest-on-borrowing-tab-in .control-tagcard-inside-items-block .tagcard-inside-total{
 		margin: 0 50px;
 	}
 	.control-overview-of-borrowings .itemdetail-tagcard .tagcard-inside .tagcard-inside-up .right-desc{
 		position: relative;
+		top: 0;
 		left: 0;
 		width: auto;
 		padding-left: 36px;
@@ -4085,7 +4104,18 @@ ul.dtr-details .dtr-data {
 	.control-overview-of-borrowings .tagcard-inside-items .ul-items:first-child .ul-li-items:first-child .itemsLR:first-child{
 		padding-top: 0px;
 	}
+	.control-overview-of-borrowings .itemdetail-tagcard .tagcard-inside .tagcard-inside-items .ul-items{
+	    padding: 0 0px;
+	}
 
+}
+@media only screen and (max-width: 374px) and (min-width: 320px){
+	.control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items .ul-li-items .itemsLR{
+		margin: 0 45px 0 45px;
+	}
+	.control-interest-on-borrowing-tab-in .control-tagcard-inside-items-block .tagcard-inside-total{
+		margin: 0 45px;
+	}
 }
 @media only screen and (max-width: 355px) and (min-width: 320px){
 	.control-interest-on-borrowing-tab-in .tagcard-inside-items .ul-items .ul-li-items .itemsLR{
