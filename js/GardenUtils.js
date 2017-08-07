@@ -245,8 +245,8 @@ var GardenUtils = {
                 minHeight: 0
             }, obj);
 
-            console.debug(obj);
-            console.debug('top = ' + $(obj.moveToObj).offset().top);
+            // console.debug(obj);
+            // console.debug('top = ' + $(obj.moveToObj).offset().top);
             $('html, body').animate({
                 'scrollTop': ($(obj.moveToObj).offset().top - obj.minHeight)
             }, 1000);
@@ -1972,7 +1972,7 @@ var GardenUtils = {
 
             target.find('thead > tr').prepend('<th class="details-control sorting_disabled hidden"></th>');
             target.find('tbody > tr:not(.child)').prepend('<td class=" details-control hidden"></td>');
-            
+
             var table = target.DataTable({
                 filter: false,
                 paging: false,
@@ -1981,14 +1981,22 @@ var GardenUtils = {
                 responsive: true
             });
 
+            target.addClass('ga-table-collapse');
+
         
             table.on( 'responsive-resize', function ( e, datatable, columns ) {
 
-                // console.log('responsive-resize');
+                // console.log('responsive-resize', datatable, columns);
 
-                controlDetail();
-
-                
+                var table_ele = $(this);
+                table_ele.css('opacity', '0');
+                if( table_ele.parents('.modal').length > 0 ){
+                    setTimeout(function(){
+                        controlDetail();
+                    }, 500);
+                } else {
+                    controlDetail();
+                }
             });
 
             function openTabelWithIndex(open_conf){
@@ -1996,7 +2004,7 @@ var GardenUtils = {
                 var openIndex = open_conf.openIndex;
                 var collapseBtn = open_conf.collapseBtn;
 
-                console.log('openTabelWithIndex', openIndex, collapseBtn.eq(1));
+                // console.log('openTabelWithIndex', openIndex, collapseBtn.eq(1));
 
                 if( !collapseBtn.eq(1).parent().hasClass('parent') ){
                     // && !collapseBtn.eq(1).hasClass('hidden') ){
@@ -2007,9 +2015,34 @@ var GardenUtils = {
                     }
                 }
 
-                setTimeout(function(){
-                    target.css('opacity','1');
-                }, 500);
+                var table_ele = collapseBtn.parents('table').first();
+                var content_w = table_ele.parents().width();
+                var th_w = 0, th_len = 0;
+                table_ele.find('th').each(function(){
+                    if( $(this).is(':visible') ){
+                        th_w += $(this).outerWidth();
+                        ++th_len;
+                    }
+                }); 
+
+                if( content_w < th_w ){
+                    $(this).trigger('resize');
+                } else {
+                    table_ele.find('td.child').each(function(){
+                        var colspan = $(this).attr('colspan');
+                        if( colspan != th_len ){
+                            $(this).attr('colspan', th_len);
+                        }
+                    });
+                    setTimeout(function(){
+                        target.css('opacity','1');
+                    }, 500);
+                }
+
+
+                // setTimeout(function(){
+                //     target.css('opacity','1');
+                // }, 500);
             } // end openTabelWithIndex function           
             
             function controlDetail() {

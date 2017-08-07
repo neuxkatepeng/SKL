@@ -872,35 +872,7 @@ $('#Modal-immediacontact .topbtn.topbtnstydot > a').click(function (ev) {
 });
 
 
-//請搜尋id table-small-hide-2 . table-small-hide-9 . table-small-hide-10 . table-small-hide-99999，對應pop-up內的表格
-GardenUtils.plugin.tableCollapse({
-    target: $('#table-small-hide-2'),
-    priority: [
-        { responsivePriority: 1, targets: 0 }],
-      hasCollapseBtn: true,
-    openIndex: 0
-});
-GardenUtils.plugin.tableCollapse({
-    target: $('#table-small-hide-9'),
-    priority: [
-        { responsivePriority: 1, targets: 0 }],
-      hasCollapseBtn: true,
-    openIndex: 0
-});
-GardenUtils.plugin.tableCollapse({
-    target: $('#table-small-hide-10'),
-    priority: [
-        { responsivePriority: 1, targets: 0 }],
-      hasCollapseBtn: true,
-    openIndex: 0
-});
-GardenUtils.plugin.tableCollapse({
-    target: $('#table-small-hide-99999'),
-    priority: [
-        { responsivePriority: 1, targets: 0 }],
-      hasCollapseBtn: true,
-    openIndex: 0
-});
+
 
 
 
@@ -936,29 +908,73 @@ $('.model-style-2').on('shown.bs.modal', function (e) {
 	var target = $(e.relatedTarget).attr('data-target');
 
 	var content_div = $(target).first();
-  	var tables = content_div.find('table.display');
 
-  	if( tables.length > 0 ){
-  		tables.each(function(){
-  			//$(this).trigger('resize');
-  			var table_w = $(this).width();
-  			var content_w = $(this).parents().width();
-  			var th_w = 0;
-  			$(this).find('th').each(function(){
-  				if( $(this).is(':visible') ){
-  					th_w += $(this).width();
-  				}
-  			});
-  			
-  			// if( table_w != th_w ){
-  			// if( content_w != th_w ){
-  			if( content_w < th_w ){
-  				$(this).trigger('resize');
-  			}
-  		});
-  	}
+	// 貼心提醒 popup 表格
+	if(content_div.find('#table-small-hide-2').length > 0
+	  && !$('#table-small-hide-2').hasClass('ga-table-collapse')){
+		GardenUtils.plugin.tableCollapse({
+		    target: $('#table-small-hide-2'),
+		    priority: [
+		        { responsivePriority: 1, targets: 0 }],
+		      hasCollapseBtn: true,
+		    openIndex: 0
+		});
+	} 
+	// 注意事項1: 保單借款金額限制 popup 表格
+	else if(content_div.find('#table-small-hide-9').length > 0
+	  && !$('#table-small-hide-9').hasClass('ga-table-collapse')){
+		GardenUtils.plugin.tableCollapse({
+		    target: $('#table-small-hide-9'),
+		    priority: [
+		        { responsivePriority: 1, targets: 0 }],
+		      hasCollapseBtn: true,
+		    openIndex: 0
+		});
+	} 
+	// 注意事項2: popup 表格
+	else if(content_div.find('#table-small-hide-99999').length > 0
+	  && !$('#table-small-hide-99999').hasClass('ga-table-collapse')){
+	 	GardenUtils.plugin.tableCollapse({
+		    target: $('#table-small-hide-99999'),
+		    priority: [
+		        { responsivePriority: 1, targets: 0 }],
+		      hasCollapseBtn: true,
+		    openIndex: 0
+		});
+	} 
+	// 注意事項3: popup 表格
+	else if(content_div.find('#table-small-hide-10').length > 0
+	  && !$('#table-small-hide-10').hasClass('ga-table-collapse')){
+		GardenUtils.plugin.tableCollapse({
+		    target: $('#table-small-hide-10'),
+		    priority: [
+		        { responsivePriority: 1, targets: 0 }],
+		      hasCollapseBtn: true,
+		    openIndex: 0
+		});
+	} 
+	// popup 表格，再次打開
+	else {
+		var tables = content_div.find('table.display');
+
+	  	if( tables.length > 0 ){
+	  		tables.each(function(){
+	  			var content_w = $(this).parents().width();
+	  			var th_w = 0;
+	  			$(this).find('th').each(function(){
+	  				if( $(this).is(':visible') ){
+	  					th_w += $(this).width();
+	  				}
+	  			});
+	  			
+	  			if( content_w < th_w ){
+	  				$(this).trigger('resize');
+	  			}
+	  		});
+	  	}
+	}
+	 
 });
-
 
 
 
