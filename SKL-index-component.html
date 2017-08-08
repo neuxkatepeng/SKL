@@ -2747,6 +2747,107 @@
 									</div>
 								</div>
 
+								<div class="component-border" id="component-table-5">
+									<div class="table-small-hide">
+										<div class="table-small-hide-inside">
+											<table id="table-small-hide-Plas2-1" class="display" cellspacing="0" width="100%">
+										        <thead>
+										            <tr>
+										            	<th>選取</th>
+										                <th>主約險種名稱</th>
+										                <th>最高可借淨額（1）</th>
+										                <th>已借本金（2）</th>
+										                <th>已借利息（3）</th>
+										                <th>尚可借金額<br>（4）＝（1）－（2）－（3）</th>
+										                <th>利率</th>
+										                <th>借款型態</th>
+										                <th>本次借款金額</th>
+										                <th>優惠活動/金額</th>
+										            </tr>
+										        </thead>
+										        <tbody>
+										            <tr>
+										            	<td>
+										            		<div class="input-check-items-two-1">
+																<div class="check-input">
+																	<input type="checkbox" name="dataChecka1" id="check-a1" value="">
+																	<label for="check-a1"><span class="cusradio-sty"></span></label>
+																</div>
+															</div>
+														</td>
+														<td class="text-align-left">8888888888 長安養老（甲型）</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>6.5%</td>
+										                <td>ATM</td>
+										                <td><input class="form-control tableinputp width110" value="123,456,789"><p class="tableinputp">元</p></td>
+										                <td><p class="h5txt colorred font-weight800">123,456,789 元</p></td>
+										            </tr>
+										            <tr>
+										            	<td>
+										            		<div class="input-check-items-two-1">
+																<div class="check-input">
+																	<input type="checkbox" name="dataCheckb2" id="check-b2" value="">
+																	<label for="check-b2"><span class="cusradio-sty"></span></label>
+																</div>
+															</div>
+														</td>
+														<td class="text-align-left">8888888888 長安養老（甲型）</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>6.5%</td>
+										                <td>一般</td>
+										                <td><input class="form-control tableinputp width110" value="123,456,789"><p class="tableinputp">元</p></td>
+										                <td><p class="h5txt colorred font-weight800">還款-已優惠</p></td>
+										            </tr>
+										            <tr>
+										            	<td>
+										            		<div class="input-check-items-two-1">
+																<div class="check-input">
+																	<input type="checkbox" name="dataCheckc3" id="check-c3" value="">
+																	<label for="check-c3"><span class="cusradio-sty"></span></label>
+																</div>
+															</div>
+														</td>
+														<td class="text-align-left">8888888888 長安養老（甲型）</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>6.5%</td>
+										                <td>ATM</td>
+										                <td><input class="form-control tableinputp width110" value="123,456,789"><p class="tableinputp">元</p></td>
+										                <td><p class="h5txt colorred font-weight800">123,456,789 元</p></td>
+										            </tr>
+										            <tr>
+										            	<td>
+										            		<div class="input-check-items-two-1">
+																<div class="check-input">
+																	<input type="checkbox" name="dataCheckd4" id="check-d4" value="">
+																	<label for="check-d4"><span class="cusradio-sty"></span></label>
+																</div>
+															</div>
+														</td>
+														<td class="text-align-left">8888888888 長安養老（甲型）</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>123,456,789 元</td>
+										                <td>6.5%</td>
+										                <td>ATM</td>
+										                <td><input class="form-control tableinputp width110" value="123,456,789"><p class="tableinputp">元</p></td>
+										                <td><p class="h5txt colorred font-weight800">123,456,789 元</p></td>
+										            </tr>
+										        </tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+
 
 								<h1 style="background-color: #cc0;">全選</h1>
 
@@ -3720,6 +3821,24 @@ GardenUtils.plugin.tableCollapse({
         { responsivePriority: 1, targets: 0 }],
       hasCollapseBtn: false,
     openIndex: 0
+});
+GardenUtils.plugin.tableCollapse({
+    target: $('#table-small-hide-Plas2-1'),
+    priority: [
+        { responsivePriority: 1, targets: 0 }],
+      hasCollapseBtn: false,
+    openIndex: -2
+});
+$('#table-small-hide-Plas2-1 input').on('change', function(){
+	var ele = $(this);
+	var tr_ele = ele.parents('tr').first();
+	var detail_btn = tr_ele.find('.details-control');
+
+	if(ele.prop('checked') && !tr_ele.hasClass('parent')
+		|| !ele.prop('checked') && tr_ele.hasClass('parent') ){
+		detail_btn.trigger('click');
+	}
+	
 });
 
 GardenUtils.display.checkboxSelectAll({

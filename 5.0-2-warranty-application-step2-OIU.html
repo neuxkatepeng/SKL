@@ -969,16 +969,25 @@ $('.model-style-2').on('shown.bs.modal', function (e) {
 
 	  	if( tables.length > 0 ){
 	  		tables.each(function(){
-	  			var content_w = $(this).parents().width();
-	  			var th_w = 0;
-	  			$(this).find('th').each(function(){
-	  				if( $(this).is(':visible') ){
-	  					th_w += $(this).width();
+	  			var table_ele = $(this);
+	  			var content_w = table_ele.parents().width();
+	  			var th_w = 0, table_b = 0;
+	  			table_ele.find('th').each(function(){
+	  				if( table_ele.is(':visible') ){
+	  					th_w += table_ele.width();
 	  				}
 	  			});
-	  			
+
+                if(GardenUtils.browser.isIE()){
+                    table_b += (parseInt(table_ele.css('border-left-width'))
+                        +parseInt(table_ele.css('border-right-width')))
+                        +Math.abs(parseInt(table_ele.css('margin-left')))
+                        +Math.abs((table_ele.css('margin-right')));
+                    th_w -= table_b;
+                }
+
 	  			if( content_w < th_w ){
-	  				$(this).trigger('resize');
+	  				table_ele.trigger('resize');
 	  			}
 	  		});
 	  	}

@@ -2017,14 +2017,24 @@ var GardenUtils = {
 
                 var table_ele = collapseBtn.parents('table').first();
                 var content_w = table_ele.parents().width();
-                var th_w = 0, th_len = 0;
+                var th_w = 0, th_len = 0, table_b = 0;
                 table_ele.find('th').each(function(){
                     if( $(this).is(':visible') ){
                         th_w += $(this).outerWidth();
                         ++th_len;
                     }
-                }); 
+                });
 
+                if(GardenUtils.browser.isIE()){
+                    table_b += (parseInt(table_ele.css('border-left-width'))
+                        +parseInt(table_ele.css('border-right-width')))
+                        +Math.abs(parseInt(table_ele.css('margin-left')))
+                        +Math.abs(parseInt(table_ele.css('margin-right')));
+                    th_w -= table_b;
+                }
+
+                // console.log(table_ele.attr('id'), content_w +', '+ th_w);
+                
                 if( content_w < th_w ){
                     $(this).trigger('resize');
                 } else {
@@ -2223,6 +2233,30 @@ var GardenUtils = {
                     }
                 }
             });
+        },
+
+        isIE: function(conf) {
+
+            conf = $.extend(true, {}, conf);
+            var returnVersion = conf.hasOwnProperty('returnVersion')? conf.returnVersion:false;
+
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE ");
+
+            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)
+             || /Edge/.test(navigator.userAgent))  // If Internet Explorer, return version number
+            {
+                if(returnVersion){
+                    return (parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+                }
+                return true;
+            }
+            // else  // If another browser, return 0
+            // {
+            //     alert('otherbrowser');
+            // }
+
+            return false;
         }
         
 
@@ -5218,6 +5252,17 @@ var GardenUtils = {
         collapse: function(conf){
             var target = conf.target;
             var disabledContent = conf.hasOwnProperty('disabledContent')? conf.disabledContent:{};
+            var collapseTab = [];
+
+            var d = new Date();
+            var year = d.getFullYear();
+            var month = d.getMonth()+1;
+            var date = d.getDate();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            var ms = d.getMilliseconds();
+            var collapseId = 'ga-collapse-'+year+''+month+''+date+''+h +''+ m +''+ s +''+ ms;
 
             target.on('click', function(e){
                 e.preventDefault();
@@ -5226,27 +5271,91 @@ var GardenUtils = {
                 var collapseTarget_class = ele.attr('ga-collapse-target');
                 var collapseTarget = $('.'+collapseTarget_class);
 
-
-                if( !collapseTarget.hasClass('active') ){
-                    ele.removeClass('active');
-                }
-
-                ele.toggleClass('active');
-
-                if( collapseTarget.hasClass('hidden') ){
-                    ele.removeClass('active');
-                }
-
-                _calculateHeight({
-                    isResize: false
+                var isOnclick = false;
+                var collapseId = collapseTarget.attr('ga-collapse-id');
+                $('[ga-collapse-id="'+collapseId+'"]').each(function(){
+                    if($(this).hasClass('ga-collapse-onclick')){
+                        isOnclick = true;
+                        return false;
+                    }
                 });
+                
+                if(!isOnclick){
+
+                    if( target.length > 1 ){
+                        var active_ele = ele;
+                        target.each(function(){
+                            if( $(this).hasClass('active') ){
+                                active_ele = $(this);
+                                return false;
+                            }
+                        });
+
+                        var tmp_collapseClass = active_ele.attr('ga-collapse-target');
+                        if( tmp_collapseClass != collapseTarget_class ){
+                            var tmp_target = $('.'+tmp_collapseClass);
+                            tmp_target.addClass('collpaseClose');
+                            $('[ga-collapse-target="'+tmp_collapseClass+'"]').trigger('click');
+                        } else if( collapseTarget.hasClass('collpaseClose') ){
+                            collapseTarget.removeClass('collpaseClose');
+                        }
+                    }
+
+                    if( !collapseTarget.hasClass('active') ){
+                        ele.removeClass('active');
+                    }
+
+                    ele.toggleClass('active');
+
+                    if( collapseTarget.hasClass('hidden') ){
+                        ele.removeClass('active');
+                    }
+
+                    _calculateHeight({
+                        target: ele,
+                        isResize: false
+                    });
+
+                    if( GardenUtils.browser.isIE({ returnVersion: true }) == false
+                        || GardenUtils.browser.isIE({ returnVersion: true }) != 9 ){
+                        collapseTarget.addClass('ga-collapse-onclick');
+                    }
+                }
             }); // end click: collapse btn
 
+            target.each(function(){
+                var ele = $(this);
+                var targetClass = ele.attr('ga-collapse-target');
+
+                if( $.inArray(targetClass, collapseTab) == -1 ){
+                    collapseTab.push(targetClass);
+                }
+            });
+
+            $.each(collapseTab, function(i, collapseTarget_class){
+                var collapseTarget = $('.'+collapseTarget_class).attr('ga-collapse-id', collapseId);
+                collapseTarget.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
+                    function( event ) {
+                        var collapseId = collapseTarget.attr('ga-collapse-id');
+                        $('[ga-collapse-id="'+collapseId+'"]').removeClass('ga-collapse-onclick');
+                });
+            });
+
             var _calculateHeight = function(config){
+                var target_ele = config.hasOwnProperty('target')? config.target:target.first();
                 var isResize = config.hasOwnProperty('isResize')? config.isResize:false;
 
-                var collapseTarget_class = target.attr('ga-collapse-target');
+                if( target.length > 1 ){
+                    target.each(function(){
+                        if( $(this).hasClass('active') ){
+                            target_ele = $(this);
+                            return false;
+                        }
+                    });
+                }
+                var collapseTarget_class = target_ele.attr('ga-collapse-target');
                 var collapseTarget = $('.'+collapseTarget_class);
+                // console.log('target_ele', target_ele, collapseTarget_class);
 
                 var _reCalculateHeight = function(reConf){
                     var ele = reConf.target;
@@ -5256,8 +5365,17 @@ var GardenUtils = {
                         .addClass(clone_class)
                         .appendTo( ele.parent() );
 
+                    
                     var newHeight = $('.'+clone_class).outerHeight();
                     $('.'+clone_class).remove();
+
+                    var tableCollapse_ele = clone.find('table.ga-table-collapse');
+                    if( tableCollapse_ele.length > 0 ){
+                        var origin = ele.find('table.ga-table-collapse');
+                        origin.after( tableCollapse_ele );
+                        origin.remove();
+                    }
+
                     ele.css('height', newHeight + 'px');
                 } // end _reCalculateHeight function
 
