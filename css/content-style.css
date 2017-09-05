@@ -907,6 +907,11 @@ ul.dtr-details .dtr-data {
 .stepcontent-mar152px{
 	margin: 0 152px 0 152px;
 }
+@media only screen and (min-width: 1025px) and (max-width:1199px) { /*170822 by JiaRu*/
+	.stepcontent-mar152px{
+		margin: 0 66px 0 66px;
+	}
+}
 @media only screen and (min-width: 320px) and (max-width:1024px) {
 	.stepcontent-mar152px{
 		margin: 0 66px 0 66px;

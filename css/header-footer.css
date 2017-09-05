@@ -757,7 +757,7 @@ footer .container .row .footer-text p{
 	width: 23px;
 	height: 23px;
 }
-@media only screen and (min-width: 320px) and (max-width:768px) {
+@media only screen and (min-width: 320px) and (max-width:1023px) {
 	.menu-title a.rwd-menu-rightcancel-btn{
 		display: inline-block;
 		right: 20px;
@@ -788,7 +788,7 @@ footer .container .row .footer-text p{
 	width: 23px;
 	height: 23px;
 }
-@media only screen and (min-width: 320px) and (max-width:768px) {
+@media only screen and (min-width: 320px) and (max-width:1023px) {
 	.menu-aside-block a.rwd-menu-rightcancel-btn{
 		display: inline-block;
 		right: 0px;
@@ -823,7 +823,7 @@ footer .container .row .footer-text p{
 	display: none;
 
 }
-@media only screen and (min-width: 320px) and (max-width:768px) {
+@media only screen and (min-width: 320px) and (max-width:1023px) {
 	.menu-aside-block .first-block .menu-personal-hello{
 		display: block;
 	}
@@ -1005,7 +1005,7 @@ footer .container .row .footer-text p{
 .menu-myfavorite{
 	/*display: none;*/
 }
-@media only screen and (min-width: 320px) and (max-width:768px) {
+@media only screen and (min-width: 320px) and (max-width:1023px) {
 	.menu-myfavorite{
 		display: block;
 	}
@@ -1224,6 +1224,25 @@ footer .container .row .footer-text p{
     top: 0;
 }*/
 
+@media only screen and (min-width: 1025px) and (max-width:1199px) {
+	.meun-sub-redtitle .redtitle-txt:before{
+		width: 45px;
+	}
+
+	.meun-sub-redtitle .redtitle-txt:after{
+		width: 45px;
+	}
+}/* 170828 by JiaRu */
+
+@media only screen and (min-width: 320px) and (max-width:1024px) {
+	.meun-sub-redtitle .redtitle-txt:before{
+		width: 45px;
+	}
+
+	.meun-sub-redtitle .redtitle-txt:after{
+		width: 45px;
+	}
+}/*2017-08-16-kate*/
 
 @media only screen and (min-width: 320px) and (max-width:1023px) {
 	.Index-content .container-fluid{
@@ -1374,7 +1393,8 @@ footer .container .row .footer-text p{
 
 
 .fix-onlineservice .onlineservice-btn{
-	background-color: #7b868c;
+	/*background-color: #7b868c;*/
+	background-color: #e2231a;
     padding: 0;
     border-radius: 4px 0 0 4px;
     left: -51px;
@@ -1396,12 +1416,14 @@ footer .container .row .footer-text p{
     writing-mode: bt-rl;*/
 }
 .onlineservice-btn a p{
-	-webkit-writing-mode: vertical-lr;
+	/*-webkit-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
     -ms-writing-mode: bt-rl;
-    writing-mode: bt-rl;
+    writing-mode: bt-rl;*/
     /*display: inline-block;*/
     display: block;
+    width: 20px;
+    word-break: break-all;
 }
 .onlineservice-btn a img{
 	padding-left: 5px; 
@@ -1426,7 +1448,7 @@ p.iph-none{
 }
 .onlineservice-content{
 	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16);
-	width: 388px;
+	width: 490px;
 	height: 513px;
 	background-color: #fff;
 }
@@ -1547,7 +1569,8 @@ p.iph-none{
 	padding-bottom: 5px;
 }
 .onlineservice-rwdonly{
-	width: 324px;
+	/*width: 324px;*//*old*/
+	width: 500px;
 	margin: auto;
 }
 .onlineservice-rwdonly .onlineservice-content-block{
@@ -1567,7 +1590,7 @@ p.iph-none{
 		padding: 0 25px;
 	}
 	.onlineservice-rwdonly{
-		width: 100%;
+		/*width: 100%;*//*old*/
 		margin: auto;
 	}
 	.onlineservice-rwdonly .onlineservice-content-block{
@@ -1829,7 +1852,7 @@ p.iph-none{
 	}
 }
 .before-right-login-block.active{
-	border: 1px solid #e2231a;
+	border: 2px solid #e2231a;
 }
 .before-right-login-block .login-title{
 	text-align: center;
@@ -1842,6 +1865,9 @@ p.iph-none{
 	font-size: 23px;
 	letter-spacing: 1px;
 	margin-bottom: 0;
+}
+.before-right-login-block .login-title p.colorred{
+	font-weight: 700;
 }
 .before-right-login-block .login-radio-input{
 	width: 270px;
@@ -2187,12 +2213,444 @@ p.iph-none{
 
 
 
+
+/*2017-08-18Lynn線上客服*/
+
+	/* line 1, ../sass/layout/_cs-online-layout.scss */
+	.online-cs-block-ly-css {
+	  font-size: 0;
+	  padding: 20px;
+	  background-color: #fff;
+	}
+	/* line 7, ../sass/layout/_cs-online-layout.scss */
+	.online-cs-block-ly-css .col-left-wd {
+	  display: inline-block;
+	  vertical-align: top;
+	  width: 70%;
+	  font-size: 14px;
+	  padding-right: 25px;
+	  box-sizing: border-box;
+	}
+	/* line 15, ../sass/layout/_cs-online-layout.scss */
+	.online-cs-block-ly-css .col-right-wd {
+	  display: inline-block;
+	  vertical-align: top;
+	  width: 30%;
+	  font-size: 14px;
+	  box-sizing: border-box;
+	}
+	/* line 22, ../sass/layout/_cs-online-layout.scss */
+	.online-cs-block-ly-css .btm-block {
+	  margin-top: 30px;
+	  padding-top: 30px;
+	  border-top: 1px dashed #979797;
+	}
+
+	/* line 2, ../sass/base/_base.scss */
+	.online-cs-block-ly-css .pos-center {
+	  text-align: center;
+	}
+
+	/* line 5, ../sass/base/_base.scss */
+	.online-cs-block-ly-css .pos-left {
+	  text-align: left;
+	}
+
+	/* line 8, ../sass/base/_base.scss */
+	.online-cs-block-ly-css .pos-right {
+	  text-align: right;
+	}
+
+	/* line 13, ../sass/base/_base.scss */
+	.online-cs-block-ly-css {
+	  font-family: '微軟正黑體';
+	}
+
+	/* line 2, ../sass/component/_form.scss */
+	.online-cs-block-ly-css .form-block {
+	  font-family: '微軟正黑體';
+	}
+	/* line 4, ../sass/component/_form.scss */
+	.online-cs-block-ly-css .form-block input, .online-cs-block-ly-css .form-block select {
+	  border: 1px solid #d6d6d6;
+	  height: 35px;
+	  display: inline-block;
+	  width: 100%;
+	  border-radius: 5px;
+	  font-family: '微軟正黑體';
+	  padding: 6px 16px;
+	  box-sizing: border-box;
+	}
+	/* line 14, ../sass/component/_form.scss */
+	.online-cs-block-ly-css .form-block .form-tag {
+	  display: inline-block;
+	  width: 40%;
+	  margin-right: 1%;
+	  font-family: '微軟正黑體';
+	}
+	/* line 20, ../sass/component/_form.scss */
+	.online-cs-block-ly-css .form-block .form-content-block {
+	  display: inline-block;
+	  width: 55%;
+	  position: relative;
+	}
+	.online-cs-block-ly-css .form-block .form-content-block:after{
+		content: '';
+		width: 9px;
+		height: 4px;
+		position: absolute;
+		right: 12px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #737373;
+		border-left: 5px solid transparent;
+	}
+	.online-cs-block-ly-css .form-block .form-content-block.inputcancelarrow:after{
+		display: none;
+	}
+	/* line 25, ../sass/component/_form.scss */
+	.online-cs-block-ly-css .form-block .one-line-input + .one-line-input {
+	  margin-top: 8px;
+	}
+
+	/* line 1, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right {
+	  padding: 0;
+	  list-style-type: none;
+	  float: right;
+	  position: fixed;
+	  bottom: 20px;
+	  right: 0;
+	  font-family: '微軟正黑體';
+	  z-index: 999;
+	}
+	/* line 10, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right * {
+	  box-sizing: content-box;
+	  -webkit-box-sizing: content-box;
+	  -ms-box-sizing: content-box;
+	  -o-box-sizing: content-box;
+	  -moz-box-sizing: content-box;
+	}
+	/* line 17, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right li {
+	  width: 50px;
+	  text-align: center;
+	  background-color: #e2231a;
+	  padding: 20px 0;
+	  box-sizing: border-box;
+	}
+	/* line 23, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right li a {
+	  color: #fff;
+	  text-decoration: none;
+	  display: block;
+	  width: 20px;
+	  margin: 0 auto;
+	  line-height: 19px;
+	  font-size: 16px;
+	}
+	/* line 31, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right li a:hover, .nav-extra-right li a:active, .nav-extra-right li a:focus {
+	  color: #fff !important;
+	}
+	/* line 36, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right li + li {
+	  border-top: 1px solid #fff;
+	}
+	/* line 39, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right li + .cs-online-tag-block {
+	  border-top: 1px solid #fff;
+	}
+	/* line 43, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right .cs-click {
+	  cursor: pointer;
+	}
+	/* line 45, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right .cs-click.active {
+	  position: relative;
+	  right: -40px;
+	}
+	/* line 51, ../sass/component/_nav-extra-right.scss */
+	.nav-extra-right .cs-online-tag-block {
+	  position: relative;
+	}
+
+	@media (max-width: 1023px) {
+	  /* line 58, ../sass/component/_nav-extra-right.scss */
+	  .nav-extra-right {
+	    display: none;
+	  }
+	}
+	/* line 2, ../sass/_sm-cs-style.scss */
+	/*.online-cs-block-ly-css.sm-layout-cs {
+	  position: relative;
+	  top: 0;
+	  right: 0;
+	  box-shadow: none;
+	  padding: 0 10px;
+	  width: 100%;
+	  box-sizing: border-box;
+	  padding: 0;
+	}*/
+	/* line 12, ../sass/_sm-cs-style.scss */
+	.online-cs-block-ly-css.sm-layout-cs .top-block, .online-cs-block-ly-css.sm-layout-cs .btm-block {
+	  padding-right: 10px;
+	  padding-left: 10px;
+	}
+	/* line 18, ../sass/_sm-cs-style.scss */
+	.online-cs-block-ly-css.sm-layout-cs h1 {
+	  font-size: 20px;
+	  line-height: 23px;
+	  letter-spacing: 1.3px;
+	  color: #000;
+	  margin: 20px 0;
+	  text-align: center;
+	}
+	/* line 27, ../sass/_sm-cs-style.scss */
+	.online-cs-block-ly-css.sm-layout-cs .col-left-wd {
+	  width: 100%;
+	  padding-right: 0;
+	}
+	/* line 31, ../sass/_sm-cs-style.scss */
+	.online-cs-block-ly-css.sm-layout-cs .col-right-wd {
+	  width: 100%;
+	}
+	/* line 34, ../sass/_sm-cs-style.scss */
+	.online-cs-block-ly-css.sm-layout-cs .btn-img-block {
+	  width: 100%;
+	  min-width: 100%;
+	  margin-top: 30px;
+	}
+	/* line 39, ../sass/_sm-cs-style.scss */
+	.online-cs-block-ly-css.sm-layout-cs .img-main {
+	  background-position: center center;
+	  text-align: center;
+	}
+	/* line 42, ../sass/_sm-cs-style.scss */
+	.online-cs-block-ly-css.sm-layout-cs .img-main p {
+	  margin: 20px 0;
+	  padding-right: 100px;
+	}
+	/* line 48, ../sass/_sm-cs-style.scss */
+	.online-cs-block-ly-css.sm-layout-cs .tel + .tel {
+	  margin-top: 5px;
+	}
+	/* line 52, ../sass/_sm-cs-style.scss */
+	.online-cs-block-ly-css.sm-layout-cs .tel-block {
+	  margin-bottom: 25px;
+	}
+
+
+	/* line 14, ../sass/online-service.scss */
+	.online-cs-block-ly-css {
+	  display: inline-block;
+	  width: 490px;
+	 
+	}
+	/* line 20, ../sass/online-service.scss */
+	.online-cs-block-ly-css a {
+	  text-decoration: none;
+	}
+	/* line 22, ../sass/online-service.scss */
+	.online-cs-block-ly-css a:hover, .online-cs-block-ly-css a:active {
+	  text-decoration: none;
+	}
+	/* line 26, ../sass/online-service.scss */
+	.online-cs-block-ly-css h2 {
+	  color: #000;
+	  font-size: 18px;
+	  letter-spacing: 1.2px;
+	  line-height: 23px;
+	  padding: 0;
+	  margin: 0;
+	  font-weight: 700;
+	}
+	/* line 34, ../sass/online-service.scss */
+	.online-cs-block-ly-css p {
+	  color: #383838;
+	  font-size: 12px;
+	  letter-spacing: 1px;
+	  margin: 0;
+	  margin-top: 25px;
+	}
+	/* line 41, ../sass/online-service.scss */
+	.online-cs-block-ly-css .img-main {
+	  width: 100%;
+	  min-height: 80px;
+	  display: inline-block;
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	}
+	/* line 47, ../sass/online-service.scss */
+	.online-cs-block-ly-css .img-main p {
+	  display: inline-block;
+	  margin: 15px 40px 20px 25px;
+	  font-size: 15px;
+	  color: black;
+	  font-weight: 700;
+	  text-align: center;
+	  line-height: 23px;
+	  letter-spacing: 1px;
+	}
+	/* line 58, ../sass/online-service.scss */
+	.online-cs-block-ly-css .btn-img-block {
+	  background-color: #fff;
+	  text-align: center;
+	  border-radius: 5px;
+	  box-shadow: 0 9px 16px 0 #bebec0;
+	  border: solid 1px #e3e3e3;
+	  min-width: 121px;
+	  min-height: 121px;
+	  display: block;
+	}
+	/* line 67, ../sass/online-service.scss */
+	.online-cs-block-ly-css .btn-img-block .icon-btn {
+	  padding: 15px 0 5px 0;
+	}
+	/* line 72, ../sass/online-service.scss */
+	.online-cs-block-ly-css .pos-icon-left {
+	  float: left;
+	}
+	/* line 75, ../sass/online-service.scss */
+	.online-cs-block-ly-css .tel-block {
+	  margin-top: 30px;
+	}
+	/* line 78, ../sass/online-service.scss */
+	.online-cs-block-ly-css .tel {
+	  font-size: 15px;
+	  letter-spacing: 1px;
+	  line-height: 23px;
+	  margin-bottom: 10px;
+	}
+	/* line 83, ../sass/online-service.scss */
+	.online-cs-block-ly-css .tel-title {
+	  color: #000;
+	  font-weight: 700;
+	}
+	/* line 87, ../sass/online-service.scss */
+	.online-cs-block-ly-css .tel-content {
+	  color: #e2231a;
+	  font-weight: 700;
+	}
+	/* line 91, ../sass/online-service.scss */
+	.online-cs-block-ly-css .form-block {
+	  font-size: 15px;
+	  letter-spacing: 1px;
+	  line-height: 23px;
+	}
+	/* line 95, ../sass/online-service.scss */
+	.online-cs-block-ly-css .form-block .form-tag {
+	  font-weight: 700;
+	}
+
+	/*# sourceMappingURL=online-service.css.map */
+
+/*2017-08-18Lynn線上客服*/
+	.online-cs-block-ly-css .btm-block .col-full-wd{
+		padding-left: 45px;
+	}
+	.online-cs-block-ly-css .form-login-onlineservice-block .form-tag {
+	  font-weight: 700;
+	}
+	.online-cs-block-ly-css .form-login-onlineservice-block input, .online-cs-block-ly-css .form-login-onlineservice-block select {
+	  border: 1px solid #d6d6d6;
+	  height: 35px;
+	  display: inline-block;
+	  width: 100%;
+	  border-radius: 5px;
+	  font-family: "微軟正黑體";
+	  padding: 6px 16px;
+	  box-sizing: border-box;
+	}
+	.online-cs-block-ly-css .form-login-onlineservice-block .form-tag {
+	  display: inline-block;
+	  width: 40%;
+	  margin-right: 1%;
+	  font-family: "微軟正黑體";
+	}
+	.online-cs-block-ly-css .form-login-onlineservice-block .form-content-block {
+	  display: inline-block;
+	  width: 55%;
+	  position: relative;
+	}
+	.online-cs-block-ly-css .form-login-onlineservice-block .form-content-block:after{
+		content: '';
+		width: 9px;
+		height: 4px;
+		position: absolute;
+		right: 12px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #737373;
+		border-left: 5px solid transparent;
+	}
+	.online-cs-block-ly-css .form-login-onlineservice-block .one-line-input + .one-line-input {
+	  margin-top: 8px;
+	}
+	.online-cs-block-ly-css .form-login-onlineservice-block .login-name-ptxt{
+		padding-bottom: 30px;
+	}
+	.online-cs-block-ly-css .form-login-onlineservice-block .login-name-ptxt p{
+		font-size: 15px;
+	}
+	.online-cs-block-ly-css .form-login-onlineservice-block .login-name-ptxt p span{
+		font-size: 15px;
+		font-weight: 700;
+		margin-right: 20px;
+	}
+
+
+
+	@media only screen and (min-width: 320px) and (max-width:480px) {
+		.onlineservice-rwdonly {
+		    width: auto;
+		}
+		.online-cs-block-ly-css{
+			width: auto;
+			padding: 20px 0;
+		}
+		.online-cs-block-ly-css .top-block{
+			padding: 0px 20px;
+		}
+		.online-cs-block-ly-css .btm-block{
+			padding: 20px 20px 0 20px;
+		}
+		.online-cs-block-ly-css .col-left-wd {
+		  width: 100%;
+		  font-size: 14px;
+		  padding-right: 0;
+		}
+		.online-cs-block-ly-css .col-right-wd {
+		  width: 100%;
+		}
+		.online-cs-block-ly-css p{
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.online-cs-block-ly-css .btm-block .col-full-wd{
+			padding-left: 0;
+		}
+	}
+
+
+
+
+
+
 /*****************************************************************************************/
 /*IE10.11*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	/*.selector { 
 		property:value; 
 	}*/
+	.online-cs-block-ly-css .form-block .form-content-block:after{
+		display: none !important;
+	}
 	.onlineservice-down .onlineservice-down-select .select-item:after{
 	    display: none;
 	}
@@ -2214,6 +2672,9 @@ p.iph-none{
         background-image:none\9;
         padding: 5px\9;
     } */
+    .online-cs-block-ly-css .form-block .form-content-block:after{
+		display: none\9;
+	}
     .onlineservice-down .onlineservice-down-select .select-item:after{
 	    display: none\9;
 	}

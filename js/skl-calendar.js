@@ -1,5 +1,5 @@
-var em = function(){};
-console = {log: em, debug: em, info: em, warn: em};
+// var em = function(){};
+// console = {log: em, debug: em, info: em, warn: em};
 
 function sklCalendar(conf){
 
@@ -31,7 +31,7 @@ function sklCalendar(conf){
 		    autoplay: false,
 		    margin: 0,
 		    page: {
-	      		isDisable: false
+	      		isDisable: true
 	    	},
 		    navigation: {
 		      	isDisable: false
@@ -59,21 +59,29 @@ function sklCalendar(conf){
 
 		// create dataPoints
 		$.each(chartData, function(i, money){
-			var match = -1;
-	        $.each(levelData, function(j, levelNum) {
-	        	// console.log('match', levelNum, money, match);
-	            if (levelNum <= money && levelNum > match) {
-	                match = (j+1);
-	            }
-	        });
 
-	        if( match != -1 ){
-	            var level = match;
-	            dataPoints.push({
-	            	y: level, 
+			if( levelData.length == 0 ){
+				dataPoints.push({
+	            	y: parseInt(money), 
 	            	label: GardenUtils.format.convertThousandComma(money)
 	            });
-	        }
+			} else {
+				var match = -1;
+		        $.each(levelData, function(j, levelNum) {
+		        	// console.log('match', levelNum, money, match);
+		            if (levelNum <= money && levelNum > match) {
+		                match = (j+1);
+		            }
+		        });
+
+		        if( match != -1 ){
+		            var level = match;
+		            dataPoints.push({
+		            	y: level, 
+		            	label: GardenUtils.format.convertThousandComma(money)
+		            });
+		        }
+			}
 		}); // end each: chartData
 
 		// console.log('dataPoints', dataPoints);
@@ -118,7 +126,7 @@ function sklCalendar(conf){
 			    labelPlacement: 'outside',
 			    indexLabel: "{label}",
 			    indexLabelFontColor: inactive_color, //"#ea8a86",
-			    indexLabelFontSize: "13.5",
+			    indexLabelFontSize: "12",
 			    indexLabelMaxWidth: 60,
                 click: _chartItemClick,
 			    dataPoints: dataPoints
@@ -224,6 +232,7 @@ function sklCalendar(conf){
 function sklCalendarDetail(conf){
 
 	var target = conf.target;
+	var itemShiftCount = 2;
 
 	function _countSlideWidthLeft(slideLeft_conf) {
 
@@ -280,18 +289,25 @@ function sklCalendarDetail(conf){
 			$(this).attr('data-slide-index', i);
 			$(this).css('left', ($(this).width() * i));
 		});
+
+		target.find('.skl-calendar-detail-lg-btn').removeClass('active');
+		var window_w = $(window).width();
+		if( window_w > 1024 && detailSliderItem.length > itemShiftCount ){
+			target.find('.skl-calendar-detail-lg-btn.skl-calendar-detail-slider-next').addClass('active');
+		}
 	} // end _setSlideItemPosition function
 
 	_setSlideItemPosition({
 		target: target
 	});
 
-	target.find('.skl-calendar-detail-lg-btn').on('click', function(ev){
+	target.find('.skl-calendar-detail-lg-btn').off('click').on('click', function(ev){
 		ev.preventDefault();
 
 		var calendarBtn = $(this);
 		var prevBtn = $(), nextBtn = $();
-		var itemShiftCount = 2;
+
+		console.log('calendarBtn', calendarBtn);
 
 		var sliderContainer = calendarBtn.parent().find('.skl-calendar-detail-slider');
 		var slideItem = sliderContainer.find('.skl-calendar-detail-slider-item');
@@ -324,13 +340,13 @@ function sklCalendarDetail(conf){
 
 		var new_activeItem_i = slideItem.index( sliderContainer.find('.activeItem') );
 
+		prevBtn.addClass('active');
+		nextBtn.addClass('active');
+
 		if( new_activeItem_i >= slideItem.length-itemShiftCount ){
 			nextBtn.removeClass('active');
 		} else if( new_activeItem_i <= 0 ){
 			prevBtn.removeClass('active');
-		} else {
-			prevBtn.addClass('active');
-			nextBtn.addClass('active');
 		}
 
 		_countSlideWidthLeft({
@@ -340,7 +356,7 @@ function sklCalendarDetail(conf){
 		});
 	}); // end click: skl-calendar-detail-lg-btn
 
-	target.find('.skl-calendar-detail-sm-btn').on('click', function(ev){
+	target.find('.skl-calendar-detail-sm-btn').off('click').on('click', function(ev){
 		ev.preventDefault();
 
 		$(this).parent().find('.skl-calendar-detail-sm-btn').addClass('active');
@@ -353,7 +369,13 @@ function sklCalendarDetail(conf){
 		if( window_w > 1024 ){
 			$('.skl-calendar-detail-container-lg .skl-calendar-detail-slider-container').scrollLeft(0);
 			$('.skl-calendar-detail-container-lg .skl-calendar-detail-slider-container').removeAttr('style');
-			$('.skl-calendar-detail-container-lg .skl-calendar-detail-slider-next.skl-calendar-detail-lg-btn').addClass('active');
+			// $('.skl-calendar-detail-container-lg .skl-calendar-detail-slider-next.skl-calendar-detail-lg-btn').addClass('active');
+			$('.skl-calendar-detail-container-lg').each(function(){
+				var target = $(this).parent();
+				_setSlideItemPosition({
+					target: target
+				});
+			});
 			$('.skl-calendar-detail-container-lg .skl-calendar-detail-slider-container .skl-calendar-detail-slider-item').first().addClass('activeItem');
 		} else {
 			$('.skl-calendar-detail-container-lg .skl-calendar-detail-slider-container').css('overflow-x', 'scroll');
