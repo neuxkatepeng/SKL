@@ -4187,3 +4187,9 @@ table .fixinputcheck .radio-inline label span.cusradio-sty{
 	margin-right: 0;
 	left: -30px;
 }
+
+@media only screen and (min-width: 768px){
+	.control-make-appointment-first.control-interest-on-borrowing-tab-in .itemdetail-tagcard.noicon-sty .tagcard-inside .control-tagcard-inside-items-block .tagcard-inside-total{
+		margin: 0 26px;
+	}
+}
